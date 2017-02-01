@@ -8,10 +8,6 @@ Lit is a heat map event tracker that displays current and future events. Each ev
 
 <a name="1.1"></a>
 
-## About Us
-
-This is the project page for **TEAM 13**. This project is being done for the class Computer Science 2212B at Western University. The team will use the **Agile** software development method to develop a web application with simulated data.
-
 ## <a name="1.2"></a>Members
 
 ### Anirudha Nandi
