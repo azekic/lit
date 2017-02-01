@@ -2,7 +2,7 @@
 
 <a name="LIT">
 
-# </a>TEAM 13
+# </a>![lit logo](/website/img/lit-logo.png)
 
 <a name="1.1"></a>
 
