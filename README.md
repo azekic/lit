@@ -11,7 +11,7 @@
   * [Software Design](#3.2)
   * [Roles](#3.3)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>
 
 <a name="team13">
 
