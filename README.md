@@ -16,13 +16,11 @@ Lit is a heat map event tracker that displays current and future events. Each ev
 Nandi is a second year computer science student at Western University. He is from Milton, Ontario but was originally born in India. He plans on attending the Richard Ivey School of Business next year to double major in Computer Science and Business Administration. Nandi has been coding since he was 11 and can code in C, C#, C++, Java, and Python. He also works at RezNet, the Internet Service Provider at Western University. Fun fact: Nandi crashed his car into a 80 year old lady.
 **email:** anandi@uwo.ca
 
-### NEXT
-
-# <a name="application"></a>APPLICATION
+## <a name="application"></a>Application
 
 ## <a name="2.2"></a>Features
 
-# <a name="design"></a>DESIGN
+## <a name="design"></a>Design
 
 ## <a name="3.1"></a>UI
 
