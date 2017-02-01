@@ -1,92 +1,56 @@
-# team13# The Midnight theme
+<br>
 
-[![Build Status](https://travis-ci.org/pages-themes/midnight.svg?branch=master)](https://travis-ci.org/pages-themes/midnight) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-midnight.svg)](https://badge.fury.io/rb/jekyll-theme-midnight)
+<a name="LIT">
 
-*Midnight is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/midnight), or even [use it today](#usage).*
+# </a>TEAM 13
 
-![Thumbnail of midnight](thumbnail.png)
+<a name="1.1"></a>
 
-## Usage
+## About Us
 
-To use the Midnight theme:
+This is the project page for **TEAM 13**. This project is being done for the class Computer Science 2212B at Western University. The team will use the **Agile** software development method to develop a web application with simulated data.
 
-1. Add the following to your site's `_config.yml`:
+## <a name="1.2"></a>Members
 
-    ```yml
-    theme: jekyll-theme-midnight
-    ```
+### Anirudha Nandi
+![alt text](/website/img/nandi.jpg)
 
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
+Nandi is a second year computer science student at Western University. He is from Milton, Ontario but was originally born in India. He plans on attending the Richard Ivey School of Business next year to double major in Computer Science and Business Administration. Nandi has been coding since he was 11 and can code in C, C#, C++, Java, and Python. He also works at RezNet, the Internet Service Provider at Western University. Fun fact: Nandi crashed his car into a 80 year old lady.
+**email:** anandi@uwo.ca
 
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
+### NEXT
+
+# <a name="application"></a>APPLICATION
 
 
+## <a name="2.1"></a>About the application
 
-## Customizing
+**lit** is described as a “heat map” event tracker that displays current and future local events on a virtual map. This project intends to provide a new method of event tracking using a map-focused user interface and a live counter to make users more aware of popular local events around them. This project will use a web-based application with simulated data. The actual application of this data would require users to sign in to the location by visiting the website or after future development (outside the scope of this class), using their personal cellular devices.
 
-### Configuration variables
+## <a name="2.2"></a>Features
 
-Midnight will respect the following variables, if set in your site's `_config.yml`:
+- Story board 1
+- Story board 2
 
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
-```
+# <a name="design"></a>DESIGN
 
-Additionally, you may choose to set the following optional variables:
 
-```yml
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
-```
+## <a name="3.1"></a>UI
 
-### Stylesheet
+Write a brief description of the look and feel you want your program to have, or cite an existing design language (e.g. minimal, Material Design, flat design, etc.) You could also cite an existing application or website as a source of inspiration. Describe at a very high level how users will interact with your software.
 
-If you'd like to add your own custom styles:
+This page should also include mock-ups of screens or views you plan to include in your application. You should use, at the very least, a vector graphics based drawing tool to create examples. You could also use photos of a whiteboard drawing as long as they are exceptionally clear and easy to understand. Better yet, why not search for a free mock-up tool online to generate these for you? You might find something useful.
 
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
+No matter the format, ensure that your UI Design Page portrays the intended interfaces for all of your application’s user facing features, and how users will navigate between them.
 
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+## <a name="3.2"></a>Software
 
-### Layouts
+**Insert UML here**
 
-If you'd like to change the theme's HTML layout:
+## <a name="3.3"></a>Roles
 
-1. [Copy the original template](https://github.com/pages-themes/midnight/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-2. Create a file called `/_layouts/default.html` in your site
-3. Paste the default layout content copied in the first step
-4. Customize the layout as you'd like
+**Project Lead**:
 
-## Roadmap
+**Front end lead**:
 
-See the [open issues](https://github.com/pages-themes/midnight/issues) for a list of proposed features (and known issues).
-
-## Project philosophy
-
-The Midnight theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
-
-## Contributing
-
-Interested in contributing to Midnight? We'd love your help. Midnight is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](CONTRIBUTING.md) for instructions on how to contribute.
-
-### Previewing the theme locally
-
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
-
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/midnight`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
-
-### Running tests
-
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
+**Back end lead**:
