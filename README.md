@@ -1,5 +1,5 @@
+![Lit Logo](/images/lit-logo.png)
 # TABLE OF CONTENTS
-
 * [Team 13](#team13)
   * [About us](#1.1)
   * [Members](#1.2)
