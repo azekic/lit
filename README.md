@@ -20,7 +20,7 @@ Nandi is a second year computer science student at Western University. He is fro
 ### Mitch Mancuso
 ![alt text](/website/img/Mitch.jpg)
 
-Mitch is a fourth year computer science student at the University of Western Ontario. Over the years he has maintained a portfolio of design and operational projects utilizing knowledge in Swift, Filemaker, Oracle, HTML, CSS, PHP and SQL. Hobbies include: Spending way too much time on the internet, and losing track of time.
+Mitch is a fourth year computer science student at the University of Western Ontario. Over the years he has maintained a portfolio of design and operational projects utilizing knowledge in Swift, Filemaker, Oracle, HTML, CSS, PHP and SQL. Hobbies include: spending way too much time on the internet, and losing track of time.
 
 **mmancus4@uwo.ca**
 
