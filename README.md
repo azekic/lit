@@ -24,6 +24,19 @@ Mitch is a fourth year computer science student at the University of Western Ont
 
 **mmancus4@uwo.ca**
 
+### Yuhan Li 
+![alt_text](/website/img/Yuhan.jpg)
+
+Yuhan is a third year student double major in Financial Modeling and Computer Science at Western University. Throughout studies, he is proficient in Java, Python, Matlab,C,SQL, mongoDB, Excel(VBA). Yuhan has a wide range of interests. He created the Western Magic Community to become the largest magician club in London, ON. Hobbies includes: photoshooting, boxing and video editing.
+
+**Contact:**
+
+**[Personal Web](https://www.liyuhan.me)**    
+**[Linkedin](https://ca.linkedin.com/in/yuhan-li-5b07b896)**    
+**[Email](yli2422@uwo.ca)**
+
+
+
 ## <a name="application"></a>Application
 
 ## <a name="2.2"></a>Features
