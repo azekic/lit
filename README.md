@@ -9,21 +9,21 @@ Lit is a heat map event tracker that displays current and future events. Each ev
 ## <a name="1.2"></a>Members
 
 ### Anirudha Nandi
-![alt text](/website/img/nandi-2.jpg)
+![alt text](./website/img/nandi-2.jpg)
 
 Nandi is a second year computer science student at Western University. He is from Milton, Ontario but was originally born in India. He plans on attending the Richard Ivey School of Business next year to double major in Computer Science and Business Administration. Nandi has been coding since he was 11 and can code in C, C#, C++, Java, and Python. He also works at RezNet, the Internet Service Provider at Western University. Fun fact: Nandi crashed his car into a 80 year old lady.
 
 **anandi@uwo.ca**
 
 ### Mitch Mancuso
-![alt text](/website/img/Mitch.jpg)
+![alt text](./website/img/Mitch.jpg)
 
 Mitch is a fourth year computer science student at the University of Western Ontario. Over the years he has maintained a portfolio of design and operational projects utilizing knowledge in Swift, Filemaker, Oracle, HTML, CSS, PHP and SQL. Hobbies include: spending way too much time on the internet, and losing track of time.
 
 **mmancus4@uwo.ca**
 
 ### Yuhan Li 
-![alt_text](/website/img/Yuhan.jpg)
+![alt_text](./website/img/Yuhan.jpg)
 
 Yuhan is a third year student double major in Financial Modeling and Computer Science at Western University. Throughout studies, he is proficient in Java, Python, Matlab,C,SQL, mongoDB, Excel(VBA). Yuhan has a wide range of interests. He created the Western Magic Community to become the largest magician club in London, ON. Hobbies includes: photoshooting, boxing and video editing.
 
