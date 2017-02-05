@@ -28,6 +28,9 @@ Yuhan is a third year student double major in Financial Modeling and Computer Sc
 **[Linkedin](https://ca.linkedin.com/in/yuhan-li-5b07b896)**    
 **[Email](yli2422@uwo.ca)**
 
+### MAKSYM KOVAL
+
+
 ### YIJUN HE
 ![alt text](./website/img/yijun.jpg)
 
