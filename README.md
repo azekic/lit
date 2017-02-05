@@ -29,6 +29,9 @@ Yuhan is a third year student double major in Financial Modeling and Computer Sc
 **[Email](yli2422@uwo.ca)**
 
 ### MAKSYM KOVAL
+![alt text](./website/img/Maksym_Koval.jpg)
+
+Maksym is a second year student at western pursuing ] a dual-degree in Computer Science and Business Administration. He has always had an interest in merging business and computing. Initially involved in a student start-up as Vice President of Information Technology, he expanded his skills further upon entering university. Now as a Director of Technology at the Western Forex Association, he dedicates himself to site management and graphic design, while keeping a part time position at PPL as a Recreation Coordinator.
 
 
 ### YIJUN HE
