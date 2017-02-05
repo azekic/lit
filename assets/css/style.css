@@ -236,6 +236,13 @@ Full-Width Styles
 
 #main_content { padding-top: 40px; }
 
+#maincontainer {
+  min-height:100%;
+  width:60%;
+  min-width:600px;
+  margin:auto;
+}
+
 #footer_wrap { background: #212121; }
 
 /*******************************************************************************
