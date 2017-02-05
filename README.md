@@ -36,6 +36,9 @@ Yuhan is a third year student double major in Financial Modeling and Computer Sc
 
 Yijun is a second year computer science student at Western University who plans on doing Specilization in Computer Science. He is from China, and he like music and graphic design. He started learning code last year and he can code in Java, C, Python, and HTML/CSS/Javascritpt. 
 
+**yhe362@uwo.ca**
+
+
 
 ## <a name="application"></a>Application
 
