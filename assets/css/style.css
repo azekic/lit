@@ -219,7 +219,7 @@ Full-Width Styles
 
 #header_wrap { background-image: url("bg.jpg"); }
 
-#header_wrap .inner { padding: 80px 20px 45px 15px; }
+#header_wrap .inner { padding: 1000px 20px 45px 15px; }
 
 #project_title { margin: 0; color: #fff; font-size: 42px; font-weight: 700; text-shadow: #111 0px 0px 10px; }
 
