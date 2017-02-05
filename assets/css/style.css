@@ -203,7 +203,7 @@ th { font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-seri
 
 td { padding: 10px; border: 1px solid #ffffff; }
 
-form { background: #39434d; padding: 20px; }
+form { background: #1f252b; padding: 20px; }
 
 /*******************************************************************************
 Full-Width Styles
@@ -232,7 +232,7 @@ Full-Width Styles
 
 .tar_download_link:hover { background: url(../images/sprite_download.png) no-repeat top right; }
 
-#main_content_wrap { background: #39434d; border-top: 1px solid #111; border-bottom: 1px solid #111; }
+#main_content_wrap { background: #1f252b; border-top: 1px solid #111; border-bottom: 1px solid #111; }
 
 #main_content { padding-top: 40px; }
 
