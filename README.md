@@ -37,15 +37,15 @@ Yijun is a second year computer science student at Western University who plans 
 
 
 
-## <a name="application"></a>Application
+## <a></a>APPLICATION
 
-## <a name="2.2"></a>Features
+## <a></a>FEATURES
 
-## <a name="design"></a>Design
+## <a></a>DESIGN
 
-## <a name="3.1"></a>UI
+## <a></a>UI
 
-## <a name="3.2"></a>Software
+## <a></a>SOFTWARE
 
-## <a name="3.3"></a>Roles
+## <a></a>ROLES
 
