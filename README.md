@@ -1,4 +1,4 @@
-# ![lit logo](/website/img/lit-logo.png)
+# ![lit logo](../website/img/lit-logo.png)
 
 YOOOOOOOOO
 
@@ -9,7 +9,7 @@ Lit is a heat map event tracker that displays current and future events. Each ev
 ## <a name="1.2"></a>Members
 
 ### Anirudha Nandi
-![alt text](/website/img/nandi-2.jpg)
+![alt text](../website/img/nandi-2.jpg)
 
 Nandi is a second year computer science student at Western University. He is from Milton, Ontario but was originally born in India. He plans on attending the Richard Ivey School of Business next year to double major in Computer Science and Business Administration. Nandi has been coding since he was 11 and can code in C, C#, C++, Java, and Python. He also works at RezNet, the Internet Service Provider at Western University. Fun fact: Nandi crashed his car into a 80 year old lady.
 
