@@ -2,25 +2,25 @@
 
 .highlight table pre { margin: 0; }
 
-.highlight .cm { color: #999988; font-style: italic; }
+.highlight .cm { color: #ffffff; font-style: italic; }
 
-.highlight .cp { color: #999999; font-weight: bold; }
+.highlight .cp { color: #ffffff; font-weight: bold; }
 
-.highlight .c1 { color: #999988; font-style: italic; }
+.highlight .c1 { color: #ffffff; font-style: italic; }
 
-.highlight .cs { color: #999999; font-weight: bold; font-style: italic; }
+.highlight .cs { color: #ffffff; font-weight: bold; font-style: italic; }
 
 .highlight .c, .highlight .cd { color: #999988; font-style: italic; }
 
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 
-.highlight .gd { color: #000000; background-color: #ffdddd; }
+.highlight .gd { color: #ffffff; background-color: #ffdddd; }
 
-.highlight .ge { color: #000000; font-style: italic; }
+.highlight .ge { color: #ffffff; font-style: italic; }
 
 .highlight .gr { color: #aa0000; }
 
-.highlight .gh { color: #999999; }
+.highlight .gh { color: #ffffff; }
 
 .highlight .gi { color: #000000; background-color: #ddffdd; }
 
