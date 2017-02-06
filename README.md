@@ -1,6 +1,6 @@
 LIT is a heat map event tracker that displays current and future events. Each event will be defined by an area on the map with geo-fencing using Google Maps API. A user who enters the defined area will add to the event counter - which displays how many users are within that event’s area. The density of people will be visually displayed through color. For example: events of low, medium, and high user density will be filled in with yellow, orange, and red colours respectively. By clicking or tapping on the event area, a user can see more information about that specific event. A time slider will allow the user to view events on the map at later points in time.
 
-### DEVELOPED BY TEAM 13 FOR CS2212
+*Developed by Team 13 for CS2212*
 
 ## <a></a>MEMBERS
 
