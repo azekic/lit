@@ -3,6 +3,12 @@ Lit is a heat map event tracker that displays current and future events. Each ev
 
 ## <a></a>MEMBERS
 
+### ANDRE ZEKIC
+![alt text](./website/img/andre.jpg)
+Andre is a fourth year student at Western University pursuing a double major in Chemistry and Computer Science. He is often seen speeding across campus on his electric longboard or drinking concerning amounts of Soylent. His position as Computer Science Representative and VP of Promotions on Western’s Science Student’s Council and the Chemistry Club respectively brought insight towards a concerning truth – councils, clubs, and societies across campus have no standardized method to communicate with students. Students are left to figure out whats going on across campus on their own. From this insight came the inception of ‘Lit’, a service that aims to fill the gap and bring the events of all clubs and societies across campus directly to students.
+
+**azekic@uwo.ca**
+
 ### ANIRUDHA NANDI
 ![alt text](./website/img/nandi-2.jpg)
 
