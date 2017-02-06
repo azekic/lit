@@ -51,7 +51,7 @@ Yijun is a second year computer science student at Western University who plans 
 
 **yhe362@uwo.ca**
 
-## <a></a>UI DESIGN
+## UI DESIGN
 
 The Discover tab allows a user to find and interact with events.
 ![Discover Tab](./website/img/discover.jpg)
@@ -59,7 +59,10 @@ The Discover tab allows a user to find and interact with events.
 The Create tab allows a user to create and edit an event.
 ![Create Tab](./website/img/create.jpg)
 
-## <a></a>SOFTWARE DESIGN
+## SOFTWARE DESIGN
 
-## <a></a>PROJECT PLAN
+### UML DIAGRAM
 
+## PROJECT PLAN
+
+## USER STORIES
