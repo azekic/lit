@@ -1,9 +1,9 @@
 Computer Science 2212 - Introduction to Software Engineering is a course designed to examine the stages of the software engineering process, including requirements gathering, specification, design, implementation, and testing. Students of CS 2212 are required to work cooperatively in a team to design and implement a moderately large software system.
 
 LIT is a heat map event tracker that displays current and future events. Each event will be defined by an area on the map with geo-fencing using Google Maps API. A user who enters the defined area will add to the event counter - which displays how many users are within that event’s area. The density of people will be visually displayed through color. For example: events of low, medium, and high user density will be filled in with yellow, orange, and red colours respectively. By clicking or tapping on the event area, a user can see more information about that specific event. A time slider will allow the user to view events on the map at later points in time.
-* Create geo-fenced events
-* Users can discover events around them using a heat map
-* Facebook integration for easy login and event sharing
+1. Create geo-fenced events
+2. Users can discover events around them using a heat map
+3. Facebook integration for easy login and event sharing
 
 *Developed by Team 13 for CS 2212*
 
@@ -60,14 +60,6 @@ Yijun is a second year computer science student at Western University who plans 
 **Role:** Front End Developer
 
 **yhe362@uwo.ca**
-
-### Weija Zhou
-![alt text](./website/img/weija.jpg)
-
-Weija Zhou is a second year student at western pursuing a Computer Science Degree. He has always been interested in computers and electronics and took an interest in computer science in high school. Throughout his life, he has gained skills in the mystical languages of python, java, C, C++, html, css, and javascript. He is excited about designing new projects and is commited to learning and being awesome. His official role on the team is the "create" page developer. 
-
-**wzhou94@uwo.ca**
-
 
 ## UI DESIGN
 
