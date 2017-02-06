@@ -56,7 +56,7 @@ Yijun is a second year computer science student at Western University who plans 
 The Discover tab allows a user to find and interact with events.
 ![Discover Tab](./website/img/discover.jpg)
 
-The Create tab allows a user to create and modify their events.
+The Create tab allows a user to create and edit an event.
 ![Create Tab](./website/img/create.jpg)
 
 ## <a></a>SOFTWARE DESIGN
