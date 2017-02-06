@@ -51,17 +51,9 @@ Yijun is a second year computer science student at Western University who plans 
 
 **yhe362@uwo.ca**
 
+## <a></a>UI DESIGN
 
+## <a></a>SOFTWARE DESIGN
 
-## <a></a>APPLICATION
-
-## <a></a>FEATURES
-
-## <a></a>DESIGN
-
-## <a></a>UI
-
-## <a></a>SOFTWARE
-
-## <a></a>ROLES
+## <a></a>PROJECT PLAN
 
