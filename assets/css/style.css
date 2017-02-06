@@ -234,7 +234,6 @@ Full-Width Styles
 .zip_download_link:hover { background: url(../images/sprite_download.png) no-repeat top left; }
 
 .tar_download_link:hover { background: url(../images/sprite_download.png) no-repeat top right; }
-#main_content_wrap { background-image: url("topo.jpg"); }
 
 /*
 #main_content_wrap { background-image: url("bgmap.png"); Background-position: center; background-size: 100% auto; border-top: 1px solid #111; border-bottom: 1px solid #111; }
