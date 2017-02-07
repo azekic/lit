@@ -61,6 +61,12 @@ Yijun is a second year computer science student at Western University who plans 
 
 **yhe362@uwo.ca**
 
+![alt text](./website/img/weija.jpg)
+ 
+Weija Zhou is a second year student at Western pursuing a Computer Science degree. He has always been interested in computers and electronics. He took an interest in computer science in high school. Throughout his life, he has gained skills in the mystical languages of python, java, C, C++, html, css, and javascript. He is excited about designing new projects and is committed to learning and being awesome. His official role on the team is being the "create" page developer. 
+ 
+ **[wzhou94@uwo.ca](wzhou94@uwo.ca)**
+
 ## UI DESIGN
 
 The Discover tab allows a user to find and interact with events.
