@@ -41,6 +41,7 @@ Yuhan is a third year student double major in Financial Modeling and Computer Sc
 **Role:** Back end developer
 
 **Contact:**
+
 **[Personal Web](https://www.liyuhan.me)**    
 **[Linkedin](https://ca.linkedin.com/in/yuhan-li-5b07b896)**    
 **[Email](yli2422@uwo.ca)**
@@ -85,9 +86,10 @@ The Create tab allows a user to create and edit an event.
 
 The Settings option allows a user to modify their account, manage their events, and provides access to help resources.
 ![Settings](./website/img/settings.png)
+
 ## SOFTWARE DESIGN
 
-### UML DIAGRAM
+## UML DIAGRAM
 
 ## PROJECT PLAN
 
