@@ -85,6 +85,8 @@ Spencer is a third year computer science student at the University of Western On
 
 ## UI DESIGN
 
+The Login page allows a user to sign up, sign up with Facebook, or log into the appication.
+![Login](./website/img/login.jpg)
 The Discover tab allows a user to find and interact with events.
 ![Discover Tab](./website/img/discover.jpg)
 
