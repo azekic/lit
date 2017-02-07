@@ -77,7 +77,7 @@ Garren is an avid technology enthusiast with an interest in anything computer or
 **gmccall5@uwo.ca**
 
 ### SPENCER ROEBOTHAM
-<img src="./website/img/IMG_9692small.jpg" width="350" height="322">
+<img src="./website/img/Spencer.jpg">
 
 Spencer is a third year computer science student at the University of Western Ontario. He has experience programming in Java, C, C++, Unix shell, ARM assembly, JavaScript, Ruby, HTML, and CSS. He is currently the VP Sponsorship of Western Cyber Security, a student-run organization at Western for those interested in ethical hacking and information security.
 
