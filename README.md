@@ -87,6 +87,10 @@ Spencer is a third year computer science student at the University of Western On
 
 The Login page allows a user to sign up, sign up with Facebook, or log into the appication.
 ![Login](./website/img/login.jpg)
+
+The Sign Up page requests that a user fills in the necessary info to generate an account.
+![Signup](./website/img/login2.jpg)
+
 The Discover tab allows a user to find and interact with events.
 ![Discover Tab](./website/img/discover.jpg)
 
