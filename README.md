@@ -68,6 +68,7 @@ Weija Zhou is a second year student at Western pursuing a Computer Science degre
  **[wzhou94@uwo.ca](wzhou94@uwo.ca)**
  
 ### GARREN MCCALLUM
+![alt text](./website/img/garren.jpg)
 
 Garren is an avid technology enthusiast with an interest in anything computer or gaming related, with cars being a side hobby. He is particularly interested in the Android platform and enjoy making system modifications and changing Android versions on his mobile device. Garren is currently taking a Major in Computer Science and a Minor in Mathematics. He has experience in the Python, Java and C programming languages from past courses.
 
