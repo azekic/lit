@@ -91,11 +91,16 @@ The Discover tab allows a user to find and interact with events.
 The Create tab allows a user to create and edit an event.
 ![Create Tab](./website/img/create.jpg)
 
-The Settings option allows a user to modify their account, manage their events, and provides access to help resources.
-![Settings](./website/img/settings.png)
+The Active Events option lets a user browse current events in a timeline format and sort them by proximity, popularity, and date.
+![Active](./website/img/timeline.jpg)
 
 The Attending Events option lets a user view and modify the events they have chosen to attend.
 ![Events](./website/img/events.jpg)
+
+The Settings option allows a user to modify their account, manage their events, and provides access to help resources.
+![Settings](./website/img/settings.png)
+
+
 
 ## SOFTWARE DESIGN
 
