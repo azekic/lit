@@ -278,7 +278,7 @@ ul.tab li a:focus, .active {background-color: #070707;}
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 100px 12px;
+    padding: 6px 250px;
     border-top: none;
 }
 /*******************************************************************************
