@@ -253,6 +253,11 @@ Full-Width Styles
 
 /* Style the list */
 ul.tab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform:translate(-50%, -50%);
     list-style-type: none;
     margin: 0;
     padding: 0;
