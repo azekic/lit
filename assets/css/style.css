@@ -249,7 +249,7 @@ Full-Width Styles
 /* Style the list */
 ul.tab {
     list-style-type: none;
-    text-align: center;
+    display: inline-block;
     margin: 0;
     padding: 0;
     overflow: hidden;
