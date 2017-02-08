@@ -265,7 +265,7 @@ ul.tab {
 }
 
 /* Float the list items side by side */
-ul.tab li {float: left;}
+ul.tab li {float: none;}
 
 /* Style the links inside the list items */
 ul.tab li a {
