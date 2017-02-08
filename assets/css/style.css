@@ -278,7 +278,6 @@ ul.tab li a:focus, .active {background-color: #070707;}
 /* Style the tab content */
 .tabcontent {
     display: none;
-    min-width: 320px; max-width: 480px;
     border-top: none;
 }
 /*******************************************************************************
