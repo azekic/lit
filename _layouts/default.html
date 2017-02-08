@@ -53,14 +53,6 @@ ul.tab li a:focus, .active {
   </head>
 
   <body>
-<ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'HOME')" id="defaultOpen">HOME</a></li></a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'TEAM ROSTER')">TEAM ROSTER</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'UI DESIGN')">UI DESIGN</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'SOFTWARE DESIGN')">SOFTWARE DESIGN</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'PROJECT PLAN')">PROJECT PLAN</a></li>
-
-</ul>
 
 <script>
 function openTab(evt, tabName) {
@@ -97,6 +89,14 @@ document.getElementById("defaultOpen").click();
           {% endif %}
         </header>
     </div>
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'HOME')" id="defaultOpen">HOME</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'TEAM ROSTER')">TEAM ROSTER</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'UI DESIGN')">UI DESIGN</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'SOFTWARE DESIGN')">SOFTWARE DESIGN</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'PROJECT PLAN')">PROJECT PLAN</a></li>
+
+</ul>
 <div id="HOME" class="tabcontent">
   <h3>About the Course</h3>
   <p>Course info</p>
