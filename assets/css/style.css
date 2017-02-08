@@ -249,7 +249,6 @@ Full-Width Styles
 /* Style the list */
 ul.tab {
     list-style-type: none;
-    display: inline-block;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -257,8 +256,8 @@ ul.tab {
 }
 
 /* Float the list items side by side */
-ul.tab li {float: left;}
-
+/*ul.tab li {float: left;}
+*/
 /* Style the links inside the list items */
 ul.tab li a {
     display: inline-block;
