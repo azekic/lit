@@ -248,7 +248,6 @@ Full-Width Styles
 
 /* Style the list */
 ul.tab {
-    display: inline-block;
     list-style-type: none;
     margin: 0;
     padding: 0;
