@@ -227,8 +227,6 @@
   <p><i>UML Diagram created using <a href="https://www.draw.io">draw.io</a></i><br>
 </div>
 <div id="PROJECT PLAN" class="tabcontent">
-  <p>Includes the additional (requested) components/features to be implemented as well as any proposed elements</p>
-   <p>Each element includes a title, description, feasibility statement, and dependency statement<p>
      <h2>Features</h2>
     <h3>Authentication System</h3>
     <p>Users will have the option to create an account through traditional email and password or using Facebook Login API.<br>
@@ -242,8 +240,11 @@
     <b>Dependency:</b> Requires a functioning event database and successful use of Google Maps API.
   </p>
     <h3>Map-Based Event Browsing</h3>
-    <b>Feasibility:</b><br>
-    <b>Dependency:</b>
+  <p>The user is shown a map of Western's campus, where all current events can be seen at a glance. By clicking on any event on the map, the user is presented with information about the event including the location, time, number of attendees, and which friends of theirs are attending the event. They are also given the option to RSVP the event, which will add the event to the user's Attending Events. A filter allows the user to specify the events they would like to see on the map, and a search bar allows for further filtering. A Time Slider at the top allows a user to browse upcoming events on the map by cycling through future dates.
+    <br>
+    <b>Feasibility:</b> Medium complexity. Requires an intuitive UI to navigate events. Most data is being pulled from the event database, so no need for complex algorithms.<br>
+    <b>Dependency: Dependent on a functioning event database to pull information from each event.</b>
+    </p>
     <h3>Heat Map</h3>
   <p>A map interface will display all active and future events over a map of Western’s Campus. Each event’s area will be coloured in depending on the density of users in the area using simulated data points.
     <br>
