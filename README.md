@@ -42,7 +42,7 @@ Mitch is a fourth year computer science student at the University of Western Ont
 
 Yuhan is a third year student double major in Financial Modeling and Computer Science at Western University. Throughout studies, he is proficient in Java, Python, Matlab,C,SQL, mongoDB, Excel(VBA). Yuhan has a wide range of interests. He created the Western Magic Community to become the largest magician club in London, ON. Hobbies includes: photoshooting, boxing and video editing.
 
-**Role:** Back end developer
+**Role:** Back End Developer
 
 **Contact:**
 
@@ -55,7 +55,7 @@ Yuhan is a third year student double major in Financial Modeling and Computer Sc
 
 Maksym is a second year student at western pursuing ] a dual-degree in Computer Science and Business Administration. He has always had an interest in merging business and computing. Initially involved in a student start-up as Vice President of Information Technology, he expanded his skills further upon entering university. Now as a Director of Technology at the Western Forex Association, he dedicates himself to site management and graphic design, while keeping a part time position at PPL as a Recreation Coordinator.
 
-**Role:** Back end developer
+**Role:** Back End Developer
 
 ### YIJUN HE
 ![alt text](./website/img/yijun.jpg)
