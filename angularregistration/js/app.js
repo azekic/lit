@@ -20,6 +20,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/register.html',
       controller: 'RegistrationController'
     }).
+    when('/facebook', {
+          templateUrl: 'views/facebook.html',
+          controller: 'RegistrationController'
+        }).
     when('/success', {
       templateUrl: 'views/success.html',
       controller: 'SuccessController',

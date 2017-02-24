@@ -2,11 +2,13 @@
   <form name="myform"
     ng-submit="login()"
     novalidate>
-
-    <div class="textintro">
-    </div>
     <h1 id="project_title"><img src = "./img/lit-logo.png"  alt = "Logo"
-    style="height:150px;"></h1>
+                                style="height:150px;"></h1>
+    <div class="textintro">
+      <p class="message"
+         ng-show="message"> {{ message }}</p>
+    </div>
+
 
     <fieldset>
       <input type="email" name="email" placeholder="Email"
@@ -27,5 +29,6 @@
     <button type="submit" class="btn"
       ng-disabled="myform.$invalid">LOGIN</button>
     <p>or <a ng-href="#/register">register</a></p>
+    <p>or <a ng-href="#/facebook">login with Facebook</a></p>
   </form>
 </section>

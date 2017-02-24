@@ -4,7 +4,9 @@
     novalidate>
 
     <div class="textintro">
-      <h1>Register</h1>
+      <h1 id="project_title"><img src = "./img/lit-logo.png"  alt = "Logo"
+                                  style="height:150px;"></h1>
+      <p class="message" ng-show="message">{{ message }}</p>
     </div>
 
     <fieldset>
@@ -37,5 +39,6 @@
     <button type="submit" class="btn"
     ng-disabled="myform.$invalid">REGISTER</button>
     <p>or <a ng-href="#/login">login</a></p>
+    <p>or <a ng-href="#/facebook">login with Facebook</a></p>
   </form>
 </section>
