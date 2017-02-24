@@ -20,6 +20,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/register.html',
       controller: 'RegistrationController'
     }).
+    when('/checkins/:uId/:mId', {
+      templateUrl: 'views/checkins.html',
+      controller: 'CheckInsController'
+    }).
     when('/events', {
       templateUrl: 'views/events.html',
       controller: 'EventsController',
