@@ -231,7 +231,7 @@ input[type=radio] {
 .btn-delete { background-color: #C94C24; background-image: url(../images/icons/icon_trash.png); }
 .btn-love { background-image: url(../images/icons/icon_heart.png); }
 .btn-email { background-image: url(../images/icons/icon_email.png); }
-.btn-meeting { background-image:  url(../images/icons/icon_meeting.png); }
+.btn-event { background-image:  url(../images/icons/icon_meeting.png); }
 
 .btn-pick {
   background: #2D8BCF url(../images/icons/icon_dice.png) 5px center no-repeat;
@@ -492,34 +492,34 @@ nav li a:hover {
     width: auto;
 }
 
-.addmeeting {
+.addevent {
     width:100%;
 }
 
-.addmeeting .inputwrapper {
+.addevent .inputwrapper {
   margin-right:80px;
 }
 
-.addmeeting .inputwrapper input {
+.addevent .inputwrapper input {
     float: left;
     width: 100%;
 }
 
-.addmeeting button {
+.addevent button {
   width: 60px;
   margin-left: 20px;
   vertical-align: center;
 }
 
-.meetings {
+.events {
   padding-top: 10px;
 }
 
-.meetings h2 {
+.events h2 {
   padding-bottom: 5px;
 }
 
-.meetings .meeting {
+.events .event {
   display: inline-block;
   padding: 10px 20px 10px 15px;
   margin: 3px 10px;
@@ -529,17 +529,17 @@ nav li a:hover {
 
 }
 
-.meetings .meeting .btn {
+.events .event .btn {
   margin-right: 4px;
   padding: 1px 8px;
 }
 
-.meetings .meeting .text {
+.events .event .text {
   display: inline-block;
   vertical-align: bottom;
 }
 
-.meetings .meeting .text a{
+.events .event .text a{
   text-decoration: none;
 }
 
@@ -582,6 +582,23 @@ nav li a:hover {
       -ms-transform: translateY(0px);
        -o-transform: translateY(0px);
           transform: translateY(0px);
+}
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #777;
+  border-radius: 10px;
+}
+.badge:empty {
+  display: none;
 }
 
 .checkinslist { margin-top: 20px; }

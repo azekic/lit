@@ -24,9 +24,9 @@ myApp.config(['$routeProvider', function($routeProvider) {
           templateUrl: 'views/facebook.html',
           controller: 'RegistrationController'
         }).
-    when('/success', {
-      templateUrl: 'views/success.html',
-      controller: 'SuccessController',
+    when('/create', {
+      templateUrl: 'views/create.html',
+      controller: 'CreateController',
       resolve: {
         currentAuth: function(Authentication) {
           return Authentication.requireAuth();
