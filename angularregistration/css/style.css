@@ -27,6 +27,7 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
+
 html {
   line-height: 1; }
 
@@ -52,7 +53,7 @@ q, blockquote {
 a img {
   border: none; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, {
   display: block; }
 
 * {
@@ -77,6 +78,7 @@ html {
   background-color: #000000;
   min-height: 100%;
   height: auto;
+  background-image: url("bg.jpg"); background-repeat: no-repeat; background-position: center; background-size: 100% auto;
 }
 
 body  {
@@ -89,18 +91,14 @@ body  {
 }
 
 .card {
-  background: #444444;
   width: 100%;
-  max-width: 850px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 40px;
   text-align: center;
   position: relative;
   opacity: .95;
-  border-radius: 4px;
-  border: 1px solid #303030;
-  box-shadow: 0 1px 0 rgba(0,0,0,.25);
 }
 
 @media all and (max-width: 400px) {
@@ -121,7 +119,7 @@ a {
 }
 
 header {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 h1{
@@ -161,14 +159,16 @@ a.small {
 
 input {
   width: 100%;
+  background: black;
+  opacity:0.5;
   display: inline-block;
   font-weight: 100;
   padding: 15px;
   margin: 5px 0;
   font-size: 1rem;
   font-weight: 100;
-  color: #475B62;
-  border: 1px solid #C5C5C5;
+  color: white;
+  border: 1px solid grey;
   border-radius: 4px;
   outline: 0;
 }
@@ -204,11 +204,11 @@ input[type=radio] {
     white-space: nowrap;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid transparent;
+    border: 1px solid green;
     border-radius: 4px;
-    background: #C61C6F;
+    background: black;
     color: white;
-    background-color: #2D8BCF;
+    background-color: black;
     background-size: 18px 18px;
     min-width: 28px;
     min-height: 28px;
@@ -261,7 +261,7 @@ fieldset {
 }
 
 .search {
-  background: #F5F5F5;
+  background: #f5f5f5;
   width: 100%;
   margin: 0 auto;
   margin-top: 10px;
@@ -380,7 +380,7 @@ fieldset {
 
 
 .userlist li.expanded .btn-love {
-  background-color: #C61C6F;
+  background-color: green;
 }
 
 .userlist .buttons {
@@ -439,27 +439,8 @@ ul.awardslist li .award {
 
 nav {
   width: 100%;
-  background: #303030;
-  box-shadow: 0 1px 1px rgba(0,0,0,.1);
 }
 
-.branding {
-  float: left;
-  margin: 20px;
-}
-
-.branding a {
-  width: 80%;
-  font-size: 1.6em;
-  text-align: left;
-  color: grey;
-  text-decoration: none;
-  text-align: left;
-}
-
-.branding a:hover {
-  color: none;
-}
 
 
 nav ul {
@@ -567,7 +548,7 @@ nav li a:hover {
 }
 
 .tooltip span {
-  background: #FFF;
+  background: #fff;
   color: #000;
   font-size: .8em;
   bottom: 100%;
@@ -625,7 +606,10 @@ input.ng-valid.ng-touched {
 }
 
 .ng-invalid .btn {
-  background: gray;
+  opacity: 0.5;
+  background: grey;
+  border: 1px solid grey;
+
 }
 
 .error {

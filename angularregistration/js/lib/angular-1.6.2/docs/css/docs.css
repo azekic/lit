@@ -30,10 +30,6 @@ html, body {
   right: 0;
 }
 
-.header-branding {
-  min-height: 41px !important;
-}
-
 .docs-navbar-primary {
   border-radius: 0 !important;
   margin-bottom: 0 !important;
