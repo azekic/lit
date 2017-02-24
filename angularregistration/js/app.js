@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', 
+var myApp = angular.module('myApp',
   ['ngRoute', 'firebase']);
 
 myApp.run(['$rootScope', '$location', function($rootScope, $location) {
@@ -20,13 +20,9 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/register.html',
       controller: 'RegistrationController'
     }).
-    when('/facebook', {
-          templateUrl: 'views/facebook.html',
-          controller: 'RegistrationController'
-        }).
-    when('/create', {
-      templateUrl: 'views/create.html',
-      controller: 'CreateController',
+    when('/events', {
+      templateUrl: 'views/events.html',
+      controller: 'EventsController',
       resolve: {
         currentAuth: function(Authentication) {
           return Authentication.requireAuth();
@@ -34,6 +30,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
       }//resolve
     }).
     otherwise({
-      redirectTo: '/login'
+      redirectTo: '/events'
     });
 }]);

@@ -226,15 +226,15 @@ input[type=radio] {
 .btn .btn-right { float: right; }
 .btn:hover { background-color: #DC322F; }
 
-.btn-list { background-image: url(../images/icons/icon_list.png); }
-.btn-checkin { background-color: #859835; background-image: url(../images/icons/icon_checkmark.png); }
-.btn-delete { background-color: #C94C24; background-image: url(../images/icons/icon_trash.png); }
-.btn-love { background-image: url(../images/icons/icon_heart.png); }
-.btn-email { background-image: url(../images/icons/icon_email.png); }
-.btn-event { background-image:  url(../images/icons/icon_meeting.png); }
+.btn-list { background-image: url(../img/icons/icon_list.png); }
+.btn-checkin { background-color: #859835; background-image: url(../img/icons/icon_checkmark.png); }
+.btn-delete { background-color: #C94C24; background-image: url(../img/icons/icon_trash.png); }
+.btn-love { background-image: url(../img/icons/icon_heart.png); }
+.btn-email { background-image: url(../img/icons/icon_email.png); }
+.btn-event { background-image:  url(../img/icons/icon_meeting.png); }
 
 .btn-pick {
-  background: #2D8BCF url(../images/icons/icon_dice.png) 5px center no-repeat;
+  background: #2D8BCF url(../img/icons/icon_dice.png) 5px center no-repeat;
   background-size: 20px 20px;
   padding: 5px 5px 5px 30px;
   font-size: .8em;
@@ -242,7 +242,7 @@ input[type=radio] {
 }
 
 .btn-reset {
-  background: #CB4B19 url(../images/icons/icon_reset.png)  5px center no-repeat;
+  background: #CB4B19 url(../img/icons/icon_reset.png)  5px center no-repeat;
   background-size: 20px 20px;
   padding: 5px 5px 5px 50px;
 }
