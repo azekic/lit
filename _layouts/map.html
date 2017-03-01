@@ -5,30 +5,30 @@
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
-        /* Always set the map height explicitly to define the size of the div
-         * element that contains the map. */
-        #map {
-            height: 100%;
-        }
-        /* Optional: Makes the sample page fill the window. */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
     </style>
-</head>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      // This example requires the Drawing library. Include the libraries=drawing
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=drawing">
 
-<body>
-<div id="map"></div>
-
-<script>
-    var map;
-    function initMap() {
-        var western = new google.maps.LatLng(43.006000, -81.2720000) /*western official coordinates 43.009601, -81.2759276 */
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: western,
-            zoom: 15
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.0094, lng: -81.274},
+          zoom: 15
         });
     }
 </script>
@@ -37,4 +37,35 @@
 
 </script>
 </body>
+
+
+        var drawingManager = new google.maps.drawing.DrawingManager({
+          drawingMode: google.maps.drawing.OverlayType.MARKER,
+          drawingControl: true,
+          drawingControlOptions: {
+            position: google.maps.ControlPosition.BOTTOM_CENTER,
+            drawingModes: ['polygon'],
+
+          },
+          markerOptions: {icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'},
+          polygonOptions: {
+            fillColor: '#CAEC9B',
+            fillOpacity: 1,
+            strokeWeight: 2,
+            clickable: true,
+            editable: true,
+            zIndex: 1
+          }
+        });
+        drawingManager.setMap(map);
+
+      }
+
+
+
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-QZbxK5yxdxsxdk-RtN3fW1l5-ewE0q8&libraries=drawing&callback=initMap"
+         async defer></script>
+  </body>
 </html>
