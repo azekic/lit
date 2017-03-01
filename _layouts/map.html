@@ -25,25 +25,19 @@
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=drawing">
 
-      function initMap() {
+     function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 43.0094, lng: -81.274},
           zoom: 15
         });
-    }
-</script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATbjoHuelwTJHc9F9ZMfNVSfU9_UDkvX0&callback=initMap" async defer>
-
-</script>
-</body>
 
 
         var drawingManager = new google.maps.drawing.DrawingManager({
           drawingMode: google.maps.drawing.OverlayType.MARKER,
           drawingControl: true,
           drawingControlOptions: {
-            position: google.maps.ControlPosition.BOTTOM_CENTER,
+            position: google.maps.ControlPosition.TOP_CENTER,
             drawingModes: ['polygon'],
 
           },
@@ -61,11 +55,12 @@
 
       }
 
-
-
-
     </script>
+
+
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-QZbxK5yxdxsxdk-RtN3fW1l5-ewE0q8&libraries=drawing&callback=initMap"
          async defer></script>
-  </body>
+
+</body>
 </html>
