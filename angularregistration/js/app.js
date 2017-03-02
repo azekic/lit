@@ -44,10 +44,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
        templateUrl: 'views/allevents.html',
        controller: 'AllEventsController'
     }).
-      when('/allevents', {
-            templateUrl: 'views/allevents.html',
-              controller: 'AllEventsController'
-          }).
     when('/accountsetting', {
       templateUrl: 'views/accountsetting.html',
       controller: 'UsersController',
