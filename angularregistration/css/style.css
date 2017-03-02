@@ -633,3 +633,23 @@ input.ng-valid.ng-touched {
   color: red;
   padding-bottom: 10px;
 }
+
+
+.guide-howitwork{
+    font-size: 15px;
+    width:33.3333%;
+    float: left;
+    text-align: center;
+}
+
+.guide-sectiontwo{
+    margin: 100px 0;
+}
+
+.as-word{
+    display:inline-block;
+    content:"";
+    font-size:20px;
+    margin:20px 0px;
+    width:100%;
+}
