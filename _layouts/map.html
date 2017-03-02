@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Map</title>
+    <title>LitMap</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -25,11 +25,14 @@
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=drawing">
 
-     function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 43.0094, lng: -81.274},
-          zoom: 15
-        });
+      var map;
+      function initMap() {
+          var western = new google.maps.LatLng(43.006000, -81.2720000) /*western official coordinates 43.009601, -81.2759276 */
+          map = new google.maps.Map(document.getElementById('map'), {
+              center: western,
+              zoom: 15
+          });
+
 
 
 
