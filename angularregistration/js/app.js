@@ -37,6 +37,12 @@ myApp.config(['$routeProvider', function($routeProvider) {
         } //currentAuth
       }//resolve
     }).
+
+    when('/allevents', {
+      templateUrl: 'views/allevents.html',
+      controller: 'AllEventsController'
+  }).
+
     otherwise({
       redirectTo: '/events'
     });
