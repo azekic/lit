@@ -40,6 +40,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
         } //currentAuth
       }//resolve
     }).
+    when('/allevents', {
+         templateUrl: 'views/allevents.html',
+         controller: 'AllEventsController'
+     }).
     when('/accountsetting', {
       templateUrl: 'views/accountsetting.html',
       controller: 'UsersController',
