@@ -20,6 +20,9 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/register.html',
       controller: 'RegistrationController'
     }).
+    when('/guide', {
+      templateUrl: 'views/guide.html',
+    }).
     when('/checkins/:uId/:mId', {
       templateUrl: 'views/checkins.html',
       controller: 'CheckInsController'
@@ -37,12 +40,15 @@ myApp.config(['$routeProvider', function($routeProvider) {
         } //currentAuth
       }//resolve
     }).
-
-    when('/allevents', {
-      templateUrl: 'views/allevents.html',
-      controller: 'AllEventsController'
-  }).
-
+    when('/accountsetting', {
+      templateUrl: 'views/accountsetting.html',
+      controller: 'UsersController',
+      resolve: {
+        currentAuth: function(Authentication) {
+          return Authentication.requireAuth();
+        } //currentAuth
+      }//resolve
+    }).
     otherwise({
       redirectTo: '/events'
     });
