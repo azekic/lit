@@ -20,16 +20,19 @@
   <h2>Your Events</h2>
   <div class="event" ng-repeat="(key, event) in events">
     <button class="btn btn-delete tooltip"
-      ng-click="deleteEvent(key)"><span>Delete this event</span></button>
+    ng-click="deleteEvent(key)"><span>Delete this event</span></button>
 
     <a class="btn btn-checkin tooltip"
        ng-href="#/checkins/{{currentUser.regUser}}/{{event.$id}}">
       <span>Go to check-in URL</span>
     </a>
+
     <a class="btn btn-list tooltip"
-ng-href="#/checkins/{{currentUser.regUser}}/{{event.$id}}/checkinsList">
-<span>View list of checked-in users</span>
-</a>
+       ng-href="#/checkins/{{currentUser.regUser}}/{{event.$id}}/checkinsList">
+      <span>View list of checked-in users</span>
+    </a>
+
     <span class="text">{{event.name}}</span>
   </div><!-- events list -->
 </div><!-- events cf -->
+</div>
