@@ -40,11 +40,17 @@ myApp.config(['$routeProvider', function($routeProvider) {
         } //currentAuth
       }//resolve
     }).
+
     when('/allevents', {
-       templateUrl: 'views/allevents.html',
-       controller: 'AllEventsController'
-    }).
-    when('/accountsetting', {
+      templateUrl: 'views/allevents.html',
+      controller: 'AllEventsController',
+      resolve: {
+          currentAuth: function(Authentication) {
+              return Authentication.requireAuth();
+          } //currentAuth
+      }//resolvw//
+      }).
+when('/accountsetting', {
       templateUrl: 'views/accountsetting.html',
       controller: 'UsersController',
       resolve: {
