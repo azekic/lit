@@ -655,7 +655,8 @@ input.ng-valid.ng-touched {
 }
 
 .fb {
-  background:#3B5998 url('https://liteventtracker.com/mitch/assets/images/facebook.svg') no-repeat 14px 8px;
+  /* background:#3B5998 url('https://liteventtracker.com/mitch/assets/images/facebook.svg') no-repeat 14px 8px;*/
+  background:#3B5998;
   background-size: 27px;
   color:#fff;
   padding:1.0em;

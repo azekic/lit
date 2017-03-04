@@ -22,10 +22,10 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angularregistration/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="668" column="0" lean-forward="true" selection-start-line="668" selection-start-column="0" selection-end-line="668" selection-end-column="0" />
+            <state relative-caret-position="370">
+              <caret line="657" column="113" lean-forward="false" selection-start-line="657" selection-start-column="113" selection-end-line="657" selection-end-column="113" />
               <folding>
-                <marker date="1488601170000" expanded="true" signature="11249:11351" ph="{...}" />
+                <marker date="1488601364000" expanded="true" signature="11249:11354" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -613,7 +613,7 @@
       <option name="presentableId" value="Default" />
       <updated>1487867310258</updated>
       <workItem from="1488597892615" duration="209000" />
-      <workItem from="1488600116592" duration="1031000" />
+      <workItem from="1488600116592" duration="1216000" />
     </task>
     <task id="LOCAL-00001" summary="Adding authentication features to site">
       <created>1487867475961</created>
@@ -755,11 +755,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488601011937</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="CSS Changes for button">
+      <created>1488601173545</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1488601173546</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1240000" />
+    <option name="totallyTimeSpent" value="1425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="26" width="1410" height="829" extended-state="0" />
@@ -1058,10 +1065,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angularregistration/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="668" column="0" lean-forward="true" selection-start-line="668" selection-start-column="0" selection-end-line="668" selection-end-column="0" />
+        <state relative-caret-position="370">
+          <caret line="657" column="113" lean-forward="false" selection-start-line="657" selection-start-column="113" selection-end-line="657" selection-end-column="113" />
           <folding>
-            <marker date="1488601170000" expanded="true" signature="11249:11351" ph="{...}" />
+            <marker date="1488601364000" expanded="true" signature="11249:11354" ph="{...}" />
           </folding>
         </state>
       </provider>
