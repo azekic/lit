@@ -11,10 +11,11 @@ myApp.controller('EventsController',
 
         var eventsInfo = $firebaseArray(eventsRef);
 
-          var timelineRef = ref.child('events');
+          var timelineRef = ref.child('eventList');
           var timelineInfo = $firebaseArray(timelineRef);
 
         $scope.events = eventsInfo;
+        $scope.eventsList= timelineInfo;
 
         eventsInfo.$loaded().then(function(data) {
           $rootScope.howManyEvents = eventsInfo.length;

@@ -17,6 +17,7 @@ myApp.controller('AllEventsController',
 
                     $scope.events = eventsInfo;
 
+
                     timelineInfo.$loaded().then(function(data) {
                         $rootScope.howManyEvents = timelineInfo.length;
                     }); // make sure event data is loaded
@@ -35,7 +36,8 @@ myApp.controller('AllEventsController',
 
                         timelineInfo.$add({
                             name: $scope.eventname,
-                            date: firebase.database.ServerValue.TIMESTAMP
+                            date: firebase.database.ServerValue.TIMESTAMP,
+
                         }).then(function() {
                             $scope.eventname='';
                         }); //promise
