@@ -21,4 +21,7 @@ To create an event, select the "My Events" tab, type in the event name and selec
 ##Editing and Deleting Events
 **[link](http://liteventtracker.com/app/#/login)**<br>
 On the "My Events" tab, you can see all the events you've created at a glance.
+##Guide
+**[link](http://liteventtracker.com/app/#/login)**<br>
+The user guide provides information about various features available.
 
