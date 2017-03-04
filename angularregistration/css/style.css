@@ -655,17 +655,18 @@ input.ng-valid.ng-touched {
 }
 
 .fb {
-    background:#3B5998 url('https://liteventtracker.com/mitch/assets/images/facebook.svg') no-repeat 10px 5px;
-    background-size: 47px;
-    color:#fff;
-  padding:1.2em;
-  width:20%;
+  background:#3B5998 url('https://liteventtracker.com/mitch/assets/images/facebook.svg') no-repeat 14px 8px;
+  background-size: 27px;
+  color:#fff;
+  padding:1.0em;
+  width:18%;
   cursor:pointer;
   margin-bottom:15px;
-  font-size:1.2em;
+  font-size:1.0em;
   position: relative;
   top: 80%;
 }
+
 .fbwrapper {
   text-align: center;
 }

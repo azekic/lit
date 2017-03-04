@@ -4,7 +4,6 @@
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularregistration/css/style.css" afterPath="$PROJECT_DIR$/angularregistration/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularregistration/index.html" afterPath="$PROJECT_DIR$/angularregistration/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,10 +22,10 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angularregistration/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+            <state relative-caret-position="565">
+              <caret line="668" column="0" lean-forward="true" selection-start-line="668" selection-start-column="0" selection-end-line="668" selection-end-column="0" />
               <folding>
-                <marker date="1488601001000" expanded="true" signature="11249:11353" ph="{...}" />
+                <marker date="1488601170000" expanded="true" signature="11249:11351" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -614,7 +613,7 @@
       <option name="presentableId" value="Default" />
       <updated>1487867310258</updated>
       <workItem from="1488597892615" duration="209000" />
-      <workItem from="1488600116592" duration="866000" />
+      <workItem from="1488600116592" duration="1031000" />
     </task>
     <task id="LOCAL-00001" summary="Adding authentication features to site">
       <created>1487867475961</created>
@@ -749,11 +748,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488600630258</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="CSS Changes for button">
+      <created>1488601011937</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1488601011937</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1075000" />
+    <option name="totallyTimeSpent" value="1240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="26" width="1410" height="829" extended-state="0" />
@@ -801,7 +807,8 @@
     <MESSAGE value="    &lt;h1 id=&quot;project_title&quot;&gt;&lt;img src = &quot;./img/lit-logo.png&quot;  alt = &quot;Logo&quot;&#10;                                style=&quot;height:150px;&quot;&gt;&lt;/h1&gt;" />
     <MESSAGE value="Adding events to site" />
     <MESSAGE value="Removed Facebook Nav / Testing Files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Facebook Nav / Testing Files" />
+    <MESSAGE value="CSS Changes for button" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSS Changes for button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1051,10 +1058,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angularregistration/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="30" lean-forward="true" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        <state relative-caret-position="565">
+          <caret line="668" column="0" lean-forward="true" selection-start-line="668" selection-start-column="0" selection-end-line="668" selection-end-column="0" />
           <folding>
-            <marker date="1488601001000" expanded="true" signature="11249:11353" ph="{...}" />
+            <marker date="1488601170000" expanded="true" signature="11249:11351" ph="{...}" />
           </folding>
         </state>
       </provider>
