@@ -1,6 +1,6 @@
 myApp.controller('EventsController',
-  ['$scope', '$rootScope','$firebaseAuth','$firebaseArray',
-    function($scope, $rootScope, $firebaseAuth, $firebaseArray) {
+  ['$scope', '$rootScope','$firebaseAuth', '$firebaseArray',
+  function($scope, $rootScope, $firebaseAuth, $firebaseArray) {
 
     var ref = firebase.database().ref();
     var auth = $firebaseAuth();
@@ -8,7 +8,6 @@ myApp.controller('EventsController',
     auth.$onAuthStateChanged(function(authUser) {
       if(authUser) {
         var eventsRef = ref.child('users').child(authUser.uid).child('events');
-
         var eventsInfo = $firebaseArray(eventsRef);
 
         $scope.events = eventsInfo;
@@ -28,12 +27,12 @@ myApp.controller('EventsController',
           }).then(function() {
             $scope.eventname='';
           }); //promise
-
         } //addEvent
 
         $scope.deleteEvent = function(key) {
           eventsInfo.$remove(key);
         } //deleteEvent
+
       } //authUser
     }); //onAuthStateChanged
 }]); //myApp.controller

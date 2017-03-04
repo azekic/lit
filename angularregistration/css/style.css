@@ -100,16 +100,6 @@ body  {
   position: relative;
   opacity: .95;
 }
-.card2 {
-  width: 100%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 40px;
-  text-align: left;
-  position: relative;
-  opacity: .95;
-}
 
 @media all and (max-width: 400px) {
   main {
@@ -662,4 +652,15 @@ input.ng-valid.ng-touched {
     font-size:20px;
     margin:20px 0px;
     width:100%;
+}
+
+.fb {
+    background:#3B5998 url('https://liteventtracker.com/mitch/assets/images/facebook.svg') no-repeat 14px 6px;
+    background-size: 47px;
+    color:#fff;
+  padding:1.2em;
+  width:20%;
+  cursor:pointer;
+  margin-bottom:15px;
+  font-size:1.3em;
 }

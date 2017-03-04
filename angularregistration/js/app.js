@@ -11,8 +11,7 @@ myApp.run(['$rootScope', '$location', function($rootScope, $location) {
 }]); //run
 
 myApp.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.
-    when('/login', {
+  $routeProvider.when('/login', {
       templateUrl: 'views/login.html',
       controller: 'RegistrationController'
     }).
@@ -20,10 +19,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/register.html',
       controller: 'RegistrationController'
     }).
-    when('/teamroster', {
-          templateUrl: 'views/teamroster.html',
-          controller: 'RegistrationController'
-        }).
     when('/guide', {
       templateUrl: 'views/guide.html',
     }).

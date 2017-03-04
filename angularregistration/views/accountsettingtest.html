@@ -1,0 +1,48 @@
+<head>
+<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBLefPTD2pIO1RAUYxTIN8ao_Xdx054D9Q",
+    authDomain: "litapp-a4f8d.firebaseapp.com",
+    databaseURL: "https://litapp-a4f8d.firebaseio.com",
+    storageBucket: "litapp-a4f8d.appspot.com",
+    messagingSenderId: "863295441400"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+<body>
+<div class="card events cf" >
+  <div class="textintro">
+    <h1>User Profile</h1>
+    <span class="as-word">name: {{ users.firstname }} {{users.lastname}} </span>
+    <span class="as-word">email: {{ users.email }} </span>
+     
+    </div><!-- events cf -->
+<tr>
+<td valign="top">
+<label for="icon">Image File</label>
+</td>
+<td valign="top">
+<input accept=".jpg" type="file" id="uploadJpeg" name="icon">
+</td>
+</tr>
+<tr>
+<td colspan="5" style="text-align:center">
+<button type="submit">Upload Image</button>
+</td>
+</tr>
+<script>
+var form = document.querySelector("form");
+form.addEventListener("submit", function(event) {
+event.preventDefault();
+var timestamp = Number(new Date());
+var storageRef = firebase.storage().ref(timestamp.toString());
+var $ = jQuery;
+var file_data = $('#uploadJpeg').prop('files')[0];
+storageRef.put(file_data);
+</script>
+
+</body>
+</html>
