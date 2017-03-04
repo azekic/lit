@@ -663,4 +663,9 @@ input.ng-valid.ng-touched {
   cursor:pointer;
   margin-bottom:15px;
   font-size:1.3em;
+  position: absolute;
+  top: 80%;
+}
+.fb_wrapper {
+  text-align: center;
 }

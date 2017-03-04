@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/accountsettingtest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/background.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/background.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/credentials.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/credentials.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/firebase-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/firebase.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/main.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularregistration/css/style.css" afterPath="$PROJECT_DIR$/angularregistration/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularregistration/index.html" afterPath="$PROJECT_DIR$/angularregistration/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +20,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nav.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angularregistration/views/nav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angularregistration/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="158" column="7" lean-forward="true" selection-start-line="158" selection-start-column="7" selection-end-line="158" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularregistration/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="666" column="8" lean-forward="false" selection-start-line="666" selection-start-column="8" selection-end-line="666" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -108,13 +119,11 @@
         <option value="$PROJECT_DIR$/angularregistration/views/checkins.html" />
         <option value="$PROJECT_DIR$/angularregistration/views/checkinslist.html" />
         <option value="$PROJECT_DIR$/angularregistration/views/events.html" />
-        <option value="$PROJECT_DIR$/angularregistration/css/style.css" />
         <option value="$PROJECT_DIR$/angularregistration/js/controllers/checkins.js" />
         <option value="$PROJECT_DIR$/angularregistration/js/controllers/events2.js" />
         <option value="$PROJECT_DIR$/register/views/accountsetting.html" />
         <option value="$PROJECT_DIR$/angularregistration/js/controllers/events.js" />
         <option value="$PROJECT_DIR$/angularregistration/js/controllers/user.js" />
-        <option value="$PROJECT_DIR$/angularregistration/index.html" />
         <option value="$PROJECT_DIR$/angularregistration/views/accountsetting.html" />
         <option value="$PROJECT_DIR$/angularregistration/js/services/authentication.js" />
         <option value="$PROJECT_DIR$/angularregistration/js/controllers/registration.js" />
@@ -122,6 +131,8 @@
         <option value="$PROJECT_DIR$/angularregistration/js/app.js" />
         <option value="$PROJECT_DIR$/angularregistration/views/teamroster.html" />
         <option value="$PROJECT_DIR$/angularregistration/views/nav.html" />
+        <option value="$PROJECT_DIR$/angularregistration/index.html" />
+        <option value="$PROJECT_DIR$/angularregistration/css/style.css" />
       </list>
     </option>
   </component>
@@ -201,7 +212,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -621,7 +632,7 @@
       <option name="presentableId" value="Default" />
       <updated>1487867310258</updated>
       <workItem from="1488597892615" duration="209000" />
-      <workItem from="1488600116592" duration="197000" />
+      <workItem from="1488600116592" duration="499000" />
     </task>
     <task id="LOCAL-00001" summary="Adding authentication features to site">
       <created>1487867475961</created>
@@ -742,11 +753,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488600166761</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Removed Facebook Nav / Testing Files">
+      <created>1488600326234</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1488600326234</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="406000" />
+    <option name="totallyTimeSpent" value="708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="26" width="1410" height="829" extended-state="0" />
@@ -793,7 +811,8 @@
     <MESSAGE value="Adding authentication features to site" />
     <MESSAGE value="    &lt;h1 id=&quot;project_title&quot;&gt;&lt;img src = &quot;./img/lit-logo.png&quot;  alt = &quot;Logo&quot;&#10;                                style=&quot;height:150px;&quot;&gt;&lt;/h1&gt;" />
     <MESSAGE value="Adding events to site" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding events to site" />
+    <MESSAGE value="Removed Facebook Nav / Testing Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed Facebook Nav / Testing Files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -914,13 +933,6 @@
     <entry file="file://$PROJECT_DIR$/register/views/guide.html" />
     <entry file="file://$PROJECT_DIR$/register/views/register.html" />
     <entry file="file://$PROJECT_DIR$/register/views/accountsetting.html" />
-    <entry file="file://$PROJECT_DIR$/angularregistration/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="658" column="8" lean-forward="false" selection-start-line="658" selection-start-column="4" selection-end-line="658" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angularregistration/js/controllers/checkins.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -989,6 +1001,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,13 +1020,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angularregistration/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angularregistration/views/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1026,6 +1032,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,13 +1040,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angularregistration/views/nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularregistration/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="666" column="8" lean-forward="false" selection-start-line="666" selection-start-column="8" selection-end-line="666" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularregistration/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="158" column="7" lean-forward="true" selection-start-line="158" selection-start-column="7" selection-end-line="158" selection-end-column="7" />
           <folding />
         </state>
       </provider>
