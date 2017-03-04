@@ -10,8 +10,9 @@ myApp.controller('EventsEditController',
       if(authUser) {
         var eventsRef = ref.child('users').child(authUser.uid).child('events');
         var eventsInfo = $firebaseArray(eventsRef);
-        window.alert(authUser.uid); 
-        var eventRef = firebase.database().ref("users/"+authUser.uid"/events/KeM6xIfUt7TZd1X7h38");
+        window.alert(authUser.uid);
+        var eventRef = firebase.database().ref("users/"+authUser.uid+"/events/KeM6xIfUt7TZd1X7h38");
+      }
 
 
         $scope.events = eventsInfo;
@@ -38,7 +39,7 @@ myApp.controller('EventsEditController',
           }); //promise
         } //editEvent
 
-        
+
 
       } //authUser
     }); //onAuthStateChanged
