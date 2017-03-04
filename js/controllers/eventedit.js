@@ -16,13 +16,31 @@ myApp.controller('EventEditController',
         $scope.events = eventsInfo;
 
         $scope.addEvent = function() {
-          eventsInfo.$add({
-            name: "$scope.whichevent",
-            date: firebase.database.ServerValue.TIMESTAMP
-          }).then(function() {
-            $location.path('www.google.com')-->
-          }); //promise
-        } //addEvent
+                 eventsInfo.$add({
+                   name: $scope.eventname,
+                   eventDate: $scope.eventdate,
+                   type: $scope.eventtype,
+                   //add coordinates
+                   creationDate: firebase.database.ServerValue.TIMESTAMP
+                   $window.location.href = '/index.html';
+                 }).then(function() {
+                   $scope.eventname='hello';
+
+                 }); //promise
+               } //addEvent
+
+      } //authUser
+    }); //onAuthStateChanged
+}]); //myApp.controller
+
+
+  function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+}
 
 
 
@@ -56,7 +74,3 @@ myApp.controller('EventEditController',
       }); //$add
     }//addChecki
 */
-
-      } //authUser
-    }); //onAuthStateChanged
-}]); //myApp.controller

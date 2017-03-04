@@ -21,17 +21,17 @@ myApp.controller('EventsController',
         });
 
         $scope.addEvent = function() {
-          eventsInfo.$add({
-            name: $scope.eventname,
-            type: $scope.eventtype,
-            eventDate: $scope.eventdate,
-            //coordinate1 = $scope.topright,
-            //coordinate2 = $scope.topleft,
-            date: firebase.database.ServerValue.TIMESTAMP
-          }).then(function() {
-            $scope.eventname='xd';
-          }); //promise
-        } //addEvent
+                 eventsInfo.$add({
+                   name: $scope.eventname,
+                   eventDate: $scope.eventdate,
+                   type: $scope.eventtype,
+                   //add coordinates
+                   creationDate: firebase.database.ServerValue.TIMESTAMP
+                 }).then(function() {
+                   $scope.eventname='xyz';
+                   $scope.eventdate='';
+                 });
+               } //addEvent
 
         $scope.deleteEvent = function(key) {
           eventsInfo.$remove(key);
