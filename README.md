@@ -6,7 +6,7 @@ To access our project, simply click **[here](http://liteventtracker.com/app/#/lo
 <h2>Description</h2>
     <p>There is a disconnect between students and the events going on around them. Councils, clubs, and societies across campus have no standardized method to communicate with students. Students are left to figure out whats going on across campus on their own. From this insight came the inception of LIT, a service that aims to fill the gap and bring the events of all clubs and societies across campus directly to students, using a novel and intuitive user interface.<br></p>
     <h2>Registration</h2>
-    <p>To create an account, select the "Register" tab, then fill in your name and email, and type in a password. You will be added to our database and given a unique UserID. Alternatively, you can login with Facebook by selecting the "Facebook" tab, and entering your Facebook login info.<br><br></p>
+    <p>To create an account, select the "Register" tab, then fill in your name and email, and type in a password. You will be added to our database and given a unique UserID. Alternatively, you can login with Facebook by selecting the "Facebook" tab, and entering your Facebook login info.<br></p>
     <h2>Login</h2>
     <p>If you've already created an account, you can log in by selecting the "Login" tab, and entering your email and password from there. You can log out at any time by selecting "logout" directly below the nav bar.<br></p>
     <h2>Account Settings</h2>
