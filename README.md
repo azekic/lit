@@ -1,4 +1,3 @@
-
 <!---
 Computer Science 2212 - Introduction to Software Engineering is a course designed to examine the stages of the software engineering process, including requirements gathering, specification, design, implementation, and testing. Students of CS 2212 are required to work cooperatively in a team to design and implement a moderately large software system.
 
@@ -124,9 +123,10 @@ The Settings option allows a user to modify their account, manage their events, 
 To access our project, simply click **[here](http://liteventtracker.com/app/#/login)** and you will be directed to our website. The master branch contains the most up to date version of our project and all sub branches contain various pieces of the project.
 
 #User Guide
+To access our project, simply click **[here](http://liteventtracker.com/app/#/login)** and you will be directed to our website. The master branch contains the most up to date version of our project and all sub branches contain various pieces of the project.
 
 <div>
-
+<h2>Description<h2>
     <p>There is a disconnect between students and the events going on around them. Councils, clubs, and societies across campus have no standardized method to communicate with students. Students are left to figure out whats going on across campus on their own. From this insight came the inception of LIT, a service that aims to fill the gap and bring the events of all clubs and societies across campus directly to students, using a novel and intuitive user interface.<br><br></p>
     <h2>Registration</h2>
     <p>To create an account, select the "Register" tab, then fill in your name and email, and type in a password. You will be added to our database and given a unique UserID. Alternatively, you can login with Facebook by selecting the "Facebook" tab, and entering your Facebook login info.<br><br></p>
@@ -140,7 +140,6 @@ To access our project, simply click **[here](http://liteventtracker.com/app/#/lo
     <p>To create an event, select the "My Events" tab, type in the event name and select the "+" button.<br><br></p>
     <h2>Editing and Deleting Events</h2>
     <p>On the "My Events" tab, you can see all the events you've created at a glance. </p>
-
 
 </div>
 
