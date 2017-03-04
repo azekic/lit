@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="Adding events to site">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/exampletokengenerator/auth.html" afterPath="" />
+    <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/accountsettingtest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/background.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/background.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/credentials.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/credentials.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/firebase-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/firebase.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/chromextension/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/main.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularregistration/views/nav.html" afterPath="$PROJECT_DIR$/angularregistration/views/nav.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -612,7 +621,7 @@
       <option name="presentableId" value="Default" />
       <updated>1487867310258</updated>
       <workItem from="1488597892615" duration="209000" />
-      <workItem from="1488600116592" duration="46000" />
+      <workItem from="1488600116592" duration="197000" />
     </task>
     <task id="LOCAL-00001" summary="Adding authentication features to site">
       <created>1487867475961</created>
@@ -726,11 +735,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488598024470</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Adding events to site">
+      <created>1488600166761</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1488600166761</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255000" />
+    <option name="totallyTimeSpent" value="406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="26" width="1410" height="829" extended-state="0" />
