@@ -1,12 +1,12 @@
 <div class="card events cf">
   <div class="textintro">
-    <h1>Edit event</h1>
+    <h1>Add Event!</h1>
     <p>Fill out some details and hit +</p>
 
     <!--Add event-->
-    <form class="formgroup addevent cf"
+    <form class="formgroup editevent cf"
     name="myform"
-    ng-submit="addEvent()"
+    ng-submit="editEvent()"
     novalidate>
     <!--event name-->
     <div class="inputwrapper">
@@ -64,8 +64,44 @@
         +
       </button>
   </div>
+    <!--<input type="submit" value="+">-->
+  <!--integrate linking to gmpas()
+  <input type="image" src="http://logonoid.com/images/google-maps-logo.png" alt="Google Maps">
+-->
+  </form>
+
+<!--submit button
+<button type="submit" class="btn" ng-disabled="myform.$invalid">
+  +
+</button> -->
 
 
-</form> <!-- end of input form-->
+</div><!-- events cf -->
 
+
+<div class="card events cf">
+  <h2>Your Events</h2>
+  
+  <div class="event" ng-repeat="(key, event) in events">
+    <span class="text">Event Name: {{event.name}}</span><br>
+    <span class="text">Event Type: {{event.type}}</span><br>
+    <span class="text">Event Date: {{event.eventDate}}</span><br>
+    <button class="btn btn-delete tooltip"
+    ng-click="deleteEvent(key)"><span>Delete this event</span></button>
+
+    <!--edit the event-->
+    <a class="btn btn-reset tooltip" ng-href="#/eventedit/"> <!--ng-href="/nandi/views/eventedit/{{currentUser.regUser}}/{{event.$id}}/eventedit"-->
+    <span>Edit the event  </span>
+  </a>
+
+    <a class="btn btn-checkin tooltip"
+    ng-href="#/checkins/{{currentUser.regUser}}/{{event.$id}}">
+    <span>Go to check-in URL</span>
+    </a>
+
+    <a class="btn btn-list tooltip"
+    ng-href="#/checkins/{{currentUser.regUser}}/{{event.$id}}/checkinsList">
+    <span>View list of checked-in users</span>
+    </a>
+</div><!-- events list -->
 </div><!-- events cf -->

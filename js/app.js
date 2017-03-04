@@ -22,7 +22,12 @@ myApp.config(['$routeProvider', function($routeProvider) {
     }).
     when('/eventedit', {
       templateUrl: 'views/eventedit.html',
-      controller: 'EventEditController'
+      controller: 'EventsEditController',
+      resolve: {
+        currentAuth: function(Authentication) {
+          return Authentication.requireAuth();
+        } //currentAuth
+      }//resolve
     }).
     when('/checkins/:uId/:mId', {
       templateUrl: 'views/checkins.html',

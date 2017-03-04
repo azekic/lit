@@ -81,11 +81,13 @@
 
 <div class="card events cf">
   <h2>Your Events</h2>
+  
   <div class="event" ng-repeat="(key, event) in events">
-
+    <span class="text">Event Name: {{event.name}}</span><br>
+    <span class="text">Event Type: {{event.type}}</span><br>
+    <span class="text">Event Date: {{event.eventDate}}</span><br>
     <button class="btn btn-delete tooltip"
     ng-click="deleteEvent(key)"><span>Delete this event</span></button>
-
 
     <!--edit the event-->
     <a class="btn btn-reset tooltip" ng-href="#/eventedit/"> <!--ng-href="/nandi/views/eventedit/{{currentUser.regUser}}/{{event.$id}}/eventedit"-->
@@ -101,6 +103,5 @@
     ng-href="#/checkins/{{currentUser.regUser}}/{{event.$id}}/checkinsList">
     <span>View list of checked-in users</span>
     </a>
-    <span class="text">{{event.name}}</span>
 </div><!-- events list -->
 </div><!-- events cf -->

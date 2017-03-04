@@ -29,11 +29,12 @@ myApp.controller('EventsController',
             //coordinate2 = $scope.topleft,
             date: firebase.database.ServerValue.TIMESTAMP
           }).then(function() {
-            $scope.eventname='xd';
+            $scope.eventname='';
           }); //promise
         } //addEvent
 
         $scope.deleteEvent = function(key) {
+          window.alert(key); 
           eventsInfo.$remove(key);
         } //deleteEvent
 
