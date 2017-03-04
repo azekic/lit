@@ -4,7 +4,7 @@ To access our project, simply click **[here](http://liteventtracker.com/app/#/lo
 Unfortunately, we experienced issues with merging our separate branches, and as a result, many of our existing features are displaced within various sub-branches. We have uploaded these subbranches to our FTP for easy access of the features. The following guide will help you navigate these features.
 
 ##Registration
-**[link for Facebook login feature](http://liteventtracker.com/facebook/#/login)**<br>
+**[link for Facebook login feature](http://liteventtracker.com/facebook/**<br>
 To create an account, select the "Register" tab, then fill in your name and email, and type in a password. You will be added to our database and given a unique UserID. Alternatively, you can login with Facebook by selecting the "Facebook" tab, and entering your Facebook login info.<br>
 ##Login
 **[link](http://liteventtracker.com/app/#/login)**<br>
