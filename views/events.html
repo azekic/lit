@@ -13,13 +13,23 @@
       <input type="text" name="eventname"
       placeholder="Event name"
       ng-model="eventname" ng-required="true">
-    </div>
+    </div><br>
     <!--event type-->
+    <!--
     <div class="inputwrapper">
       <input type="text" name="eventtype"
       placeholder="Type of event"
       ng-model="eventtype" ng-required="true">
     </div>
+  -->
+  <br><br>
+  <div>
+  Event type:
+  <input type="radio" name="eventtype" value="academic" ng-model="eventtype" ng-required="true"> Academic
+  <input type="radio" name="eventtype" value="social" ng-model="eventtype" ng-required="true"> Social
+  <input type="radio" name="eventype" value="sports" ng-model="eventtype" ng-required="true"> Sports
+  </div>
+
     <!--event date-->
     <div class="inputwrapper">
       <input type="text" name="eventdate"
@@ -27,16 +37,34 @@
       ng-model="eventdate" ng-required="true">
     </div>
 
+    <br>
+
     <div class="inputwrapper">
-      Top left: <input type="text" name="tlx" value="x" required ="false" readonly><br><input type="text" name="tly" value="x" required="false" readonly><br>
-      Bottom right: <input type="text" name="brx" value="y" required = "false" readonly><br><input type="text" name="bry" value="y" required="false" readonly><br>
+      Top left:
+      <input type="text" name="tlx" value="" ng-required ="false" readonly>
+      <br>
+      <input type="text" name="tly" value="" ng-required="false" readonly>
+      <br>
+      Bottom right:
+      <input type="text" name="brx" value="" ng-required ="false" readonly>
+      <br>
+      <input type="text" name="bry" value="" ng-required="false" readonly>
+      <br>
     </div>
-
-
     <!--needs to be linked to gmaps-->
-    <button type="button"><img src="http://logonoid.com/images/google-maps-logo.png" width="50" length="50"></button>
 
+    <br><br>
 
+    <div class = "inputwrapper">
+      <!--google maps button-->
+      <button type="button"><img src="http://logonoid.com/images/google-maps-logo.png" width="50" length="50"></button><br>
+
+      <!--submit button-->
+      <button type="submit" class="btn" ng-disabled="myform.$invalid">
+        +
+      </button>
+  </div>
+    <!--<input type="submit" value="+">-->
   <!--integrate linking to gmpas()
   <input type="image" src="http://logonoid.com/images/google-maps-logo.png" alt="Google Maps">
 -->
@@ -47,7 +75,6 @@
   +
 </button> -->
 
-<input type="submit" value="+">
 
 </div><!-- events cf -->
 
