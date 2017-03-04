@@ -16,15 +16,15 @@ Selecting the "Account Settings" tab allows you to see your current name and ema
 **[link](http://liteventtracker.com/timeline)**<br>
 The "All Events" tab leads you to a list of all events created on our database. Events can be sorted by their category.<br>
 ##Creating an Event
-**[link](http://liteventtracker.com/events)**<br>
+**[link](http://liteventtracker.com/app)**<br>
 To create an event, select the "My Events" tab, type in the event name, fill in the necessary information and select the "+" button.<br>
 ##Editing and Deleting Events
-**[link](http://liteventtracker.com/events)**<br>
+**[link](http://liteventtracker.com/app)**<br>
 On the "My Events" tab, you can see all the events you've created at a glance.
 ##Guide
 **[link](http://liteventtracker.com/accountsettings)**<br>
 The user guide provides information about various features available.
 ##Map interface
-**[link](http://liteventtracker.com/events)**<br>
+**[link](http://liteventtracker.com/app)**<br>
 The map interface allows a user to draw a rectangle outlining the perimeter of the event.
 
