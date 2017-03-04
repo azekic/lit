@@ -1,0 +1,78 @@
+<div class="card events cf">
+  <div class="textintro">
+    <h1>Add Event!</h1>
+    <p>Fill out some details and hit +</p>
+
+    <!--Add event-->
+    <form class="formgroup addevent cf"
+    name="myform"
+    ng-submit="addEvent()"
+    novalidate>
+    <!--event name-->
+    <div class="inputwrapper">
+      <input type="text" name="eventname"
+      placeholder="Event name"
+      ng-model="eventname" ng-required="true">
+    </div>
+    <!--event type-->
+    <div class="inputwrapper">
+      <input type="text" name="eventtype"
+      placeholder="Type of event"
+      ng-model="eventtype" ng-required="true">
+    </div>
+    <!--event date-->
+    <div class="inputwrapper">
+      <input type="text" name="eventdate"
+      placeholder="Date (DDMMYYYY)"
+      ng-model="eventdate" ng-required="true">
+    </div>
+
+    <div class="inputwrapper">
+      Top left: <input type="text" name="tlx" value="x" required ="false" readonly><br><input type="text" name="tly" value="x" required="false" readonly><br>
+      Bottom right: <input type="text" name="brx" value="y" required = "false" readonly><br><input type="text" name="bry" value="y" required="false" readonly><br>
+    </div>
+
+
+    <!--needs to be linked to gmaps-->
+    <button type="button"><img src="http://logonoid.com/images/google-maps-logo.png" width="50" length="50"></button>
+
+
+  <!--integrate linking to gmpas()
+  <input type="image" src="http://logonoid.com/images/google-maps-logo.png" alt="Google Maps">
+-->
+  </form>
+
+<!--submit button
+<button type="submit" class="btn" ng-disabled="myform.$invalid">
+  +
+</button> -->
+
+<input type="submit" value="+">
+
+</div><!-- events cf -->
+
+
+<div class="card events cf">
+  <h2>Your Events</h2>
+  <div class="event" ng-repeat="(key, event) in events">
+
+    <button class="btn btn-delete tooltip"
+    ng-click="deleteEvent(key)"><span>Delete this event</span></button>
+
+    <!--edit the event-->
+    <a class="btn btn-reset tooltip" ng-href="#/eventedit/"> <!--ng-href="/nandi/views/eventedit/{{currentUser.regUser}}/{{event.$id}}/eventedit"-->
+    <span>Edit the event  </span>
+  </a>
+
+    <a class="btn btn-checkin tooltip"
+    ng-href="#/checkins/{{currentUser.regUser}}/{{event.$id}}">
+    <span>Go to check-in URL</span>
+    </a>
+
+    <a class="btn btn-list tooltip"
+    ng-href="#/checkins/{{currentUser.regUser}}/{{event.$id}}/checkinsList">
+    <span>View list of checked-in users</span>
+    </a>
+    <span class="text">{{event.name}}</span>
+</div><!-- events list -->
+</div><!-- events cf -->

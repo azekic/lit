@@ -1,0 +1,43 @@
+<div class="card events cf">
+  <div class="textintro">
+    <h1>Add Event</h1>
+    <p>Fill out some details and hit +</p>
+
+    <!--Add event-->
+    <form class="formgroup addevent cf"
+    name="myform"
+    ng-submit="addEvent()"
+    novalidate>
+    <!--event name-->
+    <div class="inputwrapper">
+      <input type="text" name="eventname"
+      placeholder="Event name"
+      ng-model="eventname" ng-required="true">
+    </div>
+    <!--event type-->
+    <div class="inputwrapper">
+      <input type="text" name="eventtype"
+      placeholder="Type of event"
+      ng-model="eventtype" ng-required="true">
+    </div>
+    <!--event date-->
+    <div class="inputwrapper">
+      <input type="text" name="eventdate"
+      placeholder="Date (DDMMYYYY)"
+      ng-model="eventdate" ng-required="true">
+    </div>
+
+<!--
+    <button type="submit"><img src="http://logonoid.com/images/google-maps-logo.png" width="50" length="50"></button>
+
+  
+  <input type="image" src="http://logonoid.com/images/google-maps-logo.png" alt="Google Maps">
+-->
+  </form>
+
+<!--submit button-->
+<button type="submit" class="btn"
+  ng-disabled="myform.$invalid">
+  +
+</button>
+</div><!-- events cf -->
