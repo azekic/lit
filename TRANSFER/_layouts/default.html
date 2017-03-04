@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="{{ site.title | default: site.github.repository_name }} : {{ site.description | default: site.github.project_tagline }}">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    <title>{{ "LIT - The Ultimate Event Tracker" }}</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
+
+          <h1 id="project_title"><img src = "./website/img/lit-logo.png"  alt = "Logo"></h1>
+          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+
+          {% if site.show_downloads %}
+            <section id="downloads">
+              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+            </section>
+          {% endif %}
+        </header>
+    </div>
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'HOME')" id="defaultOpen">HOME</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'TEAM ROSTER')">TEAM</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'UI DESIGN')">UI DESIGN</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'SOFTWARE DESIGN')">SOFTWARE DESIGN</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'PROJECT PLAN')">PROJECT PLAN</a></li>
+
+
+</ul>
+<div id="wrapper">
+<div id="HOME" class="tabcontent">
+  <h3>About the Course</h3>
+  <p>Computer Science 2212 - Introduction to Software Engineering is a course designed to examine the stages of the software engineering process, including requirements gathering, specification, design, implementation, and testing. Students of CS 2212 are required to work cooperatively in a team to design and implement a moderately large software system.</p>
+  <h3>Our Project</h3>
+  <p><i>Developed by Team 13</i>
+  <p>There is a disconnect between students and the events going on around them. Councils, clubs, and societies across campus have no standardized method to communicate with students. Students are left to figure out whats going on across campus on their own. From this insight came the inception of LIT, a service that aims to fill the gap and bring the events of all clubs and societies across campus directly to students, using a novel and intuitive user interface.</p>
+    <p>LIT is a heat map event tracker that displays current and future events. Each event will be defined by an area on the map with geo-fencing using Google Maps API. A user who enters the defined area will add to the event counter - which displays how many users are within that event’s area. The density of people will be visually displayed through color. For example: events of low, medium, and high user density will be filled in with yellow, orange, and red colours respectively. By clicking or tapping on the event area, a user can see more information about that specific event. A time slider will allow the user to view events on the map at later points in time.</p>
+  </div>
+
+    
+    
+    
+<div id="TEAM ROSTER" class="tabcontent">
+
+  <div class="andre" style="float:left; display:inline-block; margin-bottom: 2em;" >
+      <h3 > ANDRE ZEKIC </h3>
+        <span style="float:left;width: 35%;">
+            <img src="./website/img/andre.jpg" width="256" height="256" />
+        </span>
+        <span style="float:right;width: 65%;">
+            <p style="float:right; display:block;">Andre is a fourth year student at Western University pursuing a double major in Chemistry and Computer Science. He is often seen speeding across campus on his electric longboard or drinking concerning amounts of Soylent. He works as a graphic designer at the USC and is on the Science Student's Council as Computer Science Representative. Proficient in Adobe Photoshop, Illustrator, Python, Java, and C. Hobbies include cycling, YouTube, and existential debates.
+            </p>
+          <p><b>Role:</b> Project Lead, UI Lead</p>
+          
+          <a href="mailto:azekic@uwo.ca">azekic@uwo.ca</a>
+        </span>
+    </div>
+    <div class="nandi" style="float:left; display:inline-block; margin-bottom: 2em; ">
+        <h3> ANIRUDHA NANDI </h3>
+        <span style="float:left;width: 35%;">
+            <img src="./website/img/nandi-2.jpg" width="256" height="256" />
+        </span>
+        <span style="float:right;width: 65%;">
+            <p style="float:right; display:block;">Nandi is a second year computer science student at Western University. He is from Milton, Ontario but was originally born in India. He plans on attending the Richard Ivey School of Business next year to double major in Computer Science and Business Administration. Nandi has been coding since he was 11 and can code in C, C#, C++, Java, and Python. He also works at RezNet, the Internet Service Provider at Western University. Hobbies include: soccer, gaming, penetration testing on Linux, and coding.
+</p>
+          <p><b>Role:</b> Back End Developer</p>  
+          <a href="mailto:anandi@uwo.ca">anandi@uwo.ca</a>
+
+        </span>
+    </div>
+     
+    <div class="mitch" style="float:left; display:inline-block; margin-bottom: 2em; ">
+      <h3> MITCH MANCUSO </h3>
+        <span style="float:left;width: 35%;">
+            <img src="./website/img/Mitch.jpg" width="256" height="256" />
+        </span>
+        <span style="float:right;width: 65%;">
+            <p style="float:right; display:block;">Mitch is a fourth year computer science student at the University of Western Ontario. Over the years he has maintained a portfolio of design and operational projects utilizing knowledge in Swift, Filemaker, Oracle, HTML, CSS, PHP and SQL. Hobbies include: spending way too much time on the internet, and losing track of time.
+</p>
+                    <p><b>Role:</b> Framework Lead</p>
+
+          
+                              
+          <a href="mailto:mmancus4@uwo.ca">mmancus4@uwo.ca</a>
+
+        </span>
+    </div>
+    
+    <div class="yuhan" style="float:left; display:inline-block; margin-bottom: 2em;">
+        <h3> YUHAN LI </h3>
+        <span style="float:left;width: 35%;">
+            <img src="./website/img/Yuhan.jpg" width="256" height="256" />
+        </span>
+        <span style="float:right;width: 65%;">
+            <p style="float:right; display:block;">Yuhan is a third year student double major in Financial Modeling and Computer Science at Western University. Throughout studies, he is proficient in Java, Python, Matlab,C,SQL, mongoDB, Excel(VBA). Yuhan has a wide range of interests. He created the Western Magic Community to become the largest magician club in London, ON. Hobbies includes: photoshooting, boxing and video editing.
+          </p>
+                    <p><b>Role:</b> Back End Developer</p>
+
+          <a href="https://www.liyuhan.me">Personal Web</a><br>
+     <a href="https://ca.linkedin.com/in/yuhan-li-5b07b896">Linkedin</a><br>
+                              
+          <a href="mailto:yli2422@uwo.ca">yli2422@uwo.ca</a>
+
+        </span>
+    </div>
+   
+    <div class="maksym" style="float:left; display:inline-block; margin-bottom: 2em; ">
+      <h3> MAKSYM KOVAL </h3>
+        <span style="float:left;width: 35%;">
+            <img src="./website/img/maksym.jpg" width="256" height="256" />
+        </span>
+        <span style="float:right;width: 65%;">
+            <p style="float:right; display:block;">Maksym is a second year student at western pursuing ] a dual-degree in Computer Science and Business Administration. He has always had an interest in merging business and computing. Initially involved in a student start-up as Vice President of Information Technology, he expanded his skills further upon entering university. Now as a Director of Technology at the Western Forex Association, he dedicates himself to site management and graphic design, while keeping a part time position at PPL as a Recreation Coordinator.</p>
+                                                        <p><b>Role:</b> Back End Developer</p>
+
+          <a href="mailto:mmancus4@uwo.ca">mmancus4@uwo.ca</a>
+  
+      </span>
+     </div>
+    
+     <div class="yijun" style="float:left; display:inline-block; margin-bottom: 2em; ">
+        <h3> YIJUN HE </h3>
+        <span style="float:left;width: 35%;">
+            <img src="./website/img/yijun.jpg" width="256" height="256" />
+        </span>
+        <span style="float:right;width: 65%;">
+            <p style="float:right; display:block;">Yijun is a second year computer science student at Western University who plans on doing Specilization in Computer Science. He is from China, and he likes music and graphic design. He started learning code last year and he can code in Java, C, Python, and HTML/CSS/Javascript.</p>
+                              <p><b>Role:</b> Front End Developer</p>
+
+         
+          <a href="mailto:yhe362@uwo.ca">yhe362@uwo.ca</a>
+ 
+       </span>
+     </div>
+    
+     <div class="weija" style="float:left; display:inline-block; margin-bottom: 2em; ">
+      <h3> WEIJA ZHOU </h3>
+        <span style="float:left;width: 35%;">
+            <img src="./website/img/weija.jpg" width="256" height="256" />
+        </span>
+        <span style="float:right;width: 65%;">
+            <p style="float:right; display:block;">Weija Zhou is a second year student at Western pursuing a Computer Science degree. He has always been interested in computers and electronics. He took an interest in computer science in high school. Throughout his life, he has gained skills in the mystical languages of python, java, C, C++, html, css, and javascript. He is excited about designing new projects and is committed to learning and being awesome. His official role on the team is being the "create" page developer. </p>
+                                                         <p><b>Role:</b> Back End Developer</p>
+
+          <a href="mailto:wzhou94@uwo.ca">wzhou94@uwo.ca</a>
+ 
+       </span>
+     </div>
+    
+     <div class="garren" style="float:left; display:inline-block; margin-bottom: 2em;">
+        <h3> GARREN MCCALLUM </h3>
+        <span style="float:left;width: 35%;">
+                   <img src="./website/img/garren.jpg" width="256" height="256" /> 
+
+        </span>
+        <span style="float:left;width: 65%;">
+
+                                        
+
+            <p style="float:right; display:block;">Garren is an avid technology enthusiast with an interest in anything computer or gaming related, with cars being a side hobby. He is particularly interested in the Android platform and enjoy making system modifications and changing Android versions on his mobile device. Garren is currently taking a Major in Computer Science and a Minor in Mathematics. He has experience in the Python, Java and C programming languages from past courses.</p>
+                                       <p><b>Role:</b> Back End Developer</p>
+
+          <a href="mailto:gmccall5@uwo.ca">gmccall5@uwo.ca</a>
+       </span>
+      </div>
+    
+      <div class="spencer" style="float:left; display:inline-block; margin-bottom: 2em; ">
+      <h3> SPENCER ROEBOTHAM </h3>
+        <span style="float:left;width: 35%;">
+            <img src="./website/img/Spencer.jpg" width="256" height="256" />
+        </span>
+        <span style="float:right;width: 65%;">
+          
+            <p style="float:right; display:block;">Spencer is a third year computer science student at the University of Western Ontario. He has experience programming in Java, C, C++, Unix shell, ARM assembly, JavaScript, Ruby, HTML, and CSS. He is currently the VP Sponsorship of Western Cyber Security, a student-run organization at Western for those interested in ethical hacking and information security.</p>
+                                                         <p><b>Role:</b> Back End Lead</p>
+
+          <a href="mailto:sroeboth@uwo.ca">sroeboth@uwo.ca</a>
+
+        </span>
+     </div>
+  
+</div>
+
+<div id="UI DESIGN" class="tabcontent">
+  <h3>Design Philosophy</h3>
+  <p>UI design seems to have reached a state of homogeneity; with flat, brightly coloured, minimal interfaces accounting for many modern applications. Though our team sees the benefits of having simple design elements in a user interface, we aim to stand out with a <i>dark</i> colour scheme while still retaining the well established minimal aesthetic. This choice is not only easier on the eyes, but also provides increased contrast when looking at events with our <i>heat map</i> interface.
+  </p><br>
+  <h3>Login</h3>
+<p>The user is introduced to a simple Login page, which  allows a user to sign up, sign up with Facebook, or log into the application.</p>
+  <img src="./website/img/login.jpg" /><br>
+  <p>The Sign Up page requests that a user fills in the necessary info to generate an account if they decide to make a local account. Using Facebook's authentication API, a user can alternatively have their info filled in automatically with their Facebook profile.</p>
+  <img src="./website/img/login2.jpg" /><br>
+  <h3>Discover</h3>
+  <p>The Discover tab allows a user to find and interact with events. The page defaults to a map of Western's campus, where all current events can be seen at a glance. By clicking on any event on the map, the user is presented with information about the event including the location, time, number of attendees, and which friends of theirs are attending the event. They are also given the option to RSVP the event, which will add the event to the user's <i>Attending Events</i>. A filter at the bottom allows the user to specify the events he would like to see on the map, and a search bar allows for further filtering. A <i>Time Slider</i> at the top allows a user to browse upcoming events on the map by cycling through future dates.</p>
+  <img src="./website/img/discover.jpg" /><br>
+  <h3>Create</h3>
+  <p>The Create tab allows a user to create and edit an event. First the user is prompted to identify the vertices of the event on the map to generate a designated perimeter for the event. The user must then add a title, photo, description, event type, time, and floor number to their event. If the event is repeating they can choose to add additional days to the event. The user can also delete the event if they choose to change their mind.</p>
+  <img src="./website/img/create.jpg" /><br>
+  <h3>Additional Options</h3>
+  <p>The Active Events option lets a user browse current events in a timeline format and sort them by proximity, popularity, and date.</p>
+  <img src="./website/img/timeline.jpg" /><br>
+  <p>The Attending Events option lets a user view and modify the events they have chosen to attend.</p>
+  <img src="./website/img/events.jpg" /><br>
+  <p>The Settings option allows a user to modify their account, manage their events, and provides access to help resources.</p>
+  <img src="./website/img/settings.png" /><br>
+
+</div>
+<div id="SOFTWARE DESIGN" class="tabcontent">
+  <h3>UML Diagram</h3>
+  <img src="./website/img/uml.png" /><br>
+  <p><i>UML Diagram created using <a href="https://www.draw.io">draw.io</a></i><br>
+</div>
+<div id="PROJECT PLAN" class="tabcontent">
+     <h2>Features</h2>
+    <h3>Authentication System</h3>
+    <p>Users will have the option to create an account through traditional email and password or using Facebook Login API.<br>
+    <b>Feasibility:</b> Simple<br>
+    <b>Dependency:</b> Relies on Facebook API for registration, local database to store account info.
+    </p>
+    <h3>Event Creation</h3>
+  <p>Users can create an edit their own events, which will be stored in a local database. Basic event information like the name, description and floor level will be inputted by the user. An integrated calendar UI will allow the user to select a date and time, and the option to add photos will be included.
+    <br>To define the event’s area, the user will input the vertices of the event on the map, and a perimeter will be generated from these vertices.
+    <br><b>Feasibility:</b> Relatively complex. Calendar UI will need to span multiple years to be fully functional. Creating the event perimeter will require integration with Google Maps API.<br>
+    <b>Dependency:</b> Requires a functioning event database and successful use of Google Maps API.
+  </p>
+    <h3>Map-Based Event Browsing</h3>
+  <p>The user is shown a map of Western's campus, where all current events can be seen at a glance. By clicking on any event on the map, the user is presented with information about the event including the location, time, number of attendees, and which friends of theirs are attending the event. They are also given the option to RSVP the event, which will add the event to the user's Attending Events. A filter allows the user to specify the events they would like to see on the map, and a search bar allows for further filtering. A Time Slider at the top allows a user to browse upcoming events on the map by cycling through future dates.
+    <br>
+    <b>Feasibility:</b> Medium complexity. Requires an intuitive UI to navigate events. Most data is being pulled from the event database, so no need for complex algorithms.<br>
+    <b>Dependency: Dependent on a functioning event database to pull information from each event.</b>
+    </p>
+    <h3>Heat Map</h3>
+  <p>A map interface will display all active and future events over a map of Western’s Campus. Each event’s area will be coloured in depending on the density of users in the area using simulated data points.
+    <br>
+    <b>Feasibility:</b> Medium complexity. Vertices of the event will need to be converted to longitude / latitude points on the map to allow for overlaying. Event colour will be provided using predefined colour values for a given number of people and pulled from the event database.
+    <br>
+    <b>Dependency:</b> Requires successful use of Google Maps API to place event areas on the map.
+  </p>
+  <h3>Active Events</h3>
+  <p>A user will be able to browse current events in a timeline format and sort them by proximity, popularity, and date.
+    <br><b>Feasibility:</b> Relatively complex. Using simulated data, we will have to calculate the distance from our user to the nearest edge of each event and sort the database of active events by proximity. Popularity and date can be sorted by already provided data.
+    <b>Dependency:</b> Requires successful use of Google Maps API to calculate the distance between two points.
+  </p>
+    <h2>Additional Features</h2>
+    <h3>Attending Events</h3>
+  <p>A user can view the events they have chosen to attend, and has the option to delete them from the list.</p>
+    <h3>User Settings</h3>
+  <p>A user can modify their account (delete, change name and photo), manage their events (delete, change information), and has access to help resources (written guide to application).
+  </p>
+
+</div>
+
+</div>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        {{ content }}
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        {% if site.github.is_project_page %}
+        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+  </body>
+</html>
