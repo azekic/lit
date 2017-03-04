@@ -1,0 +1,107 @@
+<div class="card events cf">
+  <div class="textintro">
+    <h1>Add Event!</h1>
+    <p>Fill out some details and hit +</p>
+
+    <!--Add event-->
+    <form class="formgroup addevent cf"
+    name="myform"
+    ng-submit="addEvent()"
+    novalidate>
+    <!--event name-->
+    <div class="inputwrapper">
+      <input type="text" name="eventname"
+      placeholder="Event name"
+      ng-model="eventname" ng-required="true">
+    </div><br>
+    <!--event type-->
+    <!--
+    <div class="inputwrapper">
+      <input type="text" name="eventtype"
+      placeholder="Type of event"
+      ng-model="eventtype" ng-required="true">
+    </div>
+  -->
+  <br><br>
+  <div>
+  Event type:
+  <input type="radio" name="eventtype" value="academic" ng-model="eventtype" ng-required="true"> Academic
+  <input type="radio" name="eventtype" value="social" ng-model="eventtype" ng-required="true"> Social
+  <input type="radio" name="eventype" value="sports" ng-model="eventtype" ng-required="true"> Sports
+  </div>
+
+    <!--event date-->
+    <div class="inputwrapper">
+      <input type="text" name="eventdate"
+      placeholder="Date (DDMMYYYY)"
+      ng-model="eventdate" ng-required="true">
+    </div>
+
+    <br>
+
+    <div class="inputwrapper">
+      Top left:
+      <input type="text" name="tlx" value="" ng-required ="false" readonly>
+      <br>
+      <input type="text" name="tly" value="" ng-required="false" readonly>
+      <br>
+      Bottom right:
+      <input type="text" name="brx" value="" ng-required ="false" readonly>
+      <br>
+      <input type="text" name="bry" value="" ng-required="false" readonly>
+      <br>
+    </div>
+    <!--needs to be linked to gmaps-->
+
+    <br><br>
+
+    <div class = "inputwrapper">
+      <!--google maps button-->
+      <button type="button"><img src="http://logonoid.com/images/google-maps-logo.png" width="50" length="50"></button><br>
+
+      <!--submit button-->
+      <button type="submit" class="btn" ng-disabled="myform.$invalid">
+        +
+      </button>
+  </div>
+    <!--<input type="submit" value="+">-->
+  <!--integrate linking to gmpas()
+  <input type="image" src="http://logonoid.com/images/google-maps-logo.png" alt="Google Maps">
+-->
+  </form>
+
+<!--submit button
+<button type="submit" class="btn" ng-disabled="myform.$invalid">
+  +
+</button> -->
+
+
+</div><!-- events cf -->
+
+
+<div class="card events cf">
+  <h2>Your Events</h2>
+  
+  <div class="event" ng-repeat="(key, event) in events">
+    <span class="text">Event Name: {{event.name}}</span><br>
+    <span class="text">Event Type: {{event.type}}</span><br>
+    <span class="text">Event Date: {{event.eventDate}}</span><br>
+    <button class="btn btn-delete tooltip"
+    ng-click="deleteEvent(key)"><span>Delete this event</span></button>
+
+    <!--edit the event-->
+    <a class="btn btn-reset tooltip" ng-href="#/eventedit/"> <!--ng-href="/nandi/views/eventedit/{{currentUser.regUser}}/{{event.$id}}/eventedit"-->
+    <span>Edit the event  </span>
+  </a>
+
+    <a class="btn btn-checkin tooltip"
+    ng-href="#/checkins/{{currentUser.regUser}}/{{event.$id}}">
+    <span>Go to check-in URL</span>
+    </a>
+
+    <a class="btn btn-list tooltip"
+    ng-href="#/checkins/{{currentUser.regUser}}/{{event.$id}}/checkinsList">
+    <span>View list of checked-in users</span>
+    </a>
+</div><!-- events list -->
+</div><!-- events cf -->
