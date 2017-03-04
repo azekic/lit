@@ -32,6 +32,15 @@ myApp.factory('Authentication',
       return auth.$signOut();
     }, //logout
 
+    changeEmail: function(){
+    return auth.$changeEmail();
+    }, //changeEmail
+    changeFirstName: function(){
+    return auth.$changeFirstName();
+    },
+    changeLastName: function(){
+    return auth.$changeLastName();
+    },
     requireAuth: function() {
       return auth.$requireSignIn();
     }, //require Authentication

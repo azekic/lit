@@ -20,6 +20,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/register.html',
       controller: 'RegistrationController'
     }).
+    when('/teamroster', {
+          templateUrl: 'views/teamroster.html',
+          controller: 'RegistrationController'
+        }).
     when('/guide', {
       templateUrl: 'views/guide.html',
     }).

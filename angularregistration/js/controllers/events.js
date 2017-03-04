@@ -34,7 +34,6 @@ myApp.controller('EventsController',
         $scope.deleteEvent = function(key) {
           eventsInfo.$remove(key);
         } //deleteEvent
-
       } //authUser
     }); //onAuthStateChanged
 }]); //myApp.controller
