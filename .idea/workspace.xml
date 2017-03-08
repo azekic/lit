@@ -2,41 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/css/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_checkmark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_dice.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_email.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_heart.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_link.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_list.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_meeting.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_reset.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_trash.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/lit-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/controllers/allevents.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/controllers/checkins.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/controllers/events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/controllers/registration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/controllers/user.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/lib/angular/angular-animate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/lib/angular/angular-animate.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/lib/angular/angular-route.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/lib/angular/angular-route.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/lib/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/lib/angular/angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/services/authentication.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/accountsetting.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/allevents.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/checkins.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/checkinslist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/facebook.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/firebase.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/register.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/css/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/gmaps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/img/gmaps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/img/icons/icon_checkmark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/img/icons/icon_dice.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/img/icons/icon_email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/img/icons/icon_heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/img/icons/icon_link.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/img/icons/icon_list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/img/icons/icon_meeting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/img/icons/icon_reset.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/img/icons/icon_trash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/img/lit-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/controllers/allevents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/controllers/checkins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/controllers/eventedit copy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/controllers/eventedit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/controllers/events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/controllers/registration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/controllers/user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/lib/angular/angular-animate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/lib/angular/angular-animate.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/lib/angular/angular-route.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/lib/angular/angular-route.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/lib/angular/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/lib/angular/angular.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/js/services/authentication.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/accountsetting.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/allevents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/checkins.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/checkinslist.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/creatormap.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/discovermap.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/eventedit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/events.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/firebase.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/guide.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/nav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lit/views/register.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -609,7 +617,7 @@
       <updated>1487867310258</updated>
       <workItem from="1488597892615" duration="209000" />
       <workItem from="1488600116592" duration="4212000" />
-      <workItem from="1489013790417" duration="111000" />
+      <workItem from="1489013790417" duration="186000" />
     </task>
     <task id="LOCAL-00001" summary="Adding authentication features to site">
       <created>1487867475961</created>
@@ -772,11 +780,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489013819330</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="CSS Changes for button">
+      <created>1489013921279</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1489013921279</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4532000" />
+    <option name="totallyTimeSpent" value="4607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
