@@ -1,0 +1,33 @@
+<div class="card events cf" >
+  <div class="textintro">
+    <h1>My Profile</h1>
+    <span class="as-word">name: {{ users.firstname }} {{users.lastname}} </span>
+      <div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
+          <a ng-href="#/accountsetting" ng-click="changeFirstName()">change first name</a>
+      </div>
+      <div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
+          <a ng-href="#/accountsetting" ng-click="changeLastName()">change last name</a>
+      </div>
+    <span class="as-word">email: {{ users.email }} </span>
+
+      <div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
+          <a ng-href="#/accountsetting" ng-click="changeEmail()">change email</a>
+      </div>
+
+    <span class="as-word">image: <img ng-src="{{users.image.image}}"  style="width:100px;height:100px" alt="pic"/>   </span>
+     </span>
+    <form class="formgroup addprofilepic cf"
+      name="myform"
+      ng-submit="addProfilePic()"
+      novalidate>
+        <div style="float:left;width:80%; margin-right:20px;">
+          <input type="text" name="profilePic" placeholder="change your image here"
+          ng-model="userimage" ng-required="true" >
+        </div>
+        <button style="float:left" type="submit" class="btn"
+       ng-disabled="myform.$invalid">+</button>
+    </form>
+      <br/>
+
+</div><!-- events cf -->
+</div>

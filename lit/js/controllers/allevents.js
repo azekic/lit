@@ -9,21 +9,21 @@ myApp.controller('AllEventsController',
     var auth = $firebaseAuth();
             auth.$onAuthStateChanged(function(authUser) {
                 if(authUser) {
-                    var eventsRef = ref.child('users').child(authUser.uid).child('events');
-                    var eventsInfo = $firebaseArray(eventsRef);
+                    var timelineRef = ref.child('events');
+                    var timelineInfo = $firebaseArray(timelineRef);
 
-                    $scope.events = eventsInfo;
+                    $scope.events = timelineInfo;
 
-                    eventsInfo.$loaded().then(function(data) {
+                    timelineInfo.$loaded().then(function(data) {
                         $rootScope.howManyEvents = eventsInfo.length;
                     }); // make sure event data is loaded
 
-                    eventsInfo.$watch(function(data) {
+                    timelineInfo.$watch(function(data) {
                         $rootScope.howManyEvents = eventsInfo.length;
                     });
 
                     $scope.addEvent = function() {
-                        eventsInfo.$add({
+                        timelineInfo.$add({
                             name: $scope.eventname,
                             date: firebase.database.ServerValue.TIMESTAMP
                         }).then(function() {

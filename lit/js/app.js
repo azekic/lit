@@ -22,6 +22,19 @@ myApp.config(['$routeProvider', function($routeProvider) {
     when('/guide', {
       templateUrl: 'views/guide.html',
     }).
+	
+	when('/eventedit', {
+      templateUrl: 'views/eventedit.html',
+      controller: 'EventsEditController',
+      resolve: {
+        currentAuth: function(Authentication) {
+          return Authentication.requireAuth();
+        } //currentAuth
+      }//resolve
+    }).
+	when('/teamroster', {
+          templateUrl: 'views/teamroster.html'
+        }).
     when('/checkins/:uId/:mId', {
       templateUrl: 'views/checkins.html',
       controller: 'CheckInsController'

@@ -6,11 +6,13 @@ myApp.controller('CheckInsController',
 
     $scope.whichevent = $routeParams.mId;
     $scope.whichuser = $routeParams.uId;
+	$scope.whichevent2 = $routeParams.uId;
 
     ref = firebase.database().ref()
       .child('users').child($scope.whichuser)
       .child('events').child($scope.whichevent)
       .child('checkins');
+	  .child('events2').child($scope.whichevent2);
 
     checkinsList = $firebaseArray(ref);
     $scope.checkins = checkinsList;

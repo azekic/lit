@@ -2,7 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/css/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_checkmark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_dice.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_link.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_list.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_meeting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_reset.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/icons/icon_trash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/img/lit-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/controllers/allevents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/controllers/checkins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/controllers/events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/controllers/registration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/controllers/user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/lib/angular/angular-animate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/lib/angular/angular-animate.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/lib/angular/angular-route.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/lib/angular/angular-route.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/lib/angular/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/lib/angular/angular.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/js/services/authentication.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/accountsetting.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/allevents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/checkins.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/checkinslist.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/events.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/facebook.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/firebase.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/nav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angularregistration/views/register.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -60,7 +94,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="FacebookAuth" />
       </map>
     </option>
   </component>
@@ -148,56 +182,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angularregistration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angularregistration" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -625,7 +609,7 @@
       <updated>1487867310258</updated>
       <workItem from="1488597892615" duration="209000" />
       <workItem from="1488600116592" duration="4212000" />
-      <workItem from="1489013790417" duration="22000" />
+      <workItem from="1489013790417" duration="111000" />
     </task>
     <task id="LOCAL-00001" summary="Adding authentication features to site">
       <created>1487867475961</created>
@@ -781,14 +765,21 @@
       <option name="project" value="LOCAL" />
       <updated>1488601370909</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="CSS Changes for button">
+      <created>1489013819330</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1489013819330</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4443000" />
+    <option name="totallyTimeSpent" value="4532000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="828" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="828" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1072,9 +1063,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="641" column="23" lean-forward="false" selection-start-line="641" selection-start-column="23" selection-end-line="641" selection-end-column="23" />
-          <folding>
-            <marker date="1488601364000" expanded="true" signature="11249:11354" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
