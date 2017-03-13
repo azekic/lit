@@ -1,0 +1,44 @@
+<div class="card allevents ">
+    <h1>Event Browser</h1>
+
+    <div class="formgroup">
+        <span class="label">by:</span>
+
+        <select ng-model="order">
+            <option value="time">Time</option>
+            <option value="social">Social</option>
+            <option value="academic">Academic</option>
+        </select>
+
+    </div>
+
+
+
+<div class="card events cf">
+  <h2>Listed Events</h2>
+  <div class="event" ng-repeat="(key, event) in events">
+    <span class="text">Host Name: {{event.hostname}}</span><br>
+    <span class="text">Event Name: {{event.eventname}}</span><br>
+    <span class="text">Event Type: {{event.type}}</span><br>
+    <span class="text">Event Date: {{event.eventdate}}</span><br>
+
+   <button class="btn btn-checkin tooltip"
+    ng-click="addUser(event.$id)"><span>Going to This Event</span></button>
+
+
+    <a class="btn btn-list tooltip"
+       ng-href="#/checkinsList/{{event.$id}}">
+      <span>View list of checked-in users</span>
+    </a>
+
+     <a class="btn btn-map tooltip"
+       href="views/eventmap.html?eventId={{event.$id}}">
+      <span>Look at Event on Map</span>
+    </a>
+
+    
+  </div><!-- events list -->
+</div><!-- events cf -->
+</div>
+
+

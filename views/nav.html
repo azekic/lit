@@ -1,0 +1,12 @@
+  <ul>
+      <li><a ng-show="currentUser" ng-href="#/events">Your Events
+      <span ng-show="howManyEvents" class="badge">{{howManyEvents}}</span></a></li>
+      <li><a ng-show="currentUser" ng-href="#/addevent">Add Event</a></li>
+	  <li><a ng-show="currentUser" ng-href="#/allevents">All Events</a></li>
+	  <li><a href="views/alleventsmap.html">Map</a></li>
+      <li><a ng-show="currentUser" ng-href="#/accountsetting">Account Setting</a></li>
+      <li><a ng-href="#/guide">Guide</a></li>
+
+      <li><a ng-hide="currentUser" ng-href="#/login">Login</a></li>
+    <li><a ng-hide="currentUser" ng-href="#/register">Register</a></li>
+  </ul>

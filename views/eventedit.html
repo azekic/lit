@@ -1,0 +1,26 @@
+<div class="card events cf">
+  <div class="textintro">
+    <h1>Edit Event {{event.name}}</h1>
+    <p>Type a event name and hit +</p>
+    <form class="formgroup addevent cf"
+      name="myform"
+      ng-submit="editEvent()"
+      novalidate>
+      <div class="inputwrapper">
+        <input type="text" name="eventname"
+          placeholder="Event name"
+          ng-model="eventname" ng-required="true">
+        <input type="text" name="eventtype"
+          placeholder="Event Type"
+          ng-model="eventtype" ng-required="true">
+        <input type="text" name="eventdate"
+          placeholder="Event Date"
+          ng-model="eventdate" ng-required="true">
+      </div>
+      <button type="submit" class="btn"
+       ng-disabled="myform.$invalid">+</button>
+       <a ng-href="#/events">Events</a>
+    </form>
+</div><!-- events cf -->
+
+</div>
