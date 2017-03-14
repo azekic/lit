@@ -9,21 +9,24 @@ myApp.controller('EventEditController',
 
     $scope.editEvent = function() {
           refEvent.update({
-            name: $scope.eventname,
-            eventdate: $scope.eventdate,
-            type: $scope.eventtype,
-
-
-          }).then(function() {
-            var regEventRef = ref.child('events').child($scope.whichevent).update({
             eventname: $scope.eventname,
             eventdate: $scope.eventdate,
-            type: $scope.eventtype
+            eventtype: $scope.eventtype,
+            eventfloor: $scope.eventfloor,
+            eventdescription: $scope.eventdescription,
+            archive: "false",
+          }).then(function() {
+            var regEventRef = ref.child('events').child($scope.whichevent).update({
+              eventname: $scope.eventname,
+              eventdate: $scope.eventdate,
+              eventtype: $scope.eventtype,
+              eventfloor: $scope.eventfloor,
+              eventdescription: $scope.eventdescription,
             }); //This little part creates the same event id in the Events part of the database
             $scope.eventname='';//empties input field
             $scope.eventdate='';//empties input field
             $scope.eventtype='';//empties input field
-            $location.path(view);
+            window.location.href = "/app/#/events";
           }); //promise
       } //editEvent
 

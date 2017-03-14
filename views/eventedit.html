@@ -15,18 +15,36 @@
       <br><br><br>
       <div>
         Event type:
-        <input type="radio" name="eventtype" value="academic" ng-model="eventtype" ng-required="true"> Academic
+        <input type="radio" name="eventtype" value="educational" ng-model="eventtype" ng-required="true"> Educational
         <input type="radio" name="eventtype" value="social" ng-model="eventtype" ng-required="true"> Social
         <input type="radio" name="eventype" value="sports" ng-model="eventtype" ng-required="true"> Sports
+        <input type="radio" name="eventype" value="networking" ng-model="eventtype" ng-required="true"> Networking
+        <input type="radio" name="eventype" value="general" ng-model="eventtype" ng-required="true"> General
+      </div>
+
+      <!--
+      <div class="inputwrapper">
+      <textarea rows="5" cols="45">The run will begin at 9:00 A.M. Participants must be registered by this point. We are expecting to have around 100 participants. We will have sent registration applications out prior to the event, to smaller running clubs in the area. Registration fees are $20. The fees are to help cover park permit fees, park participant fees, parking fees, and refreshments. If a participant has registered early they will have a parking pass distributed by us and the East Bay Regional Parks will be reimbursed by the end of the event. If a participant has not registered early they will not have a parking pass and will have to pay for parking on their own.
+      </textarea>
+      </div>
+      -->
+
+      <!--ensure the description there works^-->
+      <div>
+        <input type="text" name="eventdescription" placeholder="Description of the event. No word limit." ng-model="eventdescription" ng-required="false">
       </div>
 
       <div class="inputwrapper">
-        <input type="text" name="eventdate"
-          placeholder="Event Date"
-          ng-model="eventdate" ng-required="true">
+        <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' pattern=".{8}" maxlength="8" name="eventdate" placeholder="Event Date in DDMMYYYY format." ng-model="eventdate" ng-required="true">
       </div>
 
+      <div class="inputwrapper">
+        <input type="text" name="eventfloor" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="Event Floor. Enter 1 for default."     ng-model="eventfloor" ng-required="true">
+      </div>
+
+      <div class="inputwrapper">
         <button type="submit" class="btn"
+        ng-disabled="myform.$invalid" >+</button>
       </div>
     </form>
 </div><!-- events cf -->
