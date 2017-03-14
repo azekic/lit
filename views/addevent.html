@@ -6,19 +6,31 @@
       name="myform"
       ng-submit="addEvent()"
       novalidate>
+
       <div class="inputwrapper">
         <input type="text" name="eventname"
           placeholder="Event name"
           ng-model="eventname" ng-required="true">
-        <input type="text" name="eventtype"
-          placeholder="Event Type"
-          ng-model="eventtype" ng-required="true">
+      </div>
+
+      <br><br><br>
+      <div>
+        Event type:
+        <input type="radio" name="eventtype" value="academic" ng-model="eventtype" ng-required="true"> Academic
+        <input type="radio" name="eventtype" value="social" ng-model="eventtype" ng-required="true"> Social
+        <input type="radio" name="eventype" value="sports" ng-model="eventtype" ng-required="true"> Sports
+      </div>
+
+      <div class="inputwrapper">
         <input type="text" name="eventdate"
           placeholder="Event Date"
           ng-model="eventdate" ng-required="true">
       </div>
-      <button type="submit" class="btn"
-       ng-disabled="myform.$invalid" >+</button>
+
+      <div class="inputwrapper">
+        <button type="submit" class="btn"
+        ng-disabled="myform.$invalid" >+</button>
+      </div>
     </form>
 </div><!-- events cf -->
 
