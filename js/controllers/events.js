@@ -4,9 +4,7 @@ myApp.controller('EventsController',
 
     var ref = firebase.database().ref();
     var auth = $firebaseAuth();
-    // $scope.ne = $routeParams.neId;
-    // $scope.sw = $routeParams.swId;
-
+    
     auth.$onAuthStateChanged(function(authUser) {
       if(authUser) {
         var eventsRef = ref.child('users').child(authUser.uid).child('events');
@@ -23,47 +21,41 @@ myApp.controller('EventsController',
 
         $scope.addEvent = function() {
           eventsInfo.$add({
-            eventname: $scope.eventname,
+            name: $scope.eventname,
             eventdate: $scope.eventdate,
-            eventtype: $scope.eventtype,
-            eventfloor: $scope.eventfloor,
-            eventdescription: $scope.eventdescription,
-            archive: "false",
-            id: "",
+            type: $scope.eventtype,
+            id: "", 
             date: firebase.database.ServerValue.TIMESTAMP
           }).then(function() {
 
-            var key = eventsInfo.$keyAt(eventsInfo.length-1);
+            var key = eventsInfo.$keyAt(eventsInfo.length-1); 
             //receives key data from hash created by most recent event
-            tempRef = eventsRef.child(key);
+            tempRef = eventsRef.child(key); 
             //references the most recently created event
-            tempRef.update({
+            tempRef.update({          
               id: key
               //updates that event with its own hash
-            })
+            })   
 
 
-            var hostName;
+            var hostName; 
             ref.child('users').child(authUser.uid).on("value", function(snapshot){
             hostName = snapshot.val().firstname + ' ' + snapshot.val().lastname;});
             //finds the first name and last name of the creater of the event
 
             var regEventRef = ref.child('events').child(key).set({
-              eventname: $scope.eventname,
-              eventdate: $scope.eventdate,
-              type: $scope.eventtype,
-              floor: $scope.eventfloor,
-              description: $scope.eventdescription,
-              archive: "false",
-              hostid: authUser.uid,
-              hostname: hostName,
+            hostid: authUser.uid,
+            hostname: hostName, 
+            eventname: $scope.eventname,
+            eventdate: $scope.eventdate,
+            type: $scope.eventtype
             }); //This little part creates the same event id in the Events part of the database
+            
+            
 
-
-
-            $scope.eventname='';//empties input field
-            $scope.eventdate='';//empties input field
-            $scope.eventtype='';//empties input field
+            $scope.eventname='';//empties input field 
+            $scope.eventdate='';//empties input field 
+            $scope.eventtype='';//empties input field 
             window.location.href = "views/discovermap.html?eventId="+key;
 
           }); //promise
@@ -72,7 +64,10 @@ myApp.controller('EventsController',
 
         $scope.deleteEvent = function(key) {
           var eventid = eventsInfo.$keyAt(key);
+          //deletes event in user's own directory 
           eventsInfo.$remove(key);
+
+          //deletes event in event directory
           var regEventRef = ref.child('events').child(eventid).remove();
 
         } //deleteEvent

@@ -35,10 +35,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/checkinslistauth.html',
       controller: 'CheckInsController'
     }).
-    when('/addevent/:nId/:eId/:sId/:wId/', {
-      templateUrl: 'views/addevent.html',
-      controller: 'EventsMapController'
-    }).
     when('/events', {
       templateUrl: 'views/events.html',
       controller: 'EventsController',

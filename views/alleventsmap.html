@@ -1,20 +1,25 @@
-<style>
+<!-- This style block is used to ensure that the submit button and delete button go over the map--><style>
    #wrapper { position: relative; }
    #over_map { position: absolute; bottom: 30px; left: 10px; z-index: 99; }
 </style>
 
 <div id="wrapper">
-   <div id="map">
+<!--   This div displays the map-->   
+<div id="map">
    </div>
-   <div id="over_map">
+
+<!--    This div displays the button to go back -->   
+  <div id="over_map">
       <a id = "submit" 
         href="https://liteventtracker.com/app/#/events"><img src = "../img/arrow_left-512.png">
       </a>
    </div>
 </div>
-<!-- Replace the value of the key parameter with your own API key. -->
+
+
 <script>
-  
+  //This piece of javascript defines a function which reads the variables in the url 
+  //Not used in this html, but used in other map html  
   var QueryString = function () {
     // This function is anonymous, is executed immediately and 
     // the return value is assigned to QueryString!
@@ -41,31 +46,38 @@
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-Xp8injjOHlh73LNN0oBSzfZeuCZjPns&callback=initMap">
 </script>
-<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 
+
+<!-- More styling -->
 <style type="text/css">
   #map {
   height: 100%;
   z-index: 99;
-}
-Optional: Makes the sample page fill the window.
+  }
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 } 
 </style>
-<script>
 
+
+<!-- Firebase script need this to call firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+
+<script>
 var map;
 var infoWindow;
 
-
 function initMap() {
+  //Initializes map with center coorinates on UWO 
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 43.00998848394310, lng: -81.27191001055915},
     zoom: 16
   });
+
+  //Specific configuration information needed to access firebase 
   var config = {
     apiKey: "AIzaSyBLefPTD2pIO1RAUYxTIN8ao_Xdx054D9Q",
     authDomain: "litapp-a4f8d.firebaseapp.com",
@@ -74,24 +86,40 @@ function initMap() {
     messagingSenderId: "863295441400"
   };
   firebase.initializeApp(config);
+
+  //Note any function that utilize arrays that are initialized with 
+  // firebase loop must be used within firebase for loop
+  //For example, polygon and setting the polygon on map must occur within firebase for loop, or errors will occur
+
   var refEvent = firebase.database().ref('events')
   refEvent.once("value", function(snapshot) {
-
     snapshot.forEach(function(childSnapshot) {
-    // key will be "fred" the first time and "barney" the second time
-      var eventkey = childSnapshot.key;
+      //iterates through all events in firebase 
+      var eventkey = childSnapshot.key;//gets the specific firebase key of the event within firebase
+
+      //uses event key to access the coord directory of that specific event 
       refCoord = refEvent.child(eventkey).child("Coord"); 
 
+      //access the coord directory 
       refCoord.once("value", function(snapshot){
+        //initializes array that will hold the coordinates of the event 
         var mapcoord = []
 
+        //loop through all coordinates in coord directory 
         snapshot.forEach(function(childSnapshot){
+
+          //converts the firebase coordinate to float 
           var latitude = parseFloat(childSnapshot.val().Lat);
           var longitude = parseFloat(childSnapshot.val().Long);
+
+          //push coordinate as a JS object onto array 
           mapcoord.push({lat: latitude, lng: longitude}); 
+
         });
+
+        //Can initialize shape of polygon with the array we just made 
         polygon = new google.maps.Polygon({
-          paths: mapcoord,
+          paths: mapcoord,//mapcoord is the array holding the coordinates 
           editable: false,
           draggable: false,
           fillColor: "red", 
@@ -99,6 +127,7 @@ function initMap() {
           strokeWeight: 0.5
         });
 
+        //creates the polygon onto the map 
         polygon.setMap(map);
       });
     });

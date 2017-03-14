@@ -1,6 +1,6 @@
 
-
-<!DOCTYPE html>
+<!-- Most of this code was found online and copied -->
+ <!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
@@ -43,6 +43,8 @@
                 margin-top: 5px;
             }
         </style>
+
+        <!--Script used to get variables from url -->    
         <script type="text/javascript">
         var QueryString = function () {
           // This function is anonymous, is executed immediately and 
@@ -68,6 +70,8 @@
         }();
         </script>
         <script type="text/javascript">
+
+            //Most of these functions aren't used, only submit to firebase and redirect were written by Weija
             var drawingManager;
             var selectedShape;
             var colors = ['#1E90FF', '#FF1493', '#32CD32', '#FF8C00', '#4B0082'];
@@ -246,17 +250,22 @@
             }
             google.maps.event.addDomListener(window, 'load', initialize);
 
-
+            //function used to redirect back to Lit website 
             function redirect(){
+            //need reference to database to check if the event was successfully submitted to database
               var ref = firebase.database().ref('events').child(QueryString.eventId).child('Coord');
               ref.once("value", function(snapshot) {
               var data = snapshot.val();
+
+              //Only redirect after the event is successfully submitted to database
+              //Without the if statment, website will redirect before the event is successfully submitted 
               if (typeof data === 'object'){
                 window.location.href = "https://liteventtracker.com/app/#/events";
               }
               });
                
             }
+
             function submitToFirebase(){
                 var config = {
                     apiKey: "AIzaSyBLefPTD2pIO1RAUYxTIN8ao_Xdx054D9Q",
@@ -266,15 +275,24 @@
                     messagingSenderId: "863295441400"
                 };
                 firebase.initializeApp(config);
+
                 var database = firebase.database();
+
+                //forloop that iterates through all the points on the polygon that was just drawn 
+                //for each point, it will be recorded into firebase 
                 for (i=0; i< selectedShape.getPath().getLength();i++){
-                    var coord = selectedShape.getPath().getAt(i).toUrlValue(5).split(",");
+                    var coord = selectedShape.getPath().getAt(i).toUrlValue(7).split(",");
+                    //coord will be array where coord[0] is Lat and coord[1] is long 
+
+                    //Pushes new coordinates onto proper directory in firebase 
                     firebase.database().ref('events').child(QueryString.eventId).child('Coord').push({
                         Lat: coord[0],
                         Long: coord[1]
                     });
                 }
             }
+
+            //submit button that calls submission into firebase and redirect 
             function onSubmit(){
               submitToFirebase();
               redirect(); 
@@ -283,9 +301,10 @@
         </script>
     </head>
     <body>
-        
-          <div id="map"></div>
-          <div id = "over_map">
+<!--div that contains map--> 
+        <div id="map"></div>
+<!-- everything that is not map--> 
+        <div id = "over_map">
               <div id="panel">
                   <div id="color-palette"></div>
                   <div>

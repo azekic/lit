@@ -12,11 +12,9 @@
       </a>
    </div>
 </div>
-<!-- Replace the value of the key parameter with your own API key. -->
 <script>
   
   var QueryString = function () {
-    // This function is anonymous, is executed immediately and 
     // the return value is assigned to QueryString!
     var query_string = {};
     var query = window.location.search.substring(1);
@@ -48,7 +46,6 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-Xp8injjOHlh73LNN0oBSzfZ
   height: 100%;
   z-index: 99;
 }
-Optional: Makes the sample page fill the window.
 html, body {
   height: 100%;
   margin: 0;
@@ -75,13 +72,11 @@ function initMap() {
     messagingSenderId: "863295441400"
   };
   firebase.initializeApp(config);
-  var test = []; 
   var AllCoords = []; 
   var database = firebase.database();
   var refCoord = firebase.database().ref('events').child(QueryString.eventId).child('Coord'); 
   refCoord.once("value", function(snapshot) {
     snapshot.forEach(function(childSnapshot) {
-    // key will be "fred" the first time and "barney" the second time
     var latitude = parseFloat(childSnapshot.val().Lat);
     var longitude = parseFloat(childSnapshot.val().Long);
     AllCoords.push({lat: latitude, lng: longitude}); 

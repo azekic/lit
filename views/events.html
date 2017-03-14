@@ -2,13 +2,11 @@
 <div class="card events cf">
   <h1>My Events</h1>
   <div class="event" ng-repeat="(key, event) in events">
-    <span class="text">Event Name: {{event.eventname}}</span><br>
-    <span class="text">Event Type: {{event.eventtype}}</span><br>
+    <span class="text">Event Name: {{event.name}}</span><br>
+    <span class="text">Event Type: {{event.type}}</span><br>
     <span class="text">Event Date: {{event.eventdate}}</span><br>
-    <span class="text">Event Description: {{event.eventdescription}}</span><br>
-    <span class="text">Event Floor: {{event.eventfloor}}</span><br>
-
-
+   
+    
     <button class="btn btn-delete tooltip"
     ng-click="deleteEvent(key)"><span>Delete this event</span></button>
 
@@ -24,8 +22,8 @@
        href="views/eventmap.html?eventId={{event.$id}}">
       <span>Look at Event on Map</span>
     </a>
-
-
+   
+    
   </div><!-- events list -->
 </div><!-- events cf -->
 </div>
