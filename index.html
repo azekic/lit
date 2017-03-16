@@ -44,7 +44,7 @@
 </header>
 <div class="page">
 
-  
+
   <main class="cf" ng-view>
   </main>
   <div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
@@ -133,7 +133,7 @@
         if (user) {
 		document.getElementById('quickstart-sign-in').style.visibility = "hidden";
 		document.getElementById('quickstart-account-name').textContent = JSON.stringify(user.displayName, null, '  ');
-		window.location.href = "https://liteventtracker.com/app/#/events"; 
+		window.location.href = "https://liteventtracker.com/app/#/events";
         } else {
           // User is signed out.
         }

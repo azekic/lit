@@ -18,7 +18,7 @@
             }
             #over_map { position: absolute; bottom: 30px; left: 10px; z-index: 99; }
 
-            #panel {  
+            #panel {
                 width: 200px;
               font-family: Arial, sans-serif;
                 font-size: 13px;
@@ -45,7 +45,7 @@
         </style>
         <script type="text/javascript">
         var QueryString = function () {
-          // This function is anonymous, is executed immediately and 
+          // This function is anonymous, is executed immediately and
           // the return value is assigned to QueryString!
           var query_string = {};
           var query = window.location.search.substring(1);
@@ -63,7 +63,7 @@
             } else {
               query_string[pair[0]].push(decodeURIComponent(pair[1]));
             }
-          } 
+          }
           return query_string;
         }();
         </script>
@@ -79,7 +79,7 @@
                     if (selectedShape.type !== 'marker') {
                         selectedShape.setEditable(false);
                     }
-                    
+
                     selectedShape = null;
                 }
             }
@@ -90,7 +90,7 @@
                     shape.setEditable(true);
                     selectColor(shape.get('fillColor') || shape.get('strokeColor'));
                 }
-                
+
                 selectedShape = shape;
             }
 
@@ -136,8 +136,8 @@
                 }
             }
 
-            
-            
+
+
 
             function makeColorButton (color) {
                 var button = document.createElement('span');
@@ -196,7 +196,7 @@
 
                 google.maps.event.addListener(drawingManager, 'overlaycomplete', function (e) {
                     var newShape = e.overlay;
-                    
+
                     newShape.type = e.type;
 
                     if (e.type !== google.maps.drawing.OverlayType.MARKER) {
@@ -214,7 +214,7 @@
                                     }
                                 }
                                 if (newShape.type === google.maps.drawing.OverlayType.POLYLINE) {
-                                    window.alert(10); 
+                                    window.alert(10);
                                     var path = newShape.getPath();
                                     path.removeAt(e.vertex);
                                     if (path.length < 2) {
@@ -240,7 +240,7 @@
                 google.maps.event.addListener(map, 'click', clearSelection);
                 google.maps.event.addDomListener(document.getElementById('delete-button'), 'click', deleteSelectedShape);
                 google.maps.event.addDomListener(document.getElementById('submit-button'), 'click', onSubmit);
-                
+
 
                 buildColorPalette();
             }
@@ -248,14 +248,14 @@
 
 
             function redirect(){
-              var ref = firebase.database().ref('events').child(QueryString.eventId).child('Coord');
+              var ref = firebase.database().ref('events').child(QueryString.eventId).child('coord');
               ref.once("value", function(snapshot) {
               var data = snapshot.val();
               if (typeof data === 'object'){
                 window.location.href = "https://liteventtracker.com/app/#/events";
               }
               });
-               
+
             }
             function submitToFirebase(){
                 var config = {
@@ -269,7 +269,7 @@
                 var database = firebase.database();
                 for (i=0; i< selectedShape.getPath().getLength();i++){
                     var coord = selectedShape.getPath().getAt(i).toUrlValue(5).split(",");
-                    firebase.database().ref('events').child(QueryString.eventId).child('Coord').push({
+                    firebase.database().ref('events').child(QueryString.eventId).child('coord').push({
                         Lat: coord[0],
                         Long: coord[1]
                     });
@@ -277,13 +277,13 @@
             }
             function onSubmit(){
               submitToFirebase();
-              redirect(); 
+              redirect();
             }
-            
+
         </script>
     </head>
     <body>
-        
+
           <div id="map"></div>
           <div id = "over_map">
               <div id="panel">
@@ -294,7 +294,7 @@
                   </div>
               </div>
           </div>
-        
-        
+
+
     </body>
 </html>

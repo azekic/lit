@@ -7,16 +7,16 @@
    <div id="map">
    </div>
    <div id="over_map">
-      <a id = "submit" 
+      <a id = "submit"
         href="https://liteventtracker.com/app/#/events"><img src = "../img/arrow_left-512.png">
       </a>
    </div>
 </div>
 <!-- Replace the value of the key parameter with your own API key. -->
 <script>
-  
+
   var QueryString = function () {
-    // This function is anonymous, is executed immediately and 
+    // This function is anonymous, is executed immediately and
     // the return value is assigned to QueryString!
     var query_string = {};
     var query = window.location.search.substring(1);
@@ -34,7 +34,7 @@
       } else {
         query_string[pair[0]].push(decodeURIComponent(pair[1]));
       }
-    } 
+    }
     return query_string;
   }();
 </script>
@@ -53,7 +53,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-} 
+}
 </style>
 <script>
 
@@ -80,7 +80,7 @@ function initMap() {
     snapshot.forEach(function(childSnapshot) {
     // key will be "fred" the first time and "barney" the second time
       var eventkey = childSnapshot.key;
-      refCoord = refEvent.child(eventkey).child("Coord"); 
+      refCoord = refEvent.child(eventkey).child("coord");
 
       refCoord.once("value", function(snapshot){
         var mapcoord = []
@@ -88,13 +88,13 @@ function initMap() {
         snapshot.forEach(function(childSnapshot){
           var latitude = parseFloat(childSnapshot.val().Lat);
           var longitude = parseFloat(childSnapshot.val().Long);
-          mapcoord.push({lat: latitude, lng: longitude}); 
+          mapcoord.push({lat: latitude, lng: longitude});
         });
         polygon = new google.maps.Polygon({
           paths: mapcoord,
           editable: false,
           draggable: false,
-          fillColor: "red", 
+          fillColor: "red",
           fillOpacity: 0.1,
           strokeWeight: 0.5
         });
@@ -107,5 +107,3 @@ function initMap() {
 
 
 </script>
-
-
