@@ -39,6 +39,9 @@
     <button type="submit" class="btn"
     ng-disabled="myform.$invalid">REGISTER</button>
     <p>or <a ng-href="#/login">login</a></p>
-    <p>or <a ng-href="#/facebook">login with Facebook</a></p>
+    <div class="fbwrapper">
+      <!-- Button that handles sign-in/sign-out -->
+      <button disabled id="facebook-sign-in" class="fb">Log in with Facebook</button>
+    </div>
   </form>
 </section>

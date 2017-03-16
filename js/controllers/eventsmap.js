@@ -44,7 +44,7 @@ myApp.controller('EventsMapController',
             tempRef.update({          
               id: key
               //updates that event with its own hash
-            })   
+            })
 
 
             var hostName; 
