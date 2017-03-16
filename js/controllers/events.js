@@ -9,9 +9,16 @@ myApp.controller('EventsController',
 
     auth.$onAuthStateChanged(function(authUser) {
       if(authUser) {
+
+        //all events
         var eventsRef = ref.child('users').child(authUser.uid).child('events');
         var eventsInfo = $firebaseArray(eventsRef);
         $scope.events = eventsInfo;
+
+        //archived events
+        var archiveRef = ref.child('archive').child('events');
+        var archive = $firebaseArray(archiveRef);
+        $scope.archive = archive;
 
         eventsInfo.$loaded().then(function(data) {
           $rootScope.howManyEvents = eventsInfo.length;
@@ -22,6 +29,7 @@ myApp.controller('EventsController',
         });
 
         $scope.addEvent = function() {
+
           eventsInfo.$add({
             eventname: $scope.eventname,
             eventdate: $scope.eventdate,
@@ -29,8 +37,10 @@ myApp.controller('EventsController',
             eventfloor: $scope.eventfloor,
             eventdescription: $scope.eventdescription,
             archive: "false",
-            id: "",
-            date: firebase.database.ServerValue.TIMESTAMP
+            hostid: authUser.uid,
+            datecreated: firebase.database.ServerValue.TIMESTAMP,
+
+            //
           }).then(function() {
 
             var key = eventsInfo.$keyAt(eventsInfo.length-1);
@@ -51,12 +61,13 @@ myApp.controller('EventsController',
             var regEventRef = ref.child('events').child(key).set({
               eventname: $scope.eventname,
               eventdate: $scope.eventdate,
-              type: $scope.eventtype,
-              floor: $scope.eventfloor,
-              description: $scope.eventdescription,
+              eventtype: $scope.eventtype,
+              eventfloor: $scope.eventfloor,
+              eventdescription: $scope.eventdescription,
               archive: "false",
               hostid: authUser.uid,
               hostname: hostName,
+              datecreated: firebase.database.ServerValue.TIMESTAMP
             }); //This little part creates the same event id in the Events part of the database
 
 
@@ -71,9 +82,43 @@ myApp.controller('EventsController',
         } //addEvent
 
         $scope.deleteEvent = function(key) {
-          var eventid = eventsInfo.$keyAt(key);
+
+          //gets the event ID
+          var id = eventsInfo.$keyAt(key);
+
+          //gets the variables
+          ref.child('events').child(id).on("value", function(snapshot){
+            name = snapshot.val().eventname;
+            type = snapshot.val().eventtype;
+            date = snapshot.val().eventdate;
+            description = snapshot.val().eventdescription;
+            floor = snapshot.val().eventfloor;
+            host = snapshot.val().hostname;
+            created = snapshot.val().datecreated;
+            coordinates = snapshot.val().coord;
+          });
+
+          $scope.archive.$add({
+            //assign the variables
+            eventname: name,
+            eventtype: type,
+            eventdate: date,
+            eventdescription: description,
+            eventfloor: floor,
+            hostname: host,
+            datecreated: created,
+            coord: coordinates,
+
+            //create new ones
+            archive: "true",
+            hostid: authUser.uid,
+            datearchived: firebase.database.ServerValue.TIMESTAMP
+
+          })
+
+          //delete the event first from database/user/events then from database/events
           eventsInfo.$remove(key);
-          var regEventRef = ref.child('events').child(eventid).remove();
+          var regEventRef = ref.child('events').child(id).remove();
 
         } //deleteEvent
 
