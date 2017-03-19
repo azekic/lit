@@ -41,15 +41,15 @@
 <header>
   <nav class="cf" ng-include="'views/nav.html'"></nav>
 </header>
+<div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
+  <span class="userinfo">Hi {{currentUser.firstname}} </span>
+  <a ng-href="#/events" ng-click="logout()">logout</a>
+</div>
 <div class="page">
 
 
   <main class="cf" ng-view>
   </main>
-  <div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
-    <span class="userinfo">Hi {{currentUser.firstname}} </span>
-    <a ng-href="#/events" ng-click="logout()">logout</a>
-  </div>
 </div>
 </body>
 </html>
