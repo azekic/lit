@@ -9,10 +9,40 @@ myApp.controller('AllEventsController',
     var auth = $firebaseAuth();
     auth.$onAuthStateChanged(function(authUser) {
       if(authUser) {
-        var eventsRef = ref.child('events');
-        var eventsList = $firebaseArray(eventsRef);
-        var auth = $firebaseAuth();
-        $scope.events = eventsList;
+          var eventsRef = ref.child('events');
+          var eventsList = $firebaseArray(eventsRef);
+          var auth = $firebaseAuth();
+          var eventsListBack= $firebaseArray(eventsRef);
+
+          $scope.category = eventsListBack;
+
+          $scope.makeList = function(order){
+              if (order == 'all'){
+                  $scope.category = eventsList;
+              }
+              else{
+                  if (order == 'recent'){
+                      $scope.category =  eventsListBack.reverse();
+                  }
+                  else {
+                      if (order == 'archive'){
+                          var archRef = ref.child('archive/events');
+                          $scope.category = $firebaseArray(archRef);
+                      }
+                      else {
+                          if (order == 'time') {
+                              var categories = eventsRef.orderByChild('eventdate');
+                              $scope.category = $firebaseArray(categories);
+                          }
+                          else {
+                              var categories = eventsRef.orderByChild('eventtype').equalTo(order);
+                              var categoriesList = $firebaseArray(categories);
+                              $scope.category = categoriesList;
+                          }
+                      }
+                  }
+              }
+          };
 
         $scope.addUser = function(eventid) {
             var eventRef = ref.child('events/'+eventid+"/guestlist/"+authUser.uid);
