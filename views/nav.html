@@ -5,17 +5,18 @@
 </script>
 
 <nav class="uk-navbar-container" uk-navbar>
-     <div class="uk-navbar-left">
+     <div class="uk-navbar-left" ng-show="currentUser">
 
          <ul class="uk-navbar-nav">
-             <li><a ng-show="currentUser" ng-href="#/allevents">All Events</a></li>
+             <div class="uk-margin-left uk-text-large">
+                 <img src="../img/lit-menu-logo.png" alt="LIT">
          </ul>
 
      </div>
      <div class="uk-navbar-right" ng-show="currentUser">
-         <a ng-show="currentUser" ng-href="#/events" uk-icon="icon: calendar" title="My Events" uk-tooltip></a>&nbsp;
+         <a ng-show="currentUser" ng-href="#/events" uk-icon="icon: calendar; ratio: 1.2" title="My Events" uk-tooltip></a>&nbsp;
              <span ng-show="howManyEvents" class="uk-badge"> {{howManyEvents}}</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
-         <a ng-show="currentUser" ng-href="#/accountsetting" uk-icon="icon: cog" title="Account Settings" uk-tooltip></a>
+         <a ng-show="currentUser" ng-href="#/accountsetting" uk-icon="icon: cog; ratio: 1.2" title="Account Settings" uk-tooltip></a>
          <div class="uk-padding"><button class="uk-button uk-button-danger" ng-controller="RegistrationController" ng-href="#/login" onClick="refreshPage()" ng-click="logout()">Log Out</button></div>
      </div>
  </nav>

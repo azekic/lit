@@ -34,11 +34,9 @@
             <div class="uk-card uk-card-body uk-card-secondary uk-width-1-2">
                 <div class="uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle uk-light">
-                        <object data="url" type="image">
-                            <img class="uk-border-circle"
-                                 src="https://www.soundstream.tv/assets/default_profile-e08597880fc222202f22984a4f1966a29b108e856a3fb935072bfbbc302a4b73.png"
-                                 width="150" height="150" alt="Profile Picture" />
-                        </object>
+
+                        <img id="profilePhoto" src="url" class="uk-border-circle" onerror="this.src='https://www.soundstream.tv/assets/default_profile-e08597880fc222202f22984a4f1966a29b108e856a3fb935072bfbbc302a4b73.png'" width="150" height="150">
+
                         <div class="uk-position-center">
                             <span class="uk-transition-fade" uk-tooltip title="Edit Profile" uk-toggle="target: #edit-profile" uk-icon="icon: pencil; ratio: 2"></span>
                         </div>

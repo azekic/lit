@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/lit-menu-logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/allevents.js" afterPath="$PROJECT_DIR$/js/controllers/allevents.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/allevents.html" afterPath="$PROJECT_DIR$/views/allevents.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/uikit.min.css" afterPath="$PROJECT_DIR$/css/uikit.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/user.js" afterPath="$PROJECT_DIR$/js/controllers/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/accountsetting.html" afterPath="$PROJECT_DIR$/views/accountsetting.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/nav.html" afterPath="$PROJECT_DIR$/views/nav.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +26,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="69" column="31" lean-forward="true" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
+            <state relative-caret-position="134">
+              <caret line="51" column="18" lean-forward="false" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accountsetting.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/accountsetting.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -40,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allevents.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="allevents.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/allevents.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            <state relative-caret-position="180">
+              <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -53,8 +66,8 @@
       <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/nav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="112" lean-forward="false" selection-start-line="16" selection-start-column="112" selection-end-line="16" selection-end-column="112" />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -72,8 +85,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btn</find>
-      <find>ut()</find>
       <find>login</find>
       <find>the password</find>
       <find>the pass</find>
@@ -94,14 +105,16 @@
       <find>Registration</find>
       <find>ref</find>
       <find>secon</find>
-      <find>url</find>
       <find>update</find>
       <find>upload</find>
       <find>event</find>
       <find>accountse</find>
       <find>onClic</find>
-      <find>events</find>
+      <find>.uk-navbar-container</find>
       <find>back</find>
+      <find>url</find>
+      <find>img</find>
+      <find>events</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/angularregistration</dir>
@@ -157,7 +170,6 @@
         <option value="$PROJECT_DIR$/js/controllers/allusers.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/views/guide.html" />
-        <option value="$PROJECT_DIR$/css/uikit.min.css" />
         <option value="$PROJECT_DIR$/views/eventedit.html" />
         <option value="$PROJECT_DIR$/views/login.html" />
         <option value="$PROJECT_DIR$/js/controllers/events.js" />
@@ -165,13 +177,14 @@
         <option value="$PROJECT_DIR$/views/register.html" />
         <option value="$PROJECT_DIR$/views/events.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/views/nav.html" />
-        <option value="$PROJECT_DIR$/js/controllers/registration.js" />
         <option value="$PROJECT_DIR$/views/allusers.html" />
-        <option value="$PROJECT_DIR$/views/accountsetting.html" />
-        <option value="$PROJECT_DIR$/js/controllers/user.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/views/addevent.html" />
+        <option value="$PROJECT_DIR$/css/uikit.min.css" />
+        <option value="$PROJECT_DIR$/js/controllers/registration.js" />
+        <option value="$PROJECT_DIR$/views/nav.html" />
+        <option value="$PROJECT_DIR$/js/controllers/user.js" />
+        <option value="$PROJECT_DIR$/views/accountsetting.html" />
       </list>
     </option>
   </component>
@@ -188,8 +201,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1095" />
-    <option name="y" value="23" />
+    <option name="x" value="228" />
+    <option name="y" value="182" />
     <option name="width" value="1440" />
     <option name="height" value="1132" />
   </component>
@@ -280,6 +293,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LITST3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LITST3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -336,11 +363,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$/js/controllers" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/js/styles" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/angularregistration/js/controllers" />
@@ -725,7 +752,7 @@
       <workItem from="1489013790417" duration="186000" />
       <workItem from="1489689509892" duration="169000" />
       <workItem from="1490142047576" duration="1765000" />
-      <workItem from="1490190397442" duration="51413000" />
+      <workItem from="1490190397442" duration="54528000" />
     </task>
     <task id="LOCAL-00001" summary="Adding authentication features to site">
       <created>1487867475961</created>
@@ -944,11 +971,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490327167033</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Updated HTML and JSS with changes from Master">
+      <created>1490327473471</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1490327473471</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57954000" />
+    <option name="totallyTimeSpent" value="61069000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -960,7 +994,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1095" y="23" width="1440" height="1132" extended-state="0" />
+    <frame x="228" y="182" width="1440" height="1132" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1038,15 +1072,14 @@
     <MESSAGE value="CSS Changes for button" />
     <MESSAGE value="Changes to Hardcoded URLS&#10;Changes to Auth to redirect properly&#10;Addition of Guide.html&#10;Addition of Facebook Auth to registration.js along with rules to prevent auth state from being misread&#10;Change to map button to send back without hardcode" />
     <MESSAGE value="Total Change To UI and CSS Features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Total Change To UI and CSS Features" />
+    <MESSAGE value="Updated HTML and JSS with changes from Master" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated HTML and JSS with changes from Master" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angularregistration/views/teamroster.html" />
-    <entry file="file://$PROJECT_DIR$/angularregistration/js/app.js" />
     <entry file="file://$PROJECT_DIR$/angularregistration/js/controllers/registration.js" />
     <entry file="file://$PROJECT_DIR$/angularregistration/views/nav.html" />
     <entry file="file://$PROJECT_DIR$/angularregistration/index.html" />
@@ -1246,39 +1279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/uikit.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23927">
-          <caret line="0" column="287" lean-forward="false" selection-start-line="0" selection-start-column="287" selection-end-line="0" selection-end-column="287" />
-          <folding>
-            <element signature="e#4668#5021#2" expanded="true" />
-            <element signature="e#6254#6548#2" expanded="true" />
-            <element signature="e#12217#12618#2" expanded="true" />
-            <element signature="e#12805#13206#2" expanded="true" />
-            <element signature="e#13971#14269#2" expanded="true" />
-            <element signature="e#14308#14623#2" expanded="true" />
-            <element signature="e#14668#14984#2" expanded="true" />
-            <element signature="e#15116#15414#2" expanded="true" />
-            <element signature="e#15462#15777#2" expanded="true" />
-            <element signature="e#15831#16147#2" expanded="true" />
-            <element signature="e#36856#37205#2" expanded="true" />
-            <element signature="e#37327#37675#2" expanded="true" />
-            <element signature="e#48612#49054#2" expanded="true" />
-            <element signature="e#49164#49480#2" expanded="true" />
-            <element signature="e#112681#113059#2" expanded="true" />
-            <element signature="e#118810#119132#2" expanded="true" />
-            <element signature="e#133771#134228#2" expanded="true" />
-            <element signature="e#141077#141375#2" expanded="true" />
-            <element signature="e#142002#142317#2" expanded="true" />
-            <element signature="e#143010#143326#2" expanded="true" />
-            <element signature="e#176524#176901#2" expanded="true" />
-            <element signature="e#177825#178201#2" expanded="true" />
-            <element signature="e#232162#232660#2" expanded="true" />
-            <element signature="e#233452#233796#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/eventedit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1319,14 +1319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/registration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-734">
-          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/facebook.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1339,22 +1331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="123" column="76" lean-forward="false" selection-start-line="123" selection-start-column="76" selection-end-line="123" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/accountsetting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="110" column="71" lean-forward="false" selection-start-line="110" selection-start-column="71" selection-end-line="110" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -1383,26 +1359,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="112" lean-forward="false" selection-start-line="16" selection-start-column="112" selection-end-line="16" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="69" column="31" lean-forward="true" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/allevents.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/allevents.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/lit-menu-logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/lit-logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/uikit.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="0" column="38936" lean-forward="false" selection-start-line="0" selection-start-column="38936" selection-end-line="0" selection-end-column="38936" />
+          <folding>
+            <element signature="e#4668#5021#2" expanded="true" />
+            <element signature="e#6254#6548#2" expanded="true" />
+            <element signature="e#12217#12618#2" expanded="true" />
+            <element signature="e#12805#13206#2" expanded="true" />
+            <element signature="e#13971#14269#2" expanded="true" />
+            <element signature="e#14308#14623#2" expanded="true" />
+            <element signature="e#14668#14984#2" expanded="true" />
+            <element signature="e#15116#15414#2" expanded="true" />
+            <element signature="e#15462#15777#2" expanded="true" />
+            <element signature="e#15831#16147#2" expanded="true" />
+            <element signature="e#36856#37205#2" expanded="true" />
+            <element signature="e#37327#37675#2" expanded="true" />
+            <element signature="e#48612#49054#2" expanded="true" />
+            <element signature="e#49164#49480#2" expanded="true" />
+            <element signature="e#112681#113059#2" expanded="true" />
+            <element signature="e#118810#119132#2" expanded="true" />
+            <element signature="e#133771#134228#2" expanded="true" />
+            <element signature="e#141077#141375#2" expanded="true" />
+            <element signature="e#142002#142317#2" expanded="true" />
+            <element signature="e#143010#143326#2" expanded="true" />
+            <element signature="e#176524#176901#2" expanded="true" />
+            <element signature="e#177825#178201#2" expanded="true" />
+            <element signature="e#232162#232660#2" expanded="true" />
+            <element signature="e#233452#233796#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="85" column="1" lean-forward="false" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1415,10 +1434,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/allevents.html">
+    <entry file="file://$PROJECT_DIR$/views/nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="51" column="18" lean-forward="false" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/accountsetting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding />
         </state>
       </provider>

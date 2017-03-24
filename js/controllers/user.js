@@ -42,8 +42,8 @@ myApp.controller('UsersController',
                 databasecurrentUserRef = ref.child('users').child(authUser.uid); 
                 databasecurrentUserRef.update({
                     profilePictureurl: url
-                }); 
-                  document.querySelector('img').src = url ;
+                });
+                document.querySelector('#profilePhoto').src = url ;
                 }).catch(function(error) {
                   console.error(error);
                 });
