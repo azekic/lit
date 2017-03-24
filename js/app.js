@@ -80,16 +80,31 @@ myApp.config(['$routeProvider', function($routeProvider) {
   when('/allusers', {
       templateUrl: 'views/allusers.html',
       controller: 'AllUsersController',
+      resolve: {
+          currentAuth: function(Authentication) {
+              return Authentication.requireAuth();
+          } //currentAuth
+      }//resolve
 
   }).
   when('/friendRequests', {
       templateUrl: 'views/friendRequests.html',
       controller: 'FriendRequestController',
+      resolve: {
+          currentAuth: function(Authentication) {
+              return Authentication.requireAuth();
+          } //currentAuth
+      }//resolve
 
   }).
   when('/friendList', {
       templateUrl: 'views/friends.html',
       controller: 'FriendsController',
+      esolve: {
+          currentAuth: function(Authentication) {
+              return Authentication.requireAuth();
+          } //currentAuth
+      }//resolve
 
   })
     .otherwise({redirectTo: "/events"});

@@ -10,12 +10,12 @@
          <ul class="uk-navbar-nav">
              <div class="uk-margin-left uk-text-large">
                  <img src="../img/lit-menu-logo.png" alt="LIT">
+             </div>
          </ul>
-
      </div>
      <div class="uk-navbar-right" ng-show="currentUser" ng-controller="EventsController">
-         <a ng-show="currentUser" ng-href="#/events" uk-icon="icon: calendar; ratio: 1.2" title="My Events" uk-tooltip></a>&nbsp;
-             <span ng-show="howManyEvents" class="uk-badge"> {{howManyEvents}}</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+         <a ng-show="currentUser" ng-href="#/friendRequest" uk-icon="icon: calendar; ratio: 1.2" title="My Events" uk-tooltip></a>&nbsp;
+         <span ng-show="howManyEvents" class="uk-badge"> {{howManyEvents}}</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
          <a ng-show="currentUser" ng-href="#/allevents" uk-icon="icon: list; ratio: 1.2" title="All Events" uk-tooltip></a>&nbsp;&nbsp;&nbsp;&nbsp;
          <a ng-show="currentUser" ng-href="#/accountsetting" uk-icon="icon: cog ; ratio: 1.2" title="Account Settings" uk-tooltip></a>
 
