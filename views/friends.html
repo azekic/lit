@@ -1,16 +1,29 @@
+<div class="uk-tile uk-tile-lit">
+  <p class="uk-h3-lit uk-text-center">My Friends</p>
+</div>
+<div class="uk-inline uk-position-top-center">
+<div class="uk-tile uk-tile-secondary">
 
-<div class="card events cf">
-  <h2>Friends</h2>
-  <div class="event" ng-repeat="(key, friend) in friendList">
-    <img src="{{friend.profilePic}}" style="width:75px;height:75px;"><br>
-    <span class="text">First Name: {{friend.firstname}}</span><br>
-    <span class="text">Last Name: {{friend.lastname}}</span><br>
-
-    <button class="btn btn-delete tooltip"
-    ng-click="deletefriend(friend.$id, friend.friendID)"><span>Delete Friend</span></button>
-    
-  </div><!-- events list -->
-</div><!-- events cf -->
+  <a class="uk-button uk-button-primary"
+          href="#/friendRequests">View Friend Requests</a>
+</div>
 </div>
 
+<div class="uk-child-width-1-3@m uk-margin-small" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div > .uk-card; delay: 200; repeat: false">
+  <div ng-repeat="(key, friend) in friendList">
+    <div class="uk-container">
+
+      <div class="uk-flex uk-flex-column uk-flex-center uk-text-center" uk-grid>
+        <div class="uk-card uk-card-secondary uk-card-body">
+          <img src="{{friend.profilePic}}" style="width:75px;height:75px;"><br><br>
+          <span class="text">{{friend.firstname}} {{friend.lastname}}</span><br>
+
+          <button class="uk-button uk-button-danger"
+                  ng-click="deletefriend(friend.$id, friend.friendID)"><span>Delete Friend</span></button>
+
+        </div>
+      </div>
+    </div><!-- events list -->
+  </div><!-- events cf -->
+</div>
 

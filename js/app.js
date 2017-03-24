@@ -100,7 +100,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
   when('/friendList', {
       templateUrl: 'views/friends.html',
       controller: 'FriendsController',
-      esolve: {
+      resolve: {
           currentAuth: function(Authentication) {
               return Authentication.requireAuth();
           } //currentAuth
