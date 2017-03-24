@@ -1,5 +1,187 @@
 <head>
-<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+
+<style>
+    #uploader {
+	   -webkit-appearance: none;
+        appearance:none;
+        width: 100%;
+        margin-bottom: 10px;
+}
+.textintro form .inputwrapper {
+}
+    .label{
+		float:left;
+		font-size: 25px;
+		padding-top: 10px;
+    }
+	.input{	
+		
+		width: 300px;
+		
+	}
+    .block{
+        display:inline;
+        
+    }
+	.clear{
+		clear: both;
+		height: 50px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		width:100%;
+		
+	}
+	#ageinput{
+		margin-left: 70px;
+	}
+	.main
+	{	
+	  width: 700px;
+	  max-width: 650px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  padding: 10px 40px;
+	  text-align: center;
+	  position: relative;
+	  opacity: .95;
+	}
+	hr{
+	margin-top: 80px;
+	margin-bottom: 80px;
+	width: 100%;		
+		
+	}
+	#occupation{
+		width: 500px;
+		text-align: left;
+		font-size: 25px;
+		margin-bottom: 15px;
+	}
+	
+	#gender{
+		width: 500px;
+		text-align: left;
+		font-size: 25px;
+	}
+	#occupationradio{
+		margin-top: 10px;
+		font-size: 20px;
+	}
+	#occupation #occupationradio input {
+		margin: 10px;
+	}
+	#genderradio{
+		margin-top: 10px;
+		font-size: 20px;
+	}
+	#gender #genderradio input{
+		margin: 10px;
+	}
+	#genderradio{
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+}
+</style>
+</head>
+<body>
+
+<div class="main" >
+  <div class="textintro">
+    <h1>Setting</h1><br>
+    <!--<span class="as-word">name: {{ user.firstname }} {{user.lastname}} </span>
+    <span class="as-word">email: {{ user.email }} </span>
+      <span class="as-word">occpuation: {{ user.occupation }}</span>
+       <span class="as-word">age: {{ user.age }}</span> -->
+    <form name="myform" ng-submit="updateInfo()" novalidate>
+	  <div style="margin-bottom: 40px;">
+			<div class="clear">
+				<p class ="label" >First Name:</p> 
+				<input type="text" class="input" name="firstname"
+				  placeholder="FirstName"
+				  ng-model="firstname" ng-required="true">
+            </div>
+            <div class="clear">
+				<p class = "label" >Last Name:</p><input type="text" class ="input"name="lastname"
+				  placeholder="LasstName"
+				  ng-model="lastname" ng-required="true">
+			</div>
+           <div class="clear">
+            <p class = "label" >Age:</p>  <input type="text" id="ageinput"class= "input" name="age"
+			  placeholder="age"
+			  ng-model="age" ng-required="true">
+			  </div>
+		 </div>
+        
+        <div id="occupation" >
+            <p class>Occupation:</p>
+            <div id="occupationradio">
+			  <input type="radio" name="occupation" value="Technology" ng-model="occupation" ng-required="true"> Technology
+				<input type="radio" name="occupation" value="Health" ng-model="occupation" ng-required="true"> Health
+				<input type="radio" name="occupation" value="Academia" ng-model="occupation" ng-required="true"> Academia   <br>
+				<input type="radio" name="occupation" value="Government" ng-model="occupation" ng-required="true"> Government  
+				<input type="radio" name="occupation" value="Services" ng-model="occupation" ng-required="true"> Services
+			  <input type="radio" name="occupation" value="Entrepreneur" ng-model="occupation" ng-required="true"> Entrepreneur<br>
+            </div>
+       </div>
+        
+        <div id="gender">
+            <p>Gender:</p>
+            <div id="genderradio">
+				<input type="radio" name="gender" value="Male" ng-model="gender" ng-required="true"> Male
+				<input type="radio" name="gender" value="Female" ng-model="gender" ng-required="true"> Female
+            </div>
+        </div>
+        
+        <br>
+	   <button type="submit" class="btn btn-block" >Update profile</button> <br><br>
+	   <p>Please fill out all the information before update any information</p>
+    </form> 
+     <hr/>
+      
+    <form name="myform1" ng-submit="updatePassword()" novalidate>
+        <p class="label">Password:</p>
+        <input type="text" class= "input" name="password"
+			  placeholder="password"
+			  ng-model="password" ng-required="true">
+			<button type="submit"  class="btn btn-block" style="margin-left: 20px;margin-top: 20px;" >updatePassword</button>
+		
+        <!--<button type="submit" class="btn btn-block" style="float:left; margin-left: 70px;" >Update Password</button> -->
+        <p style="clear:both;margin: 50px;">If you cannot change your password, please try to log out and log in again</p>
+      
+      </form>
+    <hr/>
+    <div id="profilepic">
+    	<p class="label">Profile Picture:</p>
+		 <img src="url" style="width:200px;height:200px;margin-bottom: 30px;">
+		  <progress value="0" max="100" id="uploader">0%</progress>
+		  <input type="file" value="upload" id="fileButton"/>
+			<form ng-submit="updatePicture()" name="myform" novalidate>
+			<button type="submit"  class="btn btn-block" >Update Picture</button>
+		 
+     </div>
+    </div><!-- events cf -->
+    <hr/>
+    <div id="facebook">
+    	<p class="label">Facebook:</p>
+    	</form>
+		   <form ng-submit="linkToFacebook()" name="myform" novalidate>     
+			<button type="submit"  class="btn btn-block" style="float:left; margin-left: 55px;">Link to Facebook</button>
+		 </form>
+		 <form ng-submit="unLinkToFacebook()" name="myform" novalidate>
+			<button type="submit"  class="btn btn-block" style="margin:30px" >UnLink to Facebook</button>
+		 </form>
+    </div>
+     <hr/>
+     <p class="label">Delete Account:</p>
+		  <form ng-submit="deleteUser()" name="myform" novalidate>
+			<button type="submit"  class="btn btn-block" style="float:left; margin-left:50px;" >Delete Account</button>
+		 </form>
+	
+    <br/>
+     
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
@@ -9,151 +191,69 @@
     storageBucket: "litapp-a4f8d.appspot.com",
     messagingSenderId: "863295441400"
   };
+    
   firebase.initializeApp(config);
+    
+    // Get a reference to the storage service, which is used to create references in your storage bucket
+    var storage = firebase.storage();
+
+    // Create a storage reference from our storage service
+    var storageRef = storage.ref();
+    
+    var uploader = document.getElementById('uploader');
+    var fileButton = document.getElementById('fileButton');
+    var uploadButton = document.getElementById('uploadButton')
+    console.log(fileButton);
+    var fileName;
+	
+    //var url = firebase.auth().currentUser.photoURL;
+    //var photoURL = firebase.auth().currentUser.photoURL;
+    console.log(firebase.auth().currentUser);
+    
+    
+	fileButton.addEventListener('change',function(e){
+		console.log("in");
+        var file = e.target.files[0];
+        fileName = file.name;
+        console.log(fileName);
+        var storageRef = firebase.storage().ref('pictures/' + file.name);
+        var task = storageRef.put(file);
+        
+        //var userRef = firebase.auth().currentUser;
+        
+                                
+        task.on('state_changed',
+
+            function progress(snapshot){
+            
+                var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                console.log('Upload is ' + progress + '% done');
+                uploader.value = percentage;
+
+
+            },
+            function error(err){
+
+            },
+            function complete(){
+
+            }
+
+           );   
+        var photoRef = "pictures/" + fileName;
+        console.log(firebase.auth().currentUser);
+        console.log(photoRef);
+        firebase.auth().currentUser.updateProfile({
+            photoURL: photoRef
+        }).then(function(){
+            var photoURL = firebase.auth().currentUser.photoURL;
+            console.log(photoURL);
+            console.log("sucess");
+        });
+         
+    });
+   
+    
+
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="http://fezvrasta.github.io/bootstrap-material-design/dist/js/material.min.js"></script>
-<script src="http://fezvrasta.github.io/bootstrap-material-design/dist/js/ripples.min.js></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angular-filter.js"></script>
-<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
-<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
-<script>
-var img2fire = angular.module('img2fire', ['firebase', 'angular.filter']);
-
-img2fire.controller("base64Ctrl", function($scope, $firebaseArray) {
-  
-  var ref = new Firebase("https://base64images.firebaseio.com/");
-
-  var img = new Firebase("https://base64images.firebaseio.com/images");
-  $scope.imgs = $firebaseArray(img);
-
-  var _validFileExtensions = [".jpg", ".jpeg", ".bmp", ".gif", ".png"];
-  $scope.uploadFile = function() {
-    var sFileName = $("#nameImg").val();
-    if (sFileName.length > 0) {
-      var blnValid = false;
-      for (var j = 0; j < _validFileExtensions.length; j++) {
-        var sCurExtension = _validFileExtensions[j];
-        if (sFileName.substr(sFileName.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
-          blnValid = true;
-          var filesSelected = document.getElementById("nameImg").files;
-          if (filesSelected.length > 0) {
-            var fileToLoad = filesSelected[0];
-
-            var fileReader = new FileReader();
-
-            fileReader.onload = function(fileLoadedEvent) {
-              var textAreaFileContents = document.getElementById(
-                "textAreaFileContents"
-              );
-
-
-              $scope.imgs.$add({
-                date: Firebase.ServerValue.TIMESTAMP,
-                base64: fileLoadedEvent.target.result
-              });
-            };
-
-            fileReader.readAsDataURL(fileToLoad);
-          }
-          break;
-        }
-      }
-
-      if (!blnValid) {
-        alert('File is not valid');
-        return false;
-      }
-    }
-
-    return true;
-  }
-
-  $scope.deleteimg = function(imgid) {
-    var r = confirm("Do you want to remove this image ?");
-    if (r == true) {
-      $scope.imgs.forEach(function(childSnapshot) {
-        if (childSnapshot.$id == imgid) {
-            $scope.imgs.$remove(childSnapshot).then(function(ref) {
-              ref.key() === childSnapshot.$id; // true
-            });
-        }
-      });
-    }
-  }
-
-});
-</script>
-</head>
-<body>
-<div class="card events cf" >
-  <div class="textintro">
-    <h1>User Profile</h1>
-    <span class="as-word">name: {{ users.firstname }} {{users.lastname}} </span>
-    <span class="as-word">email: {{ users.email }} </span>
-     
-    </div><!-- events cf -->
-<style>
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "https://fonts.googleapis.com/icon?family=Material+Icons" />
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "http://fezvrasta.github.io/bootstrap-material-design/dist/css/bootstrap-material-design.css" />
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "http://fezvrasta.github.io/bootstrap-material-design/dist/css/ripples.min.css" />
-p{
-  font-weight: bold;
-  font-size: 2.5em;
-  padding-top: 40px;
-}
-
-img{
-  cursor:pointer;
-  width: 100%; 
-  height: 200px;
-  border-style: solid; 
-  border-color: #000000 #000000; 
-  border-width: medium;
-}
-
-input[type=file] {
-    margin: 0 auto;
-}
-</style>
-<!--
-Firebase v2.2.4
-
-Las imágenes toma tiempo en cargar, sea paciente
-The images take time to load, be patient
-
--->
-<div ng-app='img2fire'>
-  <div ng-controller='base64Ctrl'>
-    <div class="container-fluid">
-      <hr />
-
-      <form ng-submit="uploadFile()">
-        <input type="file" name="file" class="inputimg" id="nameImg" accept="image/*">
-        <br />
-        <span class="input-group-btn">
-                <button  type="submit" class="btn btn-block">Upload Image 
-                </button>
-          </span>
-      </form>
-      <hr />
-      <div ng-repeat="img in imgs | toArray | orderBy: '-date'" class="col-xs-12 col-sm-6 col-md-3">
-        <img ng-src="{{img.base64}}">
-        <a class="btn btn-danger btn-block" ng-click="deleteimg(img.$id)">Delete</a>
-      </div>
-    </div>
-  </div>
+</body>
