@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/facebook.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/firebase.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/accountsetting.html" afterPath="$PROJECT_DIR$/views/accountsetting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/allusers.html" afterPath="$PROJECT_DIR$/views/allusers.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -767,7 +763,7 @@
       <workItem from="1489013790417" duration="186000" />
       <workItem from="1489689509892" duration="169000" />
       <workItem from="1490142047576" duration="1765000" />
-      <workItem from="1490190397442" duration="46968000" />
+      <workItem from="1490190397442" duration="47427000" />
     </task>
     <task id="LOCAL-00001" summary="Adding authentication features to site">
       <created>1487867475961</created>
@@ -951,11 +947,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490317639086</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Total Change To UI and CSS Features">
+      <created>1490322267789</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1490322267790</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53509000" />
+    <option name="totallyTimeSpent" value="53968000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
