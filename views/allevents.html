@@ -2,35 +2,17 @@
     <p class="uk-h3-lit uk-text-center">All Events</p>
 </div>
 
-<div ng-hide="currentUser" class="uk-inline uk-position-top-center">
+
+<div ng-show="currentUser" class="uk-inline uk-position-top-center">
     <div class="uk-tile uk-tile-secondary">
-        <!-- <a class="uk-button uk-button-primary uk-margin" onclick="location.reload()" ng-href="#/events">Back</a> -->
+
         <a class="uk-button uk-button-primary"
-           ng-href="#/login">Go To Login</a>
+           href="#filter-events" uk-toggle>Filter Events</a>
     </div>
 </div>
 
-<div class="uk-tile uk-tile-default uk-width-1-1 uk-margin">
 
-        <span class="uk-text-large">List by:</span>
-
-        <select class="uk-select" ng-model="order">
-            <option value="" disabled selected>Please Select</option>
-            <option value="recent">Most Recent</option>
-            <option value="all">All</option>
-            <option value="time">Time</option>
-            <option value="general">General</option>
-            <option value="educational">Educational</option>
-            <option value="networking">Networking</option>
-            <option value="social">Social</option>
-            <option value="sports">Sports</option>
-        </select>
-
-        <button class="uk-button uk-button-primary uk-margin"
-                ng-click="makeList(order)">Filter</button>
-</div>
-
-<div class="uk-container">
+<div class="uk-container uk-margin">
       <div class="uk-child-width-1-3@m uk-margin-small" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div > .uk-card; delay: 200; repeat: false">
           <div ng-repeat="(key, event) in category">
               <div class="uk-card uk-card-secondary uk-card-body">
@@ -57,5 +39,36 @@
   </div><!-- events list -->
 </div><!-- events cf -->
 </div>
+</div>
+
+
+
+
+
+
+<!-- This is the modal -->
+<div id="filter-events" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-tile uk-tile-default uk-width-1-1 uk-margin">
+
+            <span class="uk-text-large">List by:</span>
+
+            <select class="uk-select" ng-model="order">
+                <option value="" disabled selected>Please Select</option>
+                <option value="recent">Most Recent</option>
+                <option value="all">All</option>
+                <option value="time">Time</option>
+                <option value="general">General</option>
+                <option value="educational">Educational</option>
+                <option value="networking">Networking</option>
+                <option value="social">Social</option>
+                <option value="sports">Sports</option>
+            </select>
+
+            <button class="uk-button uk-button-primary uk-margin"
+                    ng-click="makeList(order)">Filter</button>
+        </div>
+    </div>
 </div>
 

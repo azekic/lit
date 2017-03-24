@@ -49,6 +49,7 @@
 <main ng-view ng-controller="RegistrationController"></main>
 
 <div class="uk-margin-large uk-position-bottom-right uk-overlay uk-overlay-default">
+    <a ng-hide="currentUser" ng-href="#/login" class="uk-icon-link" title="Login" uk-tooltip uk-icon="icon: lock; ratio: 2"></a>
   <a ng-show="currentUser" ng-href="#/addevent" class="uk-icon-link" title="Add An Event" uk-tooltip uk-icon="icon: plus-circle; ratio: 2"></a>
   <a href="views/alleventsmap" class="uk-icon-link" title="All Events Map" uk-tooltip uk-icon="icon: location; ratio: 2"></a>
     <a ng-show="currentUser" ng-href="#/allusers" class="uk-icon-link" title="All Users" uk-tooltip uk-icon="icon: users; ratio: 2"></a>
