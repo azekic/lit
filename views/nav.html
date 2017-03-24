@@ -13,7 +13,7 @@
          </ul>
 
      </div>
-     <div class="uk-navbar-right" ng-show="currentUser">
+     <div class="uk-navbar-right" ng-show="currentUser" ng-controller="EventsController">
          <a ng-show="currentUser" ng-href="#/events" uk-icon="icon: calendar; ratio: 1.2" title="My Events" uk-tooltip></a>&nbsp;
              <span ng-show="howManyEvents" class="uk-badge"> {{howManyEvents}}</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
          <a ng-show="currentUser" ng-href="#/accountsetting" uk-icon="icon: cog; ratio: 1.2" title="Account Settings" uk-tooltip></a>
