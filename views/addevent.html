@@ -40,7 +40,7 @@
         <input type="text" class="uk-input" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="Event Floor. Enter 1 for default."name="eventfloor" ng-model="eventfloor" ng-required="true">
     </div>
 
-    <a class="uk-button uk-button-primary uk-margin" href="/#/">Back</a>
+    <a class="uk-button uk-button-primary uk-margin" onclick="location.reload()" ng-href="/">Back</a>
 
     <button type="submit" class="uk-button uk-button-danger uk-margin-small"
             ng-disabled="myform.$invalid">Add Event</button>
