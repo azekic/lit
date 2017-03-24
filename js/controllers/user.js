@@ -4,29 +4,29 @@ myApp.controller('UsersController',
 
     var ref = firebase.database().ref();
     var auth = $firebaseAuth();
-  
+
     auth.$onAuthStateChanged(function(authUser) {
       if(authUser) {
-          
+
         var usersRef = ref.child('users').child(authUser.uid);
         var usersInfo = $firebaseObject(usersRef);
         $scope.user = usersInfo;
         //var users = firebase.auth().currentUser;
-        
 
-        $scope.updateInfo = function() {  
-            
+
+        $scope.updateInfo = function() {
+
             usersRef.update({
                 firstname: $scope.firstname,
-                lastname: $scope.lastname, 
+                lastname: $scope.lastname,
                 occupation: $scope.occupation,
                 age: $scope.age,
                 gender: $scope.gender
             }).then(function(){
-                
-            });      
+
+            });
         }
-        
+
         var storage = firebase.storage();
         var storageRef = storage.ref();
 
@@ -39,7 +39,7 @@ myApp.controller('UsersController',
         if(firebase.auth().currentUser.photoURL!=null){
             var photoRef = storageRef.child(firebase.auth().currentUser.photoURL);
             photoRef.getDownloadURL().then(function(url) {
-                databasecurrentUserRef = ref.child('users').child(authUser.uid); 
+                databasecurrentUserRef = ref.child('users').child(authUser.uid);
                 databasecurrentUserRef.update({
                     profilePictureurl: url
                 });
@@ -48,12 +48,12 @@ myApp.controller('UsersController',
                   console.error(error);
                 });
         }
-      
+
       } //authUser
     }); //onAuthStateChanged
-     
-      
-     $scope.linkToFacebook = function(){  
+
+
+     $scope.linkToFacebook = function(){
         var provider = new firebase.auth.FacebookAuthProvider();
         firebase.auth().currentUser.linkWithPopup(provider).then(function(result) {
           // Accounts successfully linked.
@@ -69,8 +69,8 @@ myApp.controller('UsersController',
                }
             console.log(error);
             });
-        
-         
+
+
          firebase.auth().getRedirectResult().then(function(result) {
           if (result.credential) {
             // Accounts successfully linked.
@@ -82,9 +82,9 @@ myApp.controller('UsersController',
           // Handle Errors here.
              console.log(error);
           // ...
-        });  
+        });
     }
-    
+
    $scope.unLinkToFacebook = function(){
         var user = firebase.auth().currentUser;
         var providerId = new firebase.auth.FacebookAuthProvider().providerId;
@@ -96,37 +96,40 @@ myApp.controller('UsersController',
             alert("You are not currently linked to a Facebook account.");
         });
     }
-     
+
     $scope.updatePicture = function(){
          location.reload();
     }
-      
-    $scope.updatePassword = function(){          
-        
+
+    $scope.updatePassword = function(){
+
         var user = firebase.auth().currentUser;
-       
+
         var newPassword = $scope.password;
         user.updatePassword(newPassword).then(function() {
           console.log(newPassword);
-            alert("success");
+            alert("Your password has been changed. It will take effect on your next login.");
         }, function(error) {
+            if(error.code == "auth/requires-recent-login"){
+                alert("For security reasons, we require a recent login to change your password. Please re-login to enable this feature.");
+            }
             if(newPassword.length < 6){
                 alert("Password should be at least 6 characters");
             }
           console.log(error);
         });
     }
-     
-    $scope.deleteUser = function(){          
+
+    $scope.deleteUser = function(){
         firebase.auth().currentUser.delete().then(function() {
           alert("Your account has been deleted!");
         }, function(error) {
           alert("Please log out and log in again and try to delete your account.");
         });
     }
-      
+
     //console.log(firebase.auth().currentUser.email);
-    
+
    fileButton.addEventListener('change',function(e){
 		console.log("in");
         var file = e.target.files[0];
@@ -134,11 +137,11 @@ myApp.controller('UsersController',
         console.log(fileName);
         var storageRef = firebase.storage().ref('pictures/' + file.name);
         var task = storageRef.put(file);
-        
+
         task.on('state_changed',
 
             function progress(snapshot){
-            
+
                 var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
                 console.log('Upload is ' + progress + '% done');
                 uploader.value = percentage;
@@ -147,7 +150,7 @@ myApp.controller('UsersController',
                 console.log(err);
             }
 
-       );   
+       );
         var photoRef = "pictures/" + fileName;
         console.log(firebase.auth().currentUser);
         console.log(photoRef);
@@ -156,6 +159,6 @@ myApp.controller('UsersController',
         }).then(function(){
             console.log("sucess");
         });
-    });    
-    
+    });
+
 }]); //myApp.controller

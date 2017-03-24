@@ -6,7 +6,7 @@
 
 <head>
     <div class="uk-tile uk-tile-lit" ng-controller="RegistrationController">
-        <p class="uk-h3 uk-text-center">Account Settings</p>
+        <p class="uk-h3-lit uk-text-center">Account Settings</p>
     </div>
 
 <style>
@@ -47,13 +47,22 @@
 </div>
                 <br>
                 <span class="uk-text-bold">Your Information:</span>
-                <hr>
+                <br>
+                <br>
                 <span class="uk-text-small">{{user.email}}</span>
                 <br>
                 <span class="uk-text-small">Age: </span>
                 <span class="uk-text-small uk-badge">{{ user.age }}</span>
                 <br>
                 <span class="uk-text-small">Occpuation: {{ user.occupation }}</span>
+                <hr>
+
+                <form ng-submit="linkToFacebook()" name="myform" novalidate>
+                    <button type="submit"  class="uk-button uk-button-litbl uk-margin" >Link to Facebook</button>
+                </form>
+                <form ng-submit="unLinkToFacebook()" name="myform" novalidate>
+                    <button type="submit"  class="uk-button uk-button-danger" >UnLink Facebook</button>
+                </form>
                 <hr>
 
 
@@ -119,15 +128,48 @@
                 </div>
 
 
+                <a class="uk-button uk-button-secondary" href="#password-reset" uk-toggle>Reset Password</a>
+                    <button type="submit" ng-click="deleteUser()" onClick="refreshPage()" class="uk-button uk-button-danger" >Delete Account</button>
 
-        <button type="submit" class="uk-button uk-button-secondary uk-margin" >Reset Password</button>
 
-       <form ng-submit="linkToFacebook()" name="myform" novalidate>
-     	<button type="submit"  class="uk-button uk-button-primary uk-margin" >Link to Facebook</button>
-     </form>
-     <form ng-submit="unLinkToFacebook()" name="myform" novalidate>
-     	<button type="submit"  class="uk-button uk-button-danger uk-margin" >UnLink Facebook</button>
-     </form>
+
+                <div id="password-reset" uk-modal="center: true">
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <h2 class="uk-modal-title">Password Reset</h2>
+                        </div>
+                        <div class="uk-modal-body">
+
+                            <form name="myform1" ng-submit="updatePassword()" novalidate>
+
+                                <!--<button type="submit" class="btn btn-block" style="float:left; margin-left: 70px;" >Update Password</button> -->
+                                <p>To change your password, we require a recent login from your account.<br>
+                                    If you have not logged on recently, you will be prompted to log in before changing your password.</p>
+                                <div class="uk-text-center">
+                                <div class="uk-width-3-4">
+                                <p class="label">Enter A New Password:</p>
+                                <input type="password" class= "uk-input" name="password"
+                                       placeholder="Password"
+                                       ng-model="password" ng-required="true">
+                                </div>
+                                <div class="uk-width-1-4">
+                                <span uk-icon="icon: search; ratio: 1"></span>
+                                </div>
+                                </div>
+
+                                <div class="uk-margin"></div>
+                                <div class="uk-margin"></div>
+                                <div class="uk-align-right">
+                            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                            <button class="uk-button uk-button-primary uk-modal-close" type="submit">Update Password</button>
+                                </div>
+                            </form>
+                    </div>
+                    </div>
+                </div>
+
+
 
 
             </div>
