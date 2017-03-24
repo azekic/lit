@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/checkinslist.html" afterPath="$PROJECT_DIR$/views/checkinslist.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +21,8 @@
       <file leaf-file-name="checkinslist.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/checkinslist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+            <state relative-caret-position="74">
+              <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -740,7 +739,7 @@
       <workItem from="1489013790417" duration="186000" />
       <workItem from="1489689509892" duration="169000" />
       <workItem from="1490142047576" duration="1765000" />
-      <workItem from="1490190397442" duration="73615000" />
+      <workItem from="1490190397442" duration="73677000" />
     </task>
     <task id="LOCAL-00001" summary="Adding authentication features to site">
       <created>1487867475961</created>
@@ -1050,11 +1049,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490375194398</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="All Check-Ins">
+      <created>1490379823515</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1490379823519</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80156000" />
+    <option name="totallyTimeSpent" value="80218000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1154,7 +1160,8 @@
     <MESSAGE value="user.js force refresh after deleting and changing password&#10;&#10;account settings do not use on-click" />
     <MESSAGE value="Change to padding around event icons. Enlarged icon size" />
     <MESSAGE value="Beginning Changes to the checkinslist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Beginning Changes to the checkinslist" />
+    <MESSAGE value="All Check-Ins" />
+    <option name="LAST_COMMIT_MESSAGE" value="All Check-Ins" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1521,8 +1528,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/checkinslist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+        <state relative-caret-position="74">
+          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
           <folding />
         </state>
       </provider>
