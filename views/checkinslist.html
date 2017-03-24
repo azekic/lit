@@ -1,11 +1,25 @@
-<div class="card checkinslist">
-  <h1>Check-ins</h1>
-  <p>Here's a list of all your latest check-ins</p>
+<div class="uk-tile uk-tile-lit">
+  <p class="uk-h3-lit uk-text-center">All Check-Ins</p>
 
-  <div class="search cf">
-    <h2>Search Checkins</h2>
-    <input type="text" ng-model="query"
-      placeholder="Search for users">
+
+<nav class="uk-navbar-container uk-margin uk-dark uk-width-1-2 uk-align-center" uk-navbar>
+
+
+
+  <div class="nav-overlay uk-navbar-left uk-flex-1">
+
+    <div class="uk-navbar-item uk-width-expand">
+      <form class="uk-search uk-search-navbar uk-width-1-1">
+        <input class="uk-search-input" type="search" ng-model="query" placeholder="Search...">
+      </form>
+    </div>
+
+    <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+
+  </div>
+
+</nav>
+</div>
 
     <div class="formgroup">
       <span class="label">by:</span>
@@ -24,7 +38,7 @@
         ng-model="direction" value="reverse">
       <label for="dirdescending">desc</label>
     </div>
-  </div>
+
 <h1> Guests</h1>
 <ul class="userlist cf">
     <li ng-repeat="checkin in checkins | orderBy: order:direction | filter: query">
@@ -35,5 +49,4 @@
       </div><!-- checkin -->
     </li>
   </ul>
-</div>
 </div>
