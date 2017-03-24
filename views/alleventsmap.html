@@ -78,7 +78,7 @@ function initMap() {
   refEvent.once("value", function(snapshot) {
 
     snapshot.forEach(function(childSnapshot) {
-    // key will be "fred" the first time and "barney" the second time
+
       var eventkey = childSnapshot.key;
       refCoord = refEvent.child(eventkey).child("coord");
 

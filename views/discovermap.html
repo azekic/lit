@@ -268,7 +268,7 @@
                 firebase.initializeApp(config);
                 var database = firebase.database();
                 for (i=0; i< selectedShape.getPath().getLength();i++){
-                    var coord = selectedShape.getPath().getAt(i).toUrlValue(5).split(",");
+                    var coord = selectedShape.getPath().getAt(i).toUrlValue(8).split(",");
                     firebase.database().ref('events').child(QueryString.eventId).child('coord').push({
                         Lat: coord[0],
                         Long: coord[1]

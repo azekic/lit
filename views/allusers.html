@@ -1,20 +1,22 @@
-<ul class="collection with-header">
-    <li class="collection-header"><h4>All Users</h4></li>
-
-    <li class="collection-item" ng-repeat="(key, user) in users"><div>First Name: {{ user.firstname }} Last Name: {{user.lastname}} <a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
-</ul>
-
 <div class="card allevents ">
-    <h1>All Users</h1>
+    <h1>Users</h1>
 
-    <div class="card events cf">
-        <h2>Find a user</h2>
-        <div class="event" ng-repeat="(key, user) in users">
 
-            <span class="text">First Name: {{ user.firstname }}</span><br>
-            <span class="text">Last Name: {{user.lastname}}</span><br>
 
-        </div><!-- events list -->
-    </div><!-- events cf -->
+<div class="card events cf">
+  <h2>Users</h2>
+  <div class="event" ng-repeat="(key, user) in users">
+    <img src="{{user.profilePictureurl}}" style="width:75px;height:75px;"><br>
+    <span class="text">First Name: {{user.firstname}}</span><br>
+    <span class="text">Last Name: {{user.lastname}}</span><br>
 
+
+   <button class="btn btn-checkin tooltip"
+    ng-click="addfriend(user.$id)"><span>Add Friend</span></button>
+
+    
+  </div><!-- events list -->
+</div><!-- events cf -->
 </div>
+
+

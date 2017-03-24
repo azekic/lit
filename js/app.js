@@ -81,6 +81,16 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/allusers.html',
       controller: 'AllUsersController',
 
+  }).
+  when('/friendRequests', {
+      templateUrl: 'views/friendRequests.html',
+      controller: 'FriendRequestController',
+
+  }).
+  when('/friendList', {
+      templateUrl: 'views/friends.html',
+      controller: 'FriendsController',
+
   })
     .otherwise({redirectTo: "/events"});
 }]);
