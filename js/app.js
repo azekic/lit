@@ -63,7 +63,22 @@ myApp.config(['$routeProvider', function($routeProvider) {
       controller: 'AllEventsController',
       
       }).
-when('/accountsetting', {
+    when('/allusers', {
+      templateUrl: 'views/allusers.html',
+      controller: 'AllUsersController',
+      
+      }).
+    when('/friendRequests', {
+      templateUrl: 'views/friendRequests.html',
+      controller: 'FriendRequestController',
+      
+      }).
+    when('/friendList', {
+      templateUrl: 'views/friends.html',
+      controller: 'FriendsController',
+      
+      }).
+    when('/accountsetting', {
       templateUrl: 'views/accountsetting.html',
       controller: 'UsersController',
       resolve: {

@@ -1,0 +1,16 @@
+
+<div class="card events cf">
+  <h2>Friends</h2>
+  <div class="event" ng-repeat="(key, friend) in friendList">
+    <img src="{{friend.profilePic}}" style="width:75px;height:75px;"><br>
+    <span class="text">First Name: {{friend.firstname}}</span><br>
+    <span class="text">Last Name: {{friend.lastname}}</span><br>
+
+    <button class="btn btn-delete tooltip"
+    ng-click="deletefriend(friend.$id, friend.friendID)"><span>Delete Friend</span></button>
+    
+  </div><!-- events list -->
+</div><!-- events cf -->
+</div>
+
+
