@@ -110,6 +110,9 @@ myApp.controller('UsersController',
           console.log(newPassword);
             alert("success");
         }, function(error) {
+	    if(error.code == "auth/requires-recent-login"){
+                alert("Please relog in again to try one more time.");
+            }
             if(newPassword.length < 6){
                 alert("Password should be at least 6 characters");
             }
