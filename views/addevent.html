@@ -1,54 +1,52 @@
-<div class="card events cf">
-  <div class="textintro">
-    <h1>Add Event</h1>
-    <p>Type a event name and hit +</p>
-    <form class="formgroup addevent cf"
-      name="myform"
-      ng-submit="addEvent()"
-      novalidate>
-
-      <div class="inputwrapper">
-        <input type="text" name="eventname"
-          placeholder="Event name"
-          ng-model="eventname" ng-required="true">
-      </div>
-
-      <br><br><br>
-      <div>
-        Event type:
-        <input type="radio" name="eventtype" value="educational" ng-model="eventtype" ng-required="true"> Educational
-        <input type="radio" name="eventtype" value="social" ng-model="eventtype" ng-required="true"> Social
-        <input type="radio" name="eventype" value="sports" ng-model="eventtype" ng-required="true"> Sports
-        <input type="radio" name="eventype" value="networking" ng-model="eventtype" ng-required="true"> Networking
-        <input type="radio" name="eventype" value="general" ng-model="eventtype" ng-required="true"> General
-      </div>
-
-      <!--
-      <div class="inputwrapper">
-      <textarea rows="5" cols="45">The run will begin at 9:00 A.M. Participants must be registered by this point. We are expecting to have around 100 participants. We will have sent registration applications out prior to the event, to smaller running clubs in the area. Registration fees are $20. The fees are to help cover park permit fees, park participant fees, parking fees, and refreshments. If a participant has registered early they will have a parking pass distributed by us and the East Bay Regional Parks will be reimbursed by the end of the event. If a participant has not registered early they will not have a parking pass and will have to pay for parking on their own.
-      </textarea>
-      </div>
-      -->
-
-      <!--ensure the description there works^-->
-      <div>
-        <input type="text" name="eventdescription" placeholder="Description of the event. No word limit." ng-model="eventdescription" ng-required="false">
-      </div>
-
-      <div class="inputwrapper">
-        <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' pattern=".{8}" maxlength="8" name="eventdate" placeholder="Event Date in DDMMYYYY format." ng-model="eventdate" ng-required="true">
-      </div>
-
-      <div class="inputwrapper">
-        <input type="text" name="eventfloor" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="Event Floor. Enter 1 for default."     ng-model="eventfloor" ng-required="true">
-      </div>
-
-      <div class="inputwrapper">
-        <button type="submit" class="btn"
-        ng-disabled="myform.$invalid" >+</button>
-      </div>
-    </form>
-</div><!-- events cf -->
-
-
+<div class="uk-tile uk-tile-primary" ng-controller="RegistrationController">
+    <p class="uk-h4">CREATE</p>
 </div>
+<div class="uk-section">
+    <div class="uk-container">
+
+        <div class="uk-flex uk-flex-center uk-text-center" uk-grid>
+            <div class="uk-card uk-card-body uk-card-secondary uk-width-1-2">
+                <h3 class="uk-card-title">Add An Event</h3>
+<form name="myform" ng-submit="addEvent()" novalidate>
+
+    Event Name:
+    <div class="uk-margin">
+        <input class="uk-input" type="text" ng-model="eventname" ng-required="true">
+    </div>
+
+    Event Type:
+    <div class="uk-margin uk-flex uk-flex-center uk-text-center">
+        <div class="uk-margin uk-grid-small uk-child-width-auto" uk-grid>
+            <label><input class="uk-radio" type="radio" name="eventtype" value="general" ng-model="eventtype" ng-required="true" checked>General</label>
+            <label><input class="uk-radio" type="radio" name="eventtype" value="educational" ng-model="eventtype" ng-required="true">Educational</label>
+            <label><input class="uk-radio" type="radio" name="eventtype" value="networking" ng-model="eventtype" ng-required="true">Networking</label>
+            <label><input class="uk-radio" type="radio" name="eventtype" value="social" ng-model="eventtype" ng-required="true">Social</label>
+            <label><input class="uk-radio" type="radio" name="eventtype" value="sports" ng-model="eventtype" ng-required="true">Sports</label>
+        </div>
+    </div>
+
+    Event Description:
+    <div class="uk-margin">
+        <textarea class="uk-textarea" name="eventdescription" ng-model="eventdescription" ng-required="false" rows="3"></textarea>
+    </div>
+
+    Event Date:
+    <div class="uk-margin">
+        <input type="text" class="uk-input" onkeypress='return event.charCode >= 48 && event.charCode <= 57' pattern=".{8}" maxlength="8" name="eventdate" placeholder="Event Date in DDMMYYYY format." ng-model="eventdate" ng-required="true">
+    </div>
+
+    Floor Number:
+    <div class="uk-margin">
+        <input type="text" class="uk-input" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="Event Floor. Enter 1 for default."name="eventfloor" ng-model="eventfloor" ng-required="true">
+    </div>
+
+    <a class="uk-button uk-button-primary uk-margin" href="/#/">Back</a>
+
+    <button type="submit" class="uk-button uk-button-danger uk-margin-small"
+            ng-disabled="myform.$invalid">Add Event</button>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+

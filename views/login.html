@@ -1,39 +1,54 @@
-<section class="card login">
+<div class="uk-section uk-section-medium">
+  <div class="uk-container">
+
+    <div class="uk-flex uk-flex-center uk-text-center" uk-grid>
   <form name="myform"
     ng-submit="login()"
     novalidate>
     <h1 id="project_title"><img src = "./img/lit-logo.png"  alt = "Logo"
                                 style="height:150px;"></h1>
-    <div class="textintro">
-      <p class="message"
-         ng-show="message"> {{ message }}</p>
+    <div class="uk-alert-danger" uk-alert ng-show="message">
+      <a class="uk-alert-close" uk-close></a>
+      <p>{{message}}</p>
+    </div>
+
+    <div class="uk-alert-danger" uk-alert ng-show="myform.email.$invalid && myform.email.$touched">
+      <a class="uk-alert-close" uk-close></a>
+      <p>Email Address Required</p>
+    </div>
+
+    <div class="uk-alert-danger" uk-alert ng-show="myform.password.$invalid && myform.password.$touched">
+      <a class="uk-alert-close" uk-close></a>
+      <p>Password Required</p>
     </div>
 
 
-    <fieldset>
-      <input type="email" name="email" placeholder="Email"
-       ng-model="user.email" ng-required="true">
-      <p class="error validationerror"
-      ng-show="myform.email.$invalid && myform.email.$touched">
-      Must be a valid email</p>
+    <div class="uk-card uk-card-body uk-card-secondary">
+      <h3 class="uk-card-title">Welcome</h3>
+      <div class="uk-margin">
+        <div class="uk-inline">
+          <span class="uk-form-icon" uk-icon="icon: user"></span>
+          <input class="uk-input" type="email" placeholder="Email" ng-model="user.email" ng-required="true">
+        </div>
+      </div>
+      <div class="uk-margin">
+        <div class="uk-inline">
+          <span class="uk-form-icon" uk-icon="icon: lock"></span>
+          <input class="uk-input" type="password" placeholder="Password" ng-model="user.password" ng-required="true">
+        </div>
+      </div>
 
-
-      <input type="password" name="password" placeholder="Password"
-      ng-model="user.password" ng-required="true">
-      <p class="error validationerror"
-      ng-show="myform.password.$invalid && myform.email.$touched">
-      Password is required</p>
-
-    </fieldset>
-
-    <button type="submit" class="btn"
+    <button type="submit" class="uk-button uk-button-danger uk-margin-small"
       ng-disabled="myform.$invalid">LOGIN</button>
-      <div class="fbwrapper">
-      <!-- Button that handles sign-in/sign-out -->
-      <button disabled id="facebook-sign-in" class="fb">Log in with Facebook</button>
-  </div>
+
+    </div>
+    <button disabled id="facebook-sign-in" class="uk-button uk-button-primary uk-margin-small" uk-icon="icon: facebook;">Log in with </button>
+
     <p>or <a ng-href="#/register">register</a></p>
   </form>
-</section>
+    </div>
+  </div>
+</div>
+
 
 

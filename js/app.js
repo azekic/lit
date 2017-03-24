@@ -39,6 +39,15 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/addevent.html',
       controller: 'EventsMapController'
     }).
+  when('/accountsetting', {
+      templateUrl: 'views/accountsetting.html',
+      controller: 'UsersController',
+      resolve: {
+          currentAuth: function(Authentication) {
+              return Authentication.requireAuth();
+          } //currentAuth
+      }//resolve
+  }).//
     when('/events', {
       templateUrl: 'views/events.html',
       controller: 'EventsController',
@@ -63,13 +72,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
       controller: 'AllEventsController',
       
       }).
-when('/accountsetting', {
-      templateUrl: 'views/accountsetting.html',
-      controller: 'UsersController',
-      resolve: {
-        currentAuth: function(Authentication) {
-          return Authentication.requireAuth();
-        } //currentAuth
-      }//resolve
-    });
+  when('/allusers', {
+      templateUrl: 'views/allusers.html',
+      controller: 'AllUsersController',
+
+  })
+    .otherwise({redirectTo: "/events"});
 }]);

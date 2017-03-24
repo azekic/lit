@@ -1,31 +1,42 @@
 
-<div class="card events cf">
-  <h1>My Events</h1>
-  <div class="event" ng-repeat="(key, event) in events">
-    <span class="text">Event Name: {{event.eventname}}</span><br>
-    <span class="text">Event Type: {{event.eventtype}}</span><br>
-    <span class="text">Event Date: {{event.eventdate}}</span><br>
-    <span class="text">Event Description: {{event.eventdescription}}</span><br>
-    <span class="text">Event Floor: {{event.eventfloor}}</span><br>
 
-
-    <button class="btn btn-delete tooltip"
-    ng-click="deleteEvent(key)"><span>Delete this event</span></button>
-
-    <a class="btn btn-edit tooltip"
-       ng-href="#/eventedit/{{currentUser.regUser}}/{{event.$id}}">
-      <span>Go to edit URL</span>
-    </a>
-    <a class="btn btn-list tooltip"
-       ng-href="#/checkinsListAuth/{{event.$id}}">
-      <span>View list of checked-in users</span>
-    </a>
-    <a class="btn btn-map tooltip"
-       href="views/eventmap.html?eventId={{event.$id}}">
-      <span>Look at Event on Map</span>
-    </a>
-
-
-  </div><!-- events list -->
-</div><!-- events cf -->
+<div class="uk-tile uk-tile-secondary" ng-controller="RegistrationController">
+  <p class="uk-h4">My Events</p>
 </div>
+
+  <div class="uk-child-width-1-3@m uk-margin-small" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
+    <div ng-repeat="(key, event) in events">
+      <div class="uk-card uk-card-default uk-card-body">
+        <h3 class="uk-card-title">{{event.eventname}}</h3>
+        <span class="text">Event Name: {{event.eventname}}</span><br>
+        <span class="text">Event Type: {{event.eventtype}}</span><br>
+        <span class="text">Event Date: {{event.eventdate}}</span><br>
+        <span class="text">Event Description: {{event.eventdescription}}</span><br>
+        <span class="text">Event Floor: {{event.eventfloor}}</span><br>
+
+        <a ng-click="deleteEvent(key)"
+           class="uk-icon-link" title="Delete" uk-tooltip uk-icon="icon: trash">
+        </a>
+
+        <a ng-href=#/eventedit/{{currentUser.regUser}}/{{event.$id}}"
+           class="uk-icon-link" title="Edit" uk-tooltip uk-icon="icon: pencil">
+        </a>
+
+        <a ng-href="#/checkinsListAuth/{{event.$id}}"
+           class="uk-icon-link" title="View Check-Ins" uk-tooltip uk-icon="icon: users">
+        </a>
+
+        <a href="views/eventmap.html?eventId={{event.$id}}"
+           class="uk-icon-link" title="View On Map" uk-tooltip uk-icon="icon: location">
+        </a>
+      </div>
+    </div>
+    <div>
+
+
+
+
+
+
+</div><!-- events cf -->
+  </div>

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en" ng-app="myApp">
 <head>
@@ -6,7 +5,9 @@
   <title>LIT - Discover More</title>
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,100,700,900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/uikit.min.css" />
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/css/uikit.min.css" />-->
+  <script src="js/styles/jquery-3.2.0.js"></script>
 
   <script src="js/lib/angular/angular.min.js"></script>
   <script src="js/lib/angular/angular-route.min.js"></script>
@@ -26,6 +27,8 @@
 </script>
 
   <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.18/js/uikit-icons.min.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services/authentication.js"></script>
   <script src="js/controllers/registration.js"></script>
@@ -35,21 +38,48 @@
   <script src="js/controllers/eventedit.js"></script>
   <script src="js/controllers/allevents.js"></script>
   <script src="js/controllers/eventsmap.js"></script>
+  <script src="js/controllers/allusers.js"></script>
 </head>
 
 <body>
 <header>
-  <nav class="cf" ng-include="'views/nav.html'"></nav>
+  <nav class="nav" ng-include="'views/nav.html'" ng-controller="RegistrationController"></nav>
 </header>
-<div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
-  <span class="userinfo">Hi {{currentUser.firstname}} </span>
-  <a ng-href="#/events" ng-click="logout()">logout</a>
+
+<main ng-view ng-controller="RegistrationController"></main>
+
+<div class="uk-margin-large uk-position-bottom-right uk-overlay uk-overlay-default">
+  <a ng-show="currentUser" ng-href="#/addevent" class="uk-icon-link" title="Add An Event" uk-tooltip uk-icon="icon: plus-circle; ratio: 2"></a>
+  <a href="views/alleventsmap" class="uk-icon-link" title="All Events Map" uk-tooltip uk-icon="icon: location; ratio: 2"></a>
+  <a href="#modal-help" uk-toggle class="uk-icon-link" title="Guide" uk-tooltip uk-icon="icon: question; ratio: 2"></a>
 </div>
-<div class="page">
 
-
-  <main class="cf" ng-view>
-  </main>
+<div id="modal-help" uk-modal="center: true">
+  <div class="uk-modal-dialog">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">User Guide</h2>
+    </div>
+    <div class="uk-modal-body" uk-overflow-auto>
+      <h3>Intro</h3>
+      <p>There is a disconnect between students and the events going on around them. Councils, clubs, and societies across campus have no standardized method to communicate with students. Students are left to figure out whats going on across campus on their own. From this insight came the inception of LIT, a service that aims to fill the gap and bring the events of all clubs and societies across campus directly to students, using a novel and intuitive user interface.<br><br></p>
+      <h3>Registration</h3>
+      <p>To create an account, select the "Register" tab, then fill in your name and email, and type in a password. You will be added to our database and given a unique UserID. Alternatively, you can login with Facebook by selecting the "Facebook" tab, and entering your Facebook login info.<br><br></p>
+      <h3>Login</h3>
+      <p>If you've already created an account, you can log in by selecting the "Login" tab, and entering your email and password from there. You can log out at any time by selecting "logout" directly below the nav bar.<br><br></p>
+      <h3>Account Settings</h3>
+      <p>Selecting the "Account Settings" tab allows you to see your current name and email, and gives you the option to add a profile picture. Your first name, last name, and email can also be changed by clicking on their respective links. You cannot choose what to change them to, and you will not see the changes live, but the changes will appear in our database.<br><br></p>
+      <h3>All Events</h3>
+      <p>The "All Events" tab leads you to a list of all events created on our database. Events can be sorted by their category and time. To join an event simply select the "+" button next to the event and you will be added.<br><br></p>
+      <h3>Creating an Event</h3>
+      <p>To create an event, select the "My Events" tab, type in the event name and select the "+" button.<br><br></p>
+      <h3>Editing and Deleting Events</h3>
+      <p>On the "My Events" tab, you can see all the events you've created at a glance. </p>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Back</button>
+    </div>
+  </div>
 </div>
 </body>
 </html>

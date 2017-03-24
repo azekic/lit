@@ -13,7 +13,6 @@ myApp.controller('RegistrationController',
   $scope.register = function() {
     Authentication.register($scope.user);
   }; //register
-
       /**
        * Function called when clicking the Login/Logout button.
        */
@@ -27,7 +26,7 @@ myApp.controller('RegistrationController',
               provider.addScope('user_birthday');
               // [END addscopes]
               // [START signin]
-              firebase.auth().signInWithPopup(provider).then(function(result) {
+              firebase.auth().signInWithPopup(provider).then(function (result) {
                   // This gives you a Facebook Access Token. You can use it to access the Facebook API.
                   var token = result.credential.accessToken;
                   // The signed-in user info.
@@ -35,7 +34,7 @@ myApp.controller('RegistrationController',
                   // [START_EXCLUDE]
                   document.getElementById('facebook-oauthtoken').textContent = token;
                   // [END_EXCLUDE]
-              }).catch(function(error) {
+              }).catch(function (error) {
                   // Handle Errors here.
                   var errorCode = error.code;
                   var errorMessage = error.message;
@@ -63,45 +62,20 @@ myApp.controller('RegistrationController',
           document.getElementById('facebook-sign-in').disabled = true;
           // [END_EXCLUDE]
       }
-// [END buttoncallback]
 
+// [END buttoncallback]
       /**
        * initApp handles setting up UI event listeners and registering Firebase auth listeners:
        *  - firebase.auth().onAuthStateChanged: This listener is called when the user is signed in or
        *    out, and that is where we update the UI.
        */
+
       function initApp() {
           // Listening for auth state changes.
           // [START authstatelistener]
-          firebase.auth().onAuthStateChanged(function(authUser) {
+          firebase.auth().onAuthStateChanged(function (authUser) {
               if (authUser) {
-                  var loginCount = 0;
-                  document.getElementById('facebook-sign-in').style.visibility = "hidden";
-                  ++loginCount;
-                  if (loginCount == 1){
- //                     alert("once");
-                      window.location.href = "/#/events";
-                  }
-                  else{
- //                     alert('not once');
-                  }
-              } else {
- //                 alert("goodbye");
-                  // User is signed out.
-                      if(window.location.href.indexOf("register") > -1) {
-//                          alert("your url contains the name register");
-                      }
-                  else if(window.location.href.indexOf("login") > -1) {
-//                      alert("your url contains the name login");
-                  }
-
-                  else if(window.location.href.indexOf("guide") > -1) {
-//                      alert("your url contains the name guide");
-                      }
-                  else {
-                          window.location.href = "/#/login";
-                      }
-
+                  document.getElementById('facebook-sign-in');
               }
               // [START_EXCLUDE]
               document.getElementById('facebook-sign-in').disabled = false;
@@ -112,48 +86,24 @@ myApp.controller('RegistrationController',
           document.getElementById('facebook-sign-in').addEventListener('click', toggleSignIn, false);
       }
 
-      $scope.$on('$viewContentLoaded', function() {
+      $scope.$on('$viewContentLoaded', function () {
           initApp();
       });
 
       //Used for if the user refreshes the page manually.
 
-      window.onload = function(){
-          firebase.auth().onAuthStateChanged(function(authUser) {
+      window.onload = function () {
+          firebase.auth().onAuthStateChanged(function (authUser) {
               if (authUser) {
-                  var loginCount = 0;
-                  document.getElementById('facebook-sign-in').style.visibility = "hidden";
-                  ++loginCount;
-                  if (loginCount == 1){
- //                             alert("once");
-                      window.location.href = "/#/events";
-                  }
-                  else{
- //                            alert('not once');
-                  }
-              } else {
-//                  alert("goodbye");
-                  // User is signed out.
-                  if(window.location.href.indexOf("register") > -1) {
-//                          alert("your url contains the name register");
-                  }
-                  else if(window.location.href.indexOf("login") > -1) {
-//                      alert("your url contains the name login");
-                  }
 
-                  else if(window.location.href.indexOf("guide") > -1) {
-//                      alert("your url contains the name guide");
-                  }
-
-                  else {
-                      window.location.href = "/#/login";
-                  }
+                  document.getElementById('facebook-sign-in');
 
               }
               // [START_EXCLUDE]
-              document.getElementById('facebook-sign-in').disabled = false;
+              document.getElementById('facebook-sign-in');
               // [END_EXCLUDE]
-          })
-      }
+          })};
+
+
 
 }]); //Controller
