@@ -1,5 +1,6 @@
-<div class="card allevents ">
-    <h1>Event Browser</h1>
+<div class="uk-tile uk-tile-secondary">
+    <p class="uk-h3">All Events</p>
+</div>
 
     <div class="formgroup">
         <span class="label">List by:</span>
@@ -19,13 +20,13 @@
     </div>
 
 
-
-<div class="card events cf">
-  <h2>Listed Events</h2>
-  <div class="event" ng-repeat="(key, event) in category">
+      <div class="uk-child-width-1-3@m uk-margin-small" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div > .uk-card; delay: 200; repeat: true">
+          <div ng-repeat="(key, event) in category">
+              <div class="uk-card uk-card-default uk-card-body">
+                  <h3 class="uk-card-title">{{event.eventname}}</h3>
     <span class="text">Host Name: {{event.hostname}}</span><br>
     <span class="text">Event Name: {{event.eventname}}</span><br>
-    <span class="text">Event Type: {{event.type}}</span><br>
+    <span class="text">Event Type: {{event.eventtype}}</span><br>
     <span class="text">Event Date: {{event.eventdate}}</span><br>
 
    <button class="btn btn-checkin tooltip"

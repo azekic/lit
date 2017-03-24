@@ -20,7 +20,7 @@ myApp.controller('AllEventsController',
               }
 
               else {
-                  var categories = eventsRef.orderByChild('type').equalTo(order);
+                  var categories = eventsRef.orderByChild('eventtype').equalTo(order);
                   $scope.category = $firebaseArray(categories);
               }
           };
