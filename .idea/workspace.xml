@@ -4,7 +4,6 @@
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/allevents.html" afterPath="$PROJECT_DIR$/views/allevents.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +22,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="66" column="50" lean-forward="false" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
+            <state relative-caret-position="109">
+              <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -701,14 +700,7 @@
       <workItem from="1489013790417" duration="186000" />
       <workItem from="1489689509892" duration="169000" />
       <workItem from="1490142047576" duration="1765000" />
-      <workItem from="1490190397442" duration="85981000" />
-    </task>
-    <task id="LOCAL-00016" summary="Adding events to site">
-      <created>1488598024470</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1488598024470</updated>
+      <workItem from="1490190397442" duration="86071000" />
     </task>
     <task id="LOCAL-00017" summary="Adding events to site">
       <created>1488600166761</created>
@@ -1046,11 +1038,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490395525382</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Addition of Login Button">
+      <created>1490396591335</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1490396591336</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92522000" />
+    <option name="totallyTimeSpent" value="92612000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1133,7 +1132,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Updated HTML and JSS with changes from Master" />
     <MESSAGE value="Changes to user.js picture match" />
     <MESSAGE value="Changes to All Events and app.js redirections" />
     <MESSAGE value="Changes to All Events &amp; Events (js + HTML)" />
@@ -1158,7 +1156,8 @@
     <MESSAGE value="Remove Redundant &quot;Guests&quot; Label" />
     <MESSAGE value="Add Go To Login Header For Non-Logged In Users" />
     <MESSAGE value="Small Styling Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small Styling Changes" />
+    <MESSAGE value="Addition of Login Button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Addition of Login Button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1573,8 +1572,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="66" column="50" lean-forward="false" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
+        <state relative-caret-position="109">
+          <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
           <folding />
         </state>
       </provider>
