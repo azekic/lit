@@ -30,14 +30,16 @@ myApp.controller('AllEventsController',
                         var archRef = ref.child('archive/events');
                         $scope.category = $firebaseArray(archRef);
                   }
-                  if (order == 'time'){
-                      var categories = eventsRef.orderByChild('eventdate');
-                      $scope.category = $firebaseArray(categories);
-                  }
-                  else{
-                        var categories = eventsRef.orderByChild('eventtype').equalTo(order);
-                        var categoriesList = $firebaseArray(categories);
-                        $scope.category = categoriesList;
+                  else {
+                      if (order == 'time') {
+                          var categories = eventsRef.orderByChild('eventdate');
+                          $scope.category = $firebaseArray(categories);
+                      }
+                      else {
+                          var categories = eventsRef.orderByChild('eventtype').equalTo(order);
+                          var categoriesList = $firebaseArray(categories);
+                          $scope.category = categoriesList;
+                      }
                   }
               }
               }
