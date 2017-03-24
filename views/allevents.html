@@ -8,7 +8,9 @@
 
         <select class="uk-select" ng-model="order">
             <option value="" disabled selected>Please Select</option>
-            <option value="all">All/Time</option>
+            <option value="recent">Most Recent</option>
+            <option value="all">All</option>
+            <option value="time">Time</option>
             <option value="general">General</option>
             <option value="educational">Educational</option>
             <option value="networking">Networking</option>
@@ -26,7 +28,6 @@
               <div class="uk-card uk-card-secondary uk-card-body">
                   <h3 class="uk-card-title">{{event.eventname}}</h3>
     <span class="text">Host Name: {{event.hostname}}</span><br>
-    <span class="text">Event Name: {{event.eventname}}</span><br>
     <span class="text">Event Type: {{event.eventtype}}</span><br>
     <span class="text">Event Date: {{event.eventdate}}</span><br>
                   <div class="uk-margin">
