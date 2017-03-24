@@ -29,19 +29,19 @@
     <span class="text">Event Type: {{event.eventtype}}</span><br>
     <span class="text">Event Date: {{event.eventdate}}</span><br>
 
-   <button class="btn btn-checkin tooltip"
-    ng-click="addUser(event.$id)"><span>Going to This Event</span></button>
 
+                  <a ng-click="addUser(event.$id)"
+                     class="uk-icon-link uk-align-right" title="I'm Going" uk-tooltip uk-icon="icon: check">
+                  </a>
 
-    <a class="btn btn-list tooltip"
-       ng-href="#/checkinsList/{{event.$id}}">
-      <span>View list of checked-in users</span>
-    </a>
+                  <a ng-href="#/checkinsList/{{event.$id}}"
+                     class="uk-icon-link" title="View Check-Ins" uk-tooltip uk-icon="icon: users">
+                  </a>
 
-     <a class="btn btn-map tooltip"
-       href="views/eventmap.html?eventId={{event.$id}}">
-      <span>Look at Event on Map</span>
-    </a>
+                  <a href="views/eventmap.html?eventId={{event.$id}}"
+                     class="uk-icon-link" title="View On Map" uk-tooltip uk-icon="icon: location">
+                  </a>
+
 
     
   </div><!-- events list -->
