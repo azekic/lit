@@ -2,6 +2,14 @@
     <p class="uk-h3-lit uk-text-center">All Events</p>
 </div>
 
+<div ng-hide="currentUser" class="uk-inline uk-position-top-center">
+    <div class="uk-tile uk-tile-secondary">
+        <!-- <a class="uk-button uk-button-primary uk-margin" onclick="location.reload()" ng-href="#/events">Back</a> -->
+        <a class="uk-button uk-button-primary"
+           ng-href="#/login">Go To Login</a>
+    </div>
+</div>
+
 <div class="uk-tile uk-tile-default uk-width-1-1 uk-margin">
 
         <span class="uk-text-large">List by:</span>
