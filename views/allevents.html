@@ -2,25 +2,26 @@
     <p class="uk-h3 uk-text-center">All Events</p>
 </div>
 
-    <div class="formgroup">
-        <span class="label">List by:</span>
+<div class="uk-tile uk-tile-default uk-width-1-1 uk-margin">
 
-        <select ng-model="order">
+        <span class="uk-text-large">List by:</span>
+
+        <select class="uk-select" ng-model="order">
             <option value="" disabled selected>Please Select</option>
             <option value="all">All/Time</option>
-            <option value="social">Social</option>
-            <option value="educational">Educational</option>
-            <option value="sports">Sports</option>
-            <option value="networking">Networking</option>
             <option value="general">General</option>
+            <option value="educational">Educational</option>
+            <option value="networking">Networking</option>
+            <option value="social">Social</option>
+            <option value="sports">Sports</option>
         </select>
 
-        <button class="btn btn-checkin tooltip"
-                ng-click="makeList(order)"></button>
-    </div>
+        <button class="uk-button uk-button-primary uk-margin"
+                ng-click="makeList(order)">Filter</button>
+</div>
 
 
-      <div class="uk-child-width-1-3@m uk-margin-small" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div > .uk-card; delay: 200; repeat: true">
+      <div class="uk-child-width-1-4@m uk-margin-small" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div > .uk-card; delay: 200; repeat: true">
           <div ng-repeat="(key, event) in category">
               <div class="uk-card uk-card-secondary uk-card-body">
                   <h3 class="uk-card-title">{{event.eventname}}</h3>
