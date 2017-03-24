@@ -26,7 +26,7 @@ myApp.controller('EventEditController',
             $scope.eventname='';//empties input field
             $scope.eventdate='';//empties input field
             $scope.eventtype='';//empties input field
-            window.location.href = "/app/#/events";
+            window.location.href = "#/events";
           }); //promise
       } //editEvent
 

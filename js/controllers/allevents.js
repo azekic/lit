@@ -12,18 +12,7 @@ myApp.controller('AllEventsController',
         var eventsRef = ref.child('events');
         var eventsList = $firebaseArray(eventsRef);
         var auth = $firebaseAuth();
-        $scope.category = eventsList;
-          $scope.makeList = function(order){
-              if (order == 'all'){
-
-                  $scope.category = eventsList;
-              }
-
-              else {
-                  var categories = eventsRef.orderByChild('type').equalTo(order);
-                  $scope.category = $firebaseArray(categories);
-              }
-          };
+        $scope.events = eventsList;
 
         $scope.addUser = function(eventid) {
             var eventRef = ref.child('events/'+eventid+"/guestlist/"+authUser.uid);

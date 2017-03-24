@@ -8,7 +8,7 @@
    </div>
    <div id="over_map">
       <a id = "submit"
-        href="/#/guide"><img src = "../img/arrow_left-512.png">
+        href="https://liteventtracker.com/weija2/#/events"><img src = "../img/arrow_left-512.png">
       </a>
    </div>
 </div>
@@ -78,7 +78,6 @@ function initMap() {
   refEvent.once("value", function(snapshot) {
 
     snapshot.forEach(function(childSnapshot) {
-    // key will be "fred" the first time and "barney" the second time
       var eventkey = childSnapshot.key;
       refCoord = refEvent.child(eventkey).child("coord");
 

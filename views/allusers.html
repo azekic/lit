@@ -1,0 +1,22 @@
+<div class="card allevents ">
+    <h1>Users</h1>
+
+
+
+<div class="card events cf">
+  <h2>Users</h2>
+  <div class="event" ng-repeat="(key, user) in users">
+    <img src="{{user.profilePictureurl}}" style="width:75px;height:75px;"><br>
+    <span class="text">First Name: {{user.firstname}}</span><br>
+    <span class="text">Last Name: {{user.lastname}}</span><br>
+
+
+   <button class="btn btn-checkin tooltip"
+    ng-click="addfriend(user.$id)"><span>Add Friend</span></button>
+
+    
+  </div><!-- events list -->
+</div><!-- events cf -->
+</div>
+
+
