@@ -13,17 +13,33 @@ myApp.controller('AllEventsController',
         var eventsRef = ref.child('events');
         var eventsList = $firebaseArray(eventsRef);
         var auth = $firebaseAuth();
+        var eventsListBack= $firebaseArray(eventsRef);
 
-        $scope.category = eventsList;
+        $scope.category = eventsListBack;
+
           $scope.makeList = function(order){
               if (order == 'all'){
-
                   $scope.category = eventsList;
               }
-
-              else {
-                  var categories = eventsRef.orderByChild('type').equalTo(order);
-                  $scope.category = $firebaseArray(categories);
+              else{
+                if (order == 'recent'){
+                  $scope.category =  eventsListBack.reverse();
+                }
+                else {
+                  if (order == 'archive'){
+                        var archRef = ref.child('archive/events');
+                        $scope.category = $firebaseArray(archRef);
+                  }
+                  if (order == 'time'){
+                      var categories = eventsRef.orderByChild('eventdate');
+                      $scope.category = $firebaseArray(categories);
+                  }
+                  else{
+                        var categories = eventsRef.orderByChild('eventtype').equalTo(order);
+                        var categoriesList = $firebaseArray(categories);
+                        $scope.category = categoriesList;
+                  }
+              }
               }
           };
 

@@ -6,12 +6,15 @@
 
         <select ng-model="order">
             <option value="" disabled selected>Please Select</option>
-            <option value="all">All/Time</option>
+            <option value="recent">Most Recent</option>
+            <option value="all">All</option>
+            <option value="time">Time</option>
             <option value="social">Social</option>
-            <option value="academic">Academic</option>
+            <option value="educational">Educational</option>
             <option value="sports">Sports</option>
             <option value="networking">Networking</option>
             <option value="general">General</option>
+            <option value="archive">Archived</option>
         </select>
 
         <button class="btn btn-checkin tooltip"
@@ -20,11 +23,11 @@
     </div>
 
 <div class="card events cf">
-  <h2>Listed Events</h2>
+  <h2>Event Details</h2>
   <div class="event" ng-repeat="(key, event) in category">
     <span class="text">Host Name: {{event.hostname}}</span><br>
     <span class="text">Event Name: {{event.eventname}}</span><br>
-    <span class="text">Event Type: {{event.type}}</span><br>
+    <span class="text">Event Type: {{event.eventtype}}</span><br>
     <span class="text">Event Date: {{event.eventdate}}</span><br>
 
    <button class="btn btn-checkin tooltip"
