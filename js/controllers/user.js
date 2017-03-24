@@ -109,6 +109,7 @@ myApp.controller('UsersController',
         user.updatePassword(newPassword).then(function() {
           console.log(newPassword);
             alert("Your password has been changed. It will take effect on your next login.");
+            window.location.reload();
         }, function(error) {
             if(error.code == "auth/requires-recent-login"){
                 alert("For security reasons, we require a recent login to change your password. Please re-login to enable this feature.");
@@ -123,6 +124,7 @@ myApp.controller('UsersController',
     $scope.deleteUser = function(){
         firebase.auth().currentUser.delete().then(function() {
           alert("Your account has been deleted!");
+            window.location.reload();
         }, function(error) {
           alert("Please log out and log in again and try to delete your account.");
         });
