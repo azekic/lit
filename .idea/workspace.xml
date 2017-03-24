@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
+    <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="Changes to My Events Check-In Styling">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/checkinslistauth.html" afterPath="$PROJECT_DIR$/views/checkinslistauth.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/accountsetting.html" afterPath="$PROJECT_DIR$/views/accountsetting.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,18 +22,18 @@
       <file leaf-file-name="checkinslist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/checkinslist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="64" column="14" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="64" selection-end-column="14" />
+            <state relative-caret-position="135">
+              <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkinslistauth.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/checkinslistauth.html">
+      <file leaf-file-name="accountsetting.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/accountsetting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="67" column="6" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -63,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/views/friendRequests.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="10" selection-end-column="6" />
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
               </folding>
@@ -163,7 +163,6 @@
         <option value="$PROJECT_DIR$/js/controllers/facebook.js" />
         <option value="$PROJECT_DIR$/views/register.html" />
         <option value="$PROJECT_DIR$/js/controllers/registration.js" />
-        <option value="$PROJECT_DIR$/views/accountsetting.html" />
         <option value="$PROJECT_DIR$/js/controllers/user.js" />
         <option value="$PROJECT_DIR$/views/checkins.html" />
         <option value="$PROJECT_DIR$/css/uikit.min.css" />
@@ -185,6 +184,7 @@
         <option value="$PROJECT_DIR$/js/controllers/allevents.js" />
         <option value="$PROJECT_DIR$/views/checkinslist.html" />
         <option value="$PROJECT_DIR$/views/checkinslistauth.html" />
+        <option value="$PROJECT_DIR$/views/accountsetting.html" />
       </list>
     </option>
   </component>
@@ -742,14 +742,7 @@
       <workItem from="1489013790417" duration="186000" />
       <workItem from="1489689509892" duration="169000" />
       <workItem from="1490142047576" duration="1765000" />
-      <workItem from="1490190397442" duration="87956000" />
-    </task>
-    <task id="LOCAL-00020" summary="CSS Changes for button">
-      <created>1488601011937</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1488601011937</updated>
+      <workItem from="1490190397442" duration="88107000" />
     </task>
     <task id="LOCAL-00021" summary="CSS Changes for button">
       <created>1488601173545</created>
@@ -1087,11 +1080,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490398747891</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Changes to My Events Check-In Styling">
+      <created>1490398996934</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1490398996934</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94497000" />
+    <option name="totallyTimeSpent" value="94648000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1174,7 +1174,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Changes to header justification and custom classes.&#10;Red + Black Theme" />
     <MESSAGE value="Addition of custom h3 tag as well as Delete Account option to accountsetting.html" />
     <MESSAGE value="Repair Delete Account and Reset Password Styling" />
     <MESSAGE value="user.js force refresh after deleting and changing password&#10;&#10;account settings do not use on-click" />
@@ -1199,7 +1198,8 @@
     <MESSAGE value="Addition of .html to alleventsmap link" />
     <MESSAGE value="Allow all to access /allevents" />
     <MESSAGE value="Changes to All Events Check-In Styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes to All Events Check-In Styling" />
+    <MESSAGE value="Changes to My Events Check-In Styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes to My Events Check-In Styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1470,14 +1470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/accountsetting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="37" column="247" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="247" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/nav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1578,16 +1570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/friendRequests.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1604,18 +1586,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/checkinslist.html">
+    <entry file="file://$PROJECT_DIR$/views/checkinslistauth.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="64" column="14" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="64" selection-end-column="14" />
+        <state relative-caret-position="244">
+          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/checkinslistauth.html">
+    <entry file="file://$PROJECT_DIR$/views/checkinslist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="67" column="6" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+        <state relative-caret-position="135">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/friendRequests.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/accountsetting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
