@@ -1,19 +1,22 @@
-
-<div class="card events cf">
-  <h2>Friend Requests</h2>
-  <div class="event" ng-repeat="(key, friendRequest) in friendRequests">
-  	<img src="{{friendRequest.profilePic}}" style="width:75px;height:75px;"><br>
-    <span class="text">First Name: {{friendRequest.firstname}}</span><br>
-    <span class="text">Last Name: {{friendRequest.lastname}}</span><br>
-
-
-   <button class="btn btn-checkin tooltip"
-    ng-click="addfriend(friendRequest.$id, friendRequest.friendID, friendRequest.firstname, friendRequest.lastname, friendRequest.profilePic)"><span>Accept Friend Request</span></button>
-    <button class="btn btn-delete tooltip"
-    ng-click="deleteFriendRequest(friendRequest.$id)"><span>Reject Friend Request</span></button>
-    
-  </div><!-- events list -->
-</div><!-- events cf -->
+<div class="uk-tile uk-tile-lit">
+    <p class="uk-h3-lit uk-text-center">Friend Requests</p>
 </div>
+<div class="uk-child-width-1-3@m uk-margin-small" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div > .uk-card; delay: 200; repeat: false">
+    <div ng-repeat="(key, friendRequest) in friendRequests">
+        <div class="uk-container">
 
+            <div class="uk-flex uk-flex-column uk-flex-center uk-text-center" uk-grid>
+                <div class="uk-card uk-card-secondary uk-card-body">
+                    <img src="{{friendRequest.profilePic}}" style="width:75px;height:75px;"><br><br>
+                    <span class="text">First Name: {{friendRequest.firstname}} {{friendRequest.lastname}}</span><br>
+                    <span class="text">{{friendRequest.email}}</span><br><br>
 
+                    <button class="uk-button uk-button-default"
+                            ng-click="addfriend(friendRequest.$id, friendRequest.friendID, friendRequest.firstname, friendRequest.lastname, friendRequest.profilePic)"><span>Accept Friend Request</span></button>
+                    <button class="uk-button uk-button-danger"
+                            ng-click="deleteFriendRequest(friendRequest.$id)"><span>Reject Friend Request</span></button>
+                </div>
+            </div>
+        </div><!-- events list -->
+    </div><!-- events cf -->
+</div>
