@@ -127,9 +127,11 @@
                     </div>
                 </div>
 
+                <a class="uk-button uk-button-secondary uk-margin" href="#password-reset" uk-toggle>Reset Password</a>
 
-                <a class="uk-button uk-button-secondary" href="#password-reset" uk-toggle>Reset Password</a>
-                    <button type="submit" ng-click="deleteUser()" onClick="refreshPage()" class="uk-button uk-button-danger" >Delete Account</button>
+                <form ng-submit="deleteUser()" name="myform" novalidate>
+                    <button type="submit"  class="uk-button uk-button-danger" onClick="refreshPage()" >Delete Account</button>
+                </form>
 
 
 
@@ -146,23 +148,25 @@
                                 <!--<button type="submit" class="btn btn-block" style="float:left; margin-left: 70px;" >Update Password</button> -->
                                 <p>To change your password, we require a recent login from your account.<br>
                                     If you have not logged on recently, you will be prompted to log in before changing your password.</p>
+
                                 <div class="uk-text-center">
-                                <div class="uk-width-3-4">
+
                                 <p class="label">Enter A New Password:</p>
+
                                 <input type="password" class= "uk-input" name="password"
                                        placeholder="Password"
                                        ng-model="password" ng-required="true">
-                                </div>
-                                <div class="uk-width-1-4">
-                                <span uk-icon="icon: search; ratio: 1"></span>
-                                </div>
+                                    <div title="{{password}}" uk-tooltip>
+                                <span class="uk-label uk-label-success">View</span>
+                                        </div>
+
                                 </div>
 
                                 <div class="uk-margin"></div>
                                 <div class="uk-margin"></div>
                                 <div class="uk-align-right">
                             <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-                            <button class="uk-button uk-button-primary uk-modal-close" type="submit">Update Password</button>
+                            <button class="uk-button uk-button-primary" type="submit">Update Password</button>
                                 </div>
                             </form>
                     </div>
