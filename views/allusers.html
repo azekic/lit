@@ -1,19 +1,21 @@
 <div class="uk-tile uk-tile-lit">
     <p class="uk-h3-lit uk-text-center">All Users</p>
 </div>
-
 <div class="uk-child-width-1-4@m uk-margin-small" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div > .uk-card; delay: 200; repeat: false">
     <div ng-repeat="(key, user) in users">
+        <div class="uk-container">
+
+            <div class="uk-flex uk-flex-column uk-flex-center uk-text-center" uk-grid>
         <div class="uk-card uk-card-secondary uk-card-body">
-            <span class="text">First Name: {{user.firstname}}</span><br>
-            <span class="text">Last Name: {{user.lastname}}</span><br>
+                    <img src="{{user.profilePictureurl}}" style="width:75px;height:75px;"><br><br>
+            <span class="text">{{user.firstname}} {{user.lastname}}</span><br>
+            <span class="text">{{user.email}}</span><br><br>
 
-
-            <button class="btn btn-checkin tooltip"
+            <button class="uk-button uk-button-primary"
                     ng-click="addfriend(user.$id)"><span>Add Friend</span></button>
-
+                </div>
+            </div>
   </div><!-- events list -->
 </div><!-- events cf -->
 </div>
-
 
