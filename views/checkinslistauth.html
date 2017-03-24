@@ -1,44 +1,68 @@
-<div class="card checkinslist">
-  <h1>Check-ins</h1>
-  <p>Here's a list of all your latest check-ins</p>
+<div class="uk-tile uk-tile-lit uk-margin">
+  <p class="uk-h3-lit uk-text-center">Check-Ins</p>
+</div>
+<div class="uk-grid">
+  <div class="uk-tile uk-tile-default uk-width-1-2">
+    <p class="uk-h3 uk-text-center">List By:</p>
+    <div class="uk-container uk-container-small">
+      <div class="uk-margin">
+        <select ng-model="order" class="uk-select">
+          <p>By:</p>
+          <option value="firstname">First Name</option>
+          <option value="lastname">Last Name</option>
+          <option value="date">Date</option>
+        </select>
+      </div>
+      <div class="formgroup">
+        <input type="radio" id="dirascending" name="direction"
+               ng-model="direction">
+        <label for="dirascending">asc</label>&nbsp;
 
-  <div class="search cf">
-    <h2>Search Checkins</h2>
-    <input type="text" ng-model="query"
-      placeholder="Search for users">
-
-    <div class="formgroup">
-      <span class="label">by:</span>
-      <select ng-model="order">
-        <option value="firstname">First Name</option>
-        <option value="lastname">Last Name</option>
-        <option value="date">Date</option>
-      </select>
+        <input type="radio" id="dirdescending" name="direction"
+               ng-model="direction" value="reverse">
+        <label for="dirdescending">desc</label>
+      </div>
     </div>
-    <div class="formgroup">
-      <input type="radio" id="dirascending" name="direction"
-        ng-model="direction">
-      <label for="dirascending">asc</label>&nbsp;
 
-      <input type="radio" id="dirdescending" name="direction"
-        ng-model="direction" value="reverse">
-      <label for="dirdescending">desc</label>
+  </div>
+
+  <div class="uk-tile uk-tile-default uk-width-1-2 ">
+
+    <nav class="uk-navbar-container uk-dark uk-width-1-2 uk-align-center" uk-navbar>
+
+
+
+      <div class="nav-overlay uk-navbar-left uk-flex-1">
+
+
+        <div class="uk-navbar-item uk-width-expand">
+          <form class="uk-search uk-search-navbar uk-width-1-1">
+            <input class="uk-search-input" type="search" ng-model="query" placeholder="Search...">
+          </form>
+        </div>
+
+        <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+
+      </div>
+
+    </nav>
+  </div>
+</div>
+
+<div class="uk-tile uk-tile-primary uk-margin">
+  <p class="uk-h3-lit uk-text-center">Guests</p>
+</div>
+<div class="uk-child-width-1-4@m uk-margin-small" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div > .uk-card; delay: 200; repeat: true">
+  <div ng-repeat="checkin in checkins | orderBy: order:direction | filter: query">
+    <div class="uk-container uk-align-center">
+      <div class="uk-card uk-card-secondary uk-card-body">
+        <img id="userPhoto" src="url" class="uk-border-circle" onerror="this.src='https://www.soundstream.tv/assets/default_profile-e08597880fc222202f22984a4f1966a29b108e856a3fb935072bfbbc302a4b73.png'" width="50" height="50">
+        <h3 class="uk-card-title">{{checkin.name}}</h3>
+
+        <button class="uk-button uk-button-danger" ng-click="deleteCheckIn(checkin.$id)">
+          <span>Delete Check-In</span>
+        </button><!-- delete check-in -->
+      </div>
     </div>
   </div>
-<h1> Guests</h1>
-<ul class="userlist cf">
-    <li ng-repeat="checkin in checkins | orderBy: order:direction | filter: query">
-      <div class="checkin">
-        <div class="buttons">
-          <button class="btn btn-delete tooltip" ng-click="deleteCheckIn(checkin.$id)">
-            <span>Delete this check-in</span>
-          </button><!-- delete check-in -->
-
-        <div class="info">
-          <h2>{{checkin.name}}</h2>
-        </div><!-- info -->
-      </div><!-- checkin -->
-    </li>
-  </ul>
-</div>
 </div>
