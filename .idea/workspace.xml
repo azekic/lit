@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/allevents.html" afterPath="$PROJECT_DIR$/views/allevents.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/allusers.html" afterPath="$PROJECT_DIR$/views/allusers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/events.html" afterPath="$PROJECT_DIR$/views/events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/alleventsmap.html" afterPath="$PROJECT_DIR$/views/alleventsmap.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,14 +19,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="allusers.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="allusers.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/allusers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="60" lean-forward="true" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alleventsmap.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/alleventsmap.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,7 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/angularregistration/views/register.html" />
         <option value="$PROJECT_DIR$/angularregistration/js/controllers/discover.js" />
         <option value="$PROJECT_DIR$/angularregistration/views/discover.html" />
         <option value="$PROJECT_DIR$/angularregistration/js/controllers/create.js" />
@@ -132,7 +139,6 @@
         <option value="$PROJECT_DIR$/css/uikit.min.css" />
         <option value="$PROJECT_DIR$/js/controllers/eventedit.js" />
         <option value="$PROJECT_DIR$/views/discovermap.html" />
-        <option value="$PROJECT_DIR$/views/alleventsmap.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/views/checkinslist.html" />
         <option value="$PROJECT_DIR$/views/checkinslistauth.html" />
@@ -147,6 +153,8 @@
         <option value="$PROJECT_DIR$/views/allevents.html" />
         <option value="$PROJECT_DIR$/views/events.html" />
         <option value="$PROJECT_DIR$/views/allusers.html" />
+        <option value="$PROJECT_DIR$/views/alleventmap.html" />
+        <option value="$PROJECT_DIR$/views/alleventsmap.html" />
       </list>
     </option>
   </component>
@@ -311,8 +319,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js/controllers" />
       <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/js/controllers" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/js/styles" />
@@ -700,14 +708,7 @@
       <workItem from="1489013790417" duration="186000" />
       <workItem from="1489689509892" duration="169000" />
       <workItem from="1490142047576" duration="1765000" />
-      <workItem from="1490190397442" duration="82932000" />
-    </task>
-    <task id="LOCAL-00009" summary="Adding events to site">
-      <created>1487953733526</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1487953733526</updated>
+      <workItem from="1490190397442" duration="83280000" />
     </task>
     <task id="LOCAL-00010" summary="Adding events to site">
       <created>1487954804054</created>
@@ -1045,11 +1046,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490390514793</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Small UI Changes">
+      <created>1490390885570</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1490390885570</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89473000" />
+    <option name="totallyTimeSpent" value="89821000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1132,7 +1140,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Adding events to site" />
     <MESSAGE value="Removed Facebook Nav / Testing Files" />
     <MESSAGE value="CSS Changes for button" />
     <MESSAGE value="Changes to Hardcoded URLS&#10;Changes to Auth to redirect properly&#10;Addition of Guide.html&#10;Addition of Facebook Auth to registration.js along with rules to prevent auth state from being misread&#10;Change to map button to send back without hardcode" />
@@ -1157,21 +1164,14 @@
     <MESSAGE value="Friends + Friends Requests Changes" />
     <MESSAGE value="Friends, Friends Requests and All Users Styling" />
     <MESSAGE value="Combined Sorting Changes To New CSS Classes provided by Garren" />
-    <option name="LAST_COMMIT_MESSAGE" value="Combined Sorting Changes To New CSS Classes provided by Garren" />
+    <MESSAGE value="Small UI Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small UI Changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="593" column="14" lean-forward="true" selection-start-line="593" selection-start-column="14" selection-end-line="593" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1388,14 +1388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/alleventsmap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/eventmap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1568,13 +1560,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/alleventmap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/allusers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="60" lean-forward="true" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/alleventsmap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
