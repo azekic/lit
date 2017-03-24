@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/allevents.html" afterPath="$PROJECT_DIR$/views/allevents.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allevents.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="allevents.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/allevents.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="65" column="78" lean-forward="true" selection-start-line="65" selection-start-column="78" selection-end-line="65" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -159,7 +169,6 @@
         <option value="$PROJECT_DIR$/css/uikit.min.css" />
         <option value="$PROJECT_DIR$/js/controllers/eventedit.js" />
         <option value="$PROJECT_DIR$/views/discovermap.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/controllers/friendrequest.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/views/nav.html" />
@@ -175,6 +184,7 @@
         <option value="$PROJECT_DIR$/views/checkinslist.html" />
         <option value="$PROJECT_DIR$/views/checkinslistauth.html" />
         <option value="$PROJECT_DIR$/views/allevents.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -224,20 +234,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LITST3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LITST3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LITST3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -750,14 +746,7 @@
       <workItem from="1489013790417" duration="186000" />
       <workItem from="1489689509892" duration="169000" />
       <workItem from="1490142047576" duration="1765000" />
-      <workItem from="1490190397442" duration="84546000" />
-    </task>
-    <task id="LOCAL-00013" summary="Adding events to site">
-      <created>1488409360223</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1488409360223</updated>
+      <workItem from="1490190397442" duration="84833000" />
     </task>
     <task id="LOCAL-00014" summary="Adding events to site">
       <created>1488409393761</created>
@@ -1095,11 +1084,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490394634138</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Add Go To Login Header For Non-Logged In Users">
+      <created>1490394926899</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1490394926900</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91087000" />
+    <option name="totallyTimeSpent" value="91374000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1182,7 +1178,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Changes to Hardcoded URLS&#10;Changes to Auth to redirect properly&#10;Addition of Guide.html&#10;Addition of Facebook Auth to registration.js along with rules to prevent auth state from being misread&#10;Change to map button to send back without hardcode" />
     <MESSAGE value="Total Change To UI and CSS Features" />
     <MESSAGE value="Updated HTML and JSS with changes from Master" />
     <MESSAGE value="Changes to user.js picture match" />
@@ -1207,7 +1202,8 @@
     <MESSAGE value="Small UI Changes" />
     <MESSAGE value="Added Updates to AllEventsMap" />
     <MESSAGE value="Remove Redundant &quot;Guests&quot; Label" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove Redundant &quot;Guests&quot; Label" />
+    <MESSAGE value="Add Go To Login Header For Non-Logged In Users" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Go To Login Header For Non-Logged In Users" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1478,14 +1474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1624,6 +1612,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="78" lean-forward="true" selection-start-line="65" selection-start-column="78" selection-end-line="65" selection-end-column="78" />
           <folding />
         </state>
       </provider>
