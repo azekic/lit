@@ -2,21 +2,27 @@
     <h1>Event Browser</h1>
 
     <div class="formgroup">
-        <span class="label">by:</span>
+        <span class="label">List by:</span>
 
         <select ng-model="order">
-            <option value="time">Time</option>
+            <option value="" disabled selected>Please Select</option>
+            <option value="all">All/Time</option>
             <option value="social">Social</option>
             <option value="academic">Academic</option>
+            <option value="sports">Sports</option>
+            <option value="networking">Networking</option>
+            <option value="general">General</option>
         </select>
 
+        <button class="btn btn-checkin tooltip"
+                ng-click="makeList(order)"></button>
     </div>
 
 
 
 <div class="card events cf">
   <h2>Listed Events</h2>
-  <div class="event" ng-repeat="(key, event) in events">
+  <div class="event" ng-repeat="(key, event) in category">
     <span class="text">Host Name: {{event.hostname}}</span><br>
     <span class="text">Event Name: {{event.eventname}}</span><br>
     <span class="text">Event Type: {{event.type}}</span><br>
