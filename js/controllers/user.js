@@ -25,7 +25,29 @@ myApp.controller('UsersController',
             }).then(function(){
                 
             });      
-        } 
+        }
+        
+        var storage = firebase.storage();
+        var storageRef = storage.ref();
+
+        var uploader = document.getElementById('uploader');
+        var fileButton = document.getElementById('fileButton');
+        var uploadButton = document.getElementById('uploadButton')
+
+        var fileName;
+
+        if(firebase.auth().currentUser.photoURL!=null){
+            var photoRef = storageRef.child(firebase.auth().currentUser.photoURL);
+            photoRef.getDownloadURL().then(function(url) {
+                databasecurrentUserRef = ref.child('users').child(authUser.uid); 
+                databasecurrentUserRef.update({
+                    profilePictureurl: url
+                }); 
+                  document.querySelector('img').src = url ;
+                }).catch(function(error) {
+                  console.error(error);
+                });
+        }
       
       } //authUser
     }); //onAuthStateChanged
@@ -37,16 +59,19 @@ myApp.controller('UsersController',
           // Accounts successfully linked.
           var credential = result.credential;
           var user = result.user;
+          Alert("success")
           // ...
         }).catch(function(error) {
           // Handle Errors here.
           var errorCode = error.code;
-          if (errorCode === 'auth/account-exists-with-different-credential') {
-                      alert('You have already signed up with a different auth provider for that email.');
-          }
-        });
+            if(error.code == "auth/credential-already-in-use"){
+                    alert('This Facebook is already associated with a different user account.');
+               }
+            console.log(error);
+            });
         
-        firebase.authsgetRedirectResult().then(function(result) {
+         
+         firebase.auth().getRedirectResult().then(function(result) {
           if (result.credential) {
             // Accounts successfully linked.
             var credential = result.credential;
@@ -55,8 +80,9 @@ myApp.controller('UsersController',
           }
         }).catch(function(error) {
           // Handle Errors here.
+             console.log(error);
           // ...
-        });
+        });  
     }
     
    $scope.unLinkToFacebook = function(){
@@ -64,58 +90,43 @@ myApp.controller('UsersController',
         var providerId = new firebase.auth.FacebookAuthProvider().providerId;
          console.log(providerId);
         user.unlink(providerId).then(function() {
-          alert("success");
+          alert("Your Facebook account has been unlinked.");
         }).catch(function(error) {
-          // An error happened
+          console.log(error.message);
+            alert("You are not currently linked to a Facebook account.");
         });
     }
      
-     $scope.updatePicture = function(){
+    $scope.updatePicture = function(){
          location.reload();
-     }
+    }
       
-     $scope.updatePassword = function(){
-         ref.resetPassword({
-             email : "bobtony@firebase.com"
-         }, function(error) {
-             if (error === null) {
-                 console.log("Password reset email sent successfully");
-             } else {
-                 console.log("Error sending password reset email:", error);
-             }
-         });
+    $scope.updatePassword = function(){          
+        
+        var user = firebase.auth().currentUser;
+       
+        var newPassword = $scope.password;
+        user.updatePassword(newPassword).then(function() {
+          console.log(newPassword);
+            alert("success");
+        }, function(error) {
+            if(newPassword.length < 6){
+                alert("Password should be at least 6 characters");
+            }
+          console.log(error);
+        });
     }
      
-    var storage = firebase.storage();
-    var storageRef = storage.ref();
-    
-    var uploader = document.getElementById('uploader');
-    var fileButton = document.getElementById('fileButton');
-    var uploadButton = document.getElementById('uploadButton')
- 
-    var fileName;
-	
-    if(firebase.auth().currentUser.photoURL!=null){
-        var photoRef = storageRef.child(firebase.auth().currentUser.photoURL);
-        photoRef.getDownloadURL().then(function(url) {
-              console.log(url);
-              document.querySelector('img').src = url + new Date().getTime();
-            }).catch(function(error) {
-              console.error(error);
-            });
+    $scope.deleteUser = function(){          
+        firebase.auth().currentUser.delete().then(function() {
+          alert("Your account has been deleted!");
+        }, function(error) {
+          alert("Please log out and log in again and try to delete your account.");
+        });
     }
-    
-    //var photoRef = storageRef.child(firebase.auth().currentUser.photoURL);
-    //console.log(photoRef);
-      /*
-        photoRef.getDownloadURL().then(function(url) {
-              console.log(url);
-              document.querySelector('img').src = url + new Date().getTime();
-            }).catch(function(error) {
-              console.error(error);
-            });*/
-    
       
+    //console.log(firebase.auth().currentUser.email);
+    
    fileButton.addEventListener('change',function(e){
 		console.log("in");
         var file = e.target.files[0];
@@ -124,9 +135,6 @@ myApp.controller('UsersController',
         var storageRef = firebase.storage().ref('pictures/' + file.name);
         var task = storageRef.put(file);
         
-        //var userRef = firebase.auth().currentUser;
-        
-                                
         task.on('state_changed',
 
             function progress(snapshot){
@@ -134,34 +142,20 @@ myApp.controller('UsersController',
                 var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
                 console.log('Upload is ' + progress + '% done');
                 uploader.value = percentage;
-
-
             },
             function error(err){
-
-            },
-            function complete(){
-
+                console.log(err);
             }
 
-           );   
+       );   
         var photoRef = "pictures/" + fileName;
         console.log(firebase.auth().currentUser);
         console.log(photoRef);
         firebase.auth().currentUser.updateProfile({
             photoURL: photoRef
         }).then(function(){
-            var photoURL = firebase.auth().currentUser.photoURL;
-            console.log(photoURL);
             console.log("sucess");
         });
-        
-    });
-      
-   
-    
-      
-          
-   
+    });    
     
 }]); //myApp.controller

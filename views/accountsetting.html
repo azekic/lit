@@ -44,11 +44,19 @@
                         </div>
                     </div>
                 </div>
-
-
-
-                <h3 class="uk-card-title">{{user.firstname}} {{user.lastname}}</h3>
-                <h4>{{user.email}}</h4>
+<div class="uk-margin-top">
+                <span class="uk-text-large">{{user.firstname}} {{user.lastname}}</span>
+</div>
+                <br>
+                <span class="uk-text-bold">Your Information:</span>
+                <hr>
+                <span class="uk-text-small">{{user.email}}</span>
+                <br>
+                <span class="uk-text-small">Age: </span>
+                <span class="uk-text-small uk-badge">{{ user.age }}</span>
+                <br>
+                <span class="uk-text-small">Occpuation: {{ user.occupation }}</span>
+                <hr>
 
 
                 <div id="edit-profile" uk-offcanvas="mode: push; overlay: true">
@@ -72,6 +80,7 @@
 
                         <form name="myform" ng-submit="updateInfo()" novalidate>
 
+                            <hr>
                             Personal Information:
                             <br>
                             <div class="uk-margin">
@@ -84,6 +93,12 @@
                                 <input class="uk-input" type="text" name="age" placeholder="Age"
                                        ng-model="age" ng-required="true">
                             </div>
+                            <div class="uk-margin">
+                                Gender:
+                                <input type="radio" name="gender" value="Male" ng-model="gender" ng-required="true"> Male
+                                <input type="radio" name="gender" value="Female" ng-model="gender" ng-required="true"> Female
+                            </div>
+                            <hr>
 
                             Occupational Information:
                             <div class="uk-margin">
@@ -96,13 +111,7 @@
                                     <option name="occupation" value="Entrepreneur">Entrepreneur</option>
                                 </select>
                             </div>
-                            <div class="uk-margin">
-                                Gender:
-                                <input type="radio" name="gender" value="Male" ng-model="gender" ng-required="true"> Male
-                                <input type="radio" name="gender" value="Female" ng-model="gender" ng-required="true"> Female
-                            </div>
-
-                            <br>
+                            <hr>
                             <button type="submit" class="uk-button uk-button-secondary uk-width-1-1" >Update profile</button> <br>
                         </form>
 
@@ -112,21 +121,17 @@
                 </div>
 
 
-      <span class="as-word">occpuation: {{ user.occupation }}</span>
-       <span class="as-word">age: {{ user.age }}</span>
 
-    <form name="myform1" ng-submit="updatePassword()" novalidate>
-        <p class = "label">Password:</p><input type="text" name="password"
-			  placeholder="password"
-			  ng-model="password" ng-required="true">
-        <button type="submit" class="btn btn-block" >Update Password</button>
-     </form>
-       <form ng-submit="linkToFacebook()" name="myform" novalidate>     
-     	<button type="submit"  class="btn btn-block" >Link to Facebook</button>
+        <button type="submit" class="uk-button uk-button-secondary uk-margin" >Reset Password</button>
+
+       <form ng-submit="linkToFacebook()" name="myform" novalidate>
+     	<button type="submit"  class="uk-button uk-button-primary uk-margin" >Link to Facebook</button>
      </form>
      <form ng-submit="unLinkToFacebook()" name="myform" novalidate>
-     	<button type="submit"  class="btn btn-block" >UnLink to Facebook</button>
+     	<button type="submit"  class="uk-button uk-button-danger uk-margin" >UnLink Facebook</button>
      </form>
+
+
             </div>
         </div>
     </div>
