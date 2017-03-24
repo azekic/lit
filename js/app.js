@@ -70,11 +70,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
     when('/allevents', {
       templateUrl: 'views/allevents.html',
       controller: 'AllEventsController',
-      resolve: {
-      currentAuth: function(Authentication) {
-          return Authentication.requireAuth();
-      } //currentAuth
-  }//resolve
       }).
 
   when('/allusers', {

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="109">
-              <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+              <caret line="53" column="65" lean-forward="false" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -41,7 +41,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>css</find>
       <find>users</find>
       <find>icons</find>
       <find>icon</find>
@@ -71,6 +70,7 @@
       <find>.uk-navbar-container</find>
       <find>8</find>
       <find>5</find>
+      <find>authUser</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/angularregistration</dir>
@@ -128,11 +128,9 @@
         <option value="$PROJECT_DIR$/js/controllers/eventedit.js" />
         <option value="$PROJECT_DIR$/views/discovermap.html" />
         <option value="$PROJECT_DIR$/js/controllers/friendrequest.js" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/views/nav.html" />
         <option value="$PROJECT_DIR$/views/friendRequests.html" />
         <option value="$PROJECT_DIR$/views/friends.html" />
-        <option value="$PROJECT_DIR$/js/controllers/allevents.js" />
         <option value="$PROJECT_DIR$/views/addevent.html" />
         <option value="$PROJECT_DIR$/views/eventedit.html" />
         <option value="$PROJECT_DIR$/views/events.html" />
@@ -143,6 +141,8 @@
         <option value="$PROJECT_DIR$/views/checkinslistauth.html" />
         <option value="$PROJECT_DIR$/views/allevents.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/controllers/allevents.js" />
       </list>
     </option>
   </component>
@@ -242,6 +242,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LITST3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LITST3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -700,14 +718,7 @@
       <workItem from="1489013790417" duration="186000" />
       <workItem from="1489689509892" duration="169000" />
       <workItem from="1490142047576" duration="1765000" />
-      <workItem from="1490190397442" duration="86071000" />
-    </task>
-    <task id="LOCAL-00017" summary="Adding events to site">
-      <created>1488600166761</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1488600166761</updated>
+      <workItem from="1490190397442" duration="86413000" />
     </task>
     <task id="LOCAL-00018" summary="Removed Facebook Nav / Testing Files">
       <created>1488600326234</created>
@@ -1045,11 +1056,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490396591336</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Addition of .html to alleventsmap link">
+      <created>1490396722777</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1490396722778</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92612000" />
+    <option name="totallyTimeSpent" value="92954000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1132,7 +1150,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Changes to user.js picture match" />
     <MESSAGE value="Changes to All Events and app.js redirections" />
     <MESSAGE value="Changes to All Events &amp; Events (js + HTML)" />
     <MESSAGE value="Changes to header justification and custom classes.&#10;Red + Black Theme" />
@@ -1157,7 +1174,8 @@
     <MESSAGE value="Add Go To Login Header For Non-Logged In Users" />
     <MESSAGE value="Small Styling Changes" />
     <MESSAGE value="Addition of Login Button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Addition of Login Button" />
+    <MESSAGE value="Addition of .html to alleventsmap link" />
+    <option name="LAST_COMMIT_MESSAGE" value="Addition of .html to alleventsmap link" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1444,14 +1462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="102" column="7" lean-forward="false" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/addevent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1518,14 +1528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/allevents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/events.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1570,10 +1572,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/allevents.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="78" column="15" lean-forward="true" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
-          <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+          <caret line="53" column="65" lean-forward="false" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
           <folding />
         </state>
       </provider>
