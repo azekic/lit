@@ -1,12 +1,12 @@
 
 
-<div class="uk-tile uk-tile-secondary" ng-controller="RegistrationController">
-  <p class="uk-h3">My Events</p>
+<div class="uk-tile uk-tile-lit" ng-controller="RegistrationController">
+  <p class="uk-h3 uk-text-center">My Events</p>
 </div>
 
-  <div class="uk-child-width-1-3@m uk-margin-small" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div > .uk-card; delay: 200; repeat: true">
+  <div class="uk-child-width-1-3@m uk-margin" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div > .uk-card; delay: 200; repeat: true">
     <div ng-repeat="(key, event) in events">
-      <div class="uk-card uk-card-default uk-card-body">
+      <div class="uk-card uk-card-secondary uk-card-body">
         <h3 class="uk-card-title">{{event.eventname}}</h3>
         <span class="text">Event Name: {{event.eventname}}</span><br>
         <span class="text">Event Type: {{event.eventtype}}</span><br>

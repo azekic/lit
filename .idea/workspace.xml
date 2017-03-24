@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/uikit.min.css" afterPath="$PROJECT_DIR$/css/uikit.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/accountsetting.html" afterPath="$PROJECT_DIR$/views/accountsetting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/nav.html" afterPath="$PROJECT_DIR$/views/nav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/addevent.html" afterPath="$PROJECT_DIR$/views/addevent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/allevents.html" afterPath="$PROJECT_DIR$/views/allevents.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/events.html" afterPath="$PROJECT_DIR$/views/events.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accountsetting.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="accountsetting.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/accountsetting.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addevent.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/addevent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allevents.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="allevents.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/allevents.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+            <state relative-caret-position="150">
+              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -73,8 +86,8 @@
       <file leaf-file-name="events.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/events.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -92,11 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>the password</find>
-      <find>the pass</find>
-      <find>meeting</find>
-      <find>inputwr</find>
-      <find>list</find>
       <find>btn-chec</find>
       <find>inputwrapp</find>
       <find>card</find>
@@ -116,11 +124,16 @@
       <find>event</find>
       <find>accountse</find>
       <find>onClic</find>
-      <find>.uk-navbar-container</find>
       <find>back</find>
       <find>url</find>
       <find>img</find>
       <find>type</find>
+      <find>.uk-navbar-container</find>
+      <find>.uk-</find>
+      <find>.uk-tile-lit</find>
+      <find>lit</find>
+      <find>333</find>
+      <find>.uk-h3</find>
       <find>events</find>
     </findStrings>
     <dirStrings>
@@ -182,17 +195,17 @@
         <option value="$PROJECT_DIR$/js/controllers/facebook.js" />
         <option value="$PROJECT_DIR$/views/register.html" />
         <option value="$PROJECT_DIR$/views/allusers.html" />
-        <option value="$PROJECT_DIR$/views/addevent.html" />
-        <option value="$PROJECT_DIR$/css/uikit.min.css" />
         <option value="$PROJECT_DIR$/js/controllers/registration.js" />
         <option value="$PROJECT_DIR$/js/controllers/user.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/js/controllers/allevents.js" />
-        <option value="$PROJECT_DIR$/views/allevents.html" />
-        <option value="$PROJECT_DIR$/views/events.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/views/nav.html" />
+        <option value="$PROJECT_DIR$/css/uikit.min.css" />
+        <option value="$PROJECT_DIR$/views/events.html" />
         <option value="$PROJECT_DIR$/views/accountsetting.html" />
+        <option value="$PROJECT_DIR$/views/addevent.html" />
+        <option value="$PROJECT_DIR$/views/allevents.html" />
       </list>
     </option>
   </component>
@@ -760,7 +773,7 @@
       <workItem from="1489013790417" duration="186000" />
       <workItem from="1489689509892" duration="169000" />
       <workItem from="1490142047576" duration="1765000" />
-      <workItem from="1490190397442" duration="57533000" />
+      <workItem from="1490190397442" duration="58902000" />
     </task>
     <task id="LOCAL-00001" summary="Adding authentication features to site">
       <created>1487867475961</created>
@@ -1014,11 +1027,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490333886075</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Changes to All Events &amp; Events (js + HTML)">
+      <created>1490334332263</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1490334332263</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64074000" />
+    <option name="totallyTimeSpent" value="65443000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1374,39 +1394,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/uikit.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="0" column="38936" lean-forward="false" selection-start-line="0" selection-start-column="38936" selection-end-line="0" selection-end-column="38936" />
-          <folding>
-            <element signature="e#4668#5021#2" expanded="true" />
-            <element signature="e#6254#6548#2" expanded="true" />
-            <element signature="e#12217#12618#2" expanded="true" />
-            <element signature="e#12805#13206#2" expanded="true" />
-            <element signature="e#13971#14269#2" expanded="true" />
-            <element signature="e#14308#14623#2" expanded="true" />
-            <element signature="e#14668#14984#2" expanded="true" />
-            <element signature="e#15116#15414#2" expanded="true" />
-            <element signature="e#15462#15777#2" expanded="true" />
-            <element signature="e#15831#16147#2" expanded="true" />
-            <element signature="e#36856#37205#2" expanded="true" />
-            <element signature="e#37327#37675#2" expanded="true" />
-            <element signature="e#48612#49054#2" expanded="true" />
-            <element signature="e#49164#49480#2" expanded="true" />
-            <element signature="e#112681#113059#2" expanded="true" />
-            <element signature="e#118810#119132#2" expanded="true" />
-            <element signature="e#133771#134228#2" expanded="true" />
-            <element signature="e#141077#141375#2" expanded="true" />
-            <element signature="e#142002#142317#2" expanded="true" />
-            <element signature="e#143010#143326#2" expanded="true" />
-            <element signature="e#176524#176901#2" expanded="true" />
-            <element signature="e#177825#178201#2" expanded="true" />
-            <element signature="e#232162#232660#2" expanded="true" />
-            <element signature="e#233452#233796#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/registration.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
@@ -1439,14 +1426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/addevent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="84" lean-forward="true" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/allevents.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1463,26 +1442,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/allevents.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        <state relative-caret-position="479">
+          <caret line="61" column="10" lean-forward="true" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/uikit.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="0" column="1610" lean-forward="false" selection-start-line="0" selection-start-column="1610" selection-end-line="0" selection-end-column="1610" />
+          <folding>
+            <element signature="e#4668#5021#2" expanded="true" />
+            <element signature="e#6254#6548#2" expanded="true" />
+            <element signature="e#12217#12618#2" expanded="true" />
+            <element signature="e#12805#13206#2" expanded="true" />
+            <element signature="e#13971#14269#2" expanded="true" />
+            <element signature="e#14308#14623#2" expanded="true" />
+            <element signature="e#14668#14984#2" expanded="true" />
+            <element signature="e#15116#15414#2" expanded="true" />
+            <element signature="e#15462#15777#2" expanded="true" />
+            <element signature="e#15831#16147#2" expanded="true" />
+            <element signature="e#36888#37237#2" expanded="true" />
+            <element signature="e#37359#37707#2" expanded="true" />
+            <element signature="e#48641#49083#2" expanded="true" />
+            <element signature="e#49193#49509#2" expanded="true" />
+            <element signature="e#112710#113088#2" expanded="true" />
+            <element signature="e#118839#119161#2" expanded="true" />
+            <element signature="e#133800#134257#2" expanded="true" />
+            <element signature="e#141106#141404#2" expanded="true" />
+            <element signature="e#142031#142346#2" expanded="true" />
+            <element signature="e#143039#143355#2" expanded="true" />
+            <element signature="e#176553#176930#2" expanded="true" />
+            <element signature="e#177854#178230#2" expanded="true" />
+            <element signature="e#232191#232689#2" expanded="true" />
+            <element signature="e#233481#233825#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/events.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/views/accountsetting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="61" column="10" lean-forward="true" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+        <state relative-caret-position="210">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1495,10 +1507,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/accountsetting.html">
+    <entry file="file://$PROJECT_DIR$/views/addevent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/allevents.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding />
         </state>
       </provider>
