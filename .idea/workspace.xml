@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/checkinslist.html" afterPath="$PROJECT_DIR$/views/checkinslist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/checkinslistauth.html" afterPath="$PROJECT_DIR$/views/checkinslistauth.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +19,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="checkinslist.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="checkinslist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/checkinslist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="622">
+              <caret line="64" column="14" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="64" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkinslistauth.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/checkinslistauth.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="634">
+              <caret line="67" column="6" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -169,12 +179,12 @@
         <option value="$PROJECT_DIR$/views/allusers.html" />
         <option value="$PROJECT_DIR$/views/alleventmap.html" />
         <option value="$PROJECT_DIR$/views/alleventsmap.html" />
-        <option value="$PROJECT_DIR$/views/checkinslistauth.html" />
         <option value="$PROJECT_DIR$/views/allevents.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/js/controllers/allevents.js" />
         <option value="$PROJECT_DIR$/views/checkinslist.html" />
+        <option value="$PROJECT_DIR$/views/checkinslistauth.html" />
       </list>
     </option>
   </component>
@@ -732,14 +742,7 @@
       <workItem from="1489013790417" duration="186000" />
       <workItem from="1489689509892" duration="169000" />
       <workItem from="1490142047576" duration="1765000" />
-      <workItem from="1490190397442" duration="87780000" />
-    </task>
-    <task id="LOCAL-00019" summary="Removed Facebook Nav / Testing Files">
-      <created>1488600630258</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1488600630258</updated>
+      <workItem from="1490190397442" duration="87956000" />
     </task>
     <task id="LOCAL-00020" summary="CSS Changes for button">
       <created>1488601011937</created>
@@ -1077,11 +1080,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490397123416</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Changes to All Events Check-In Styling">
+      <created>1490398747891</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1490398747891</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94321000" />
+    <option name="totallyTimeSpent" value="94497000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1164,7 +1174,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Changes to All Events &amp; Events (js + HTML)" />
     <MESSAGE value="Changes to header justification and custom classes.&#10;Red + Black Theme" />
     <MESSAGE value="Addition of custom h3 tag as well as Delete Account option to accountsetting.html" />
     <MESSAGE value="Repair Delete Account and Reset Password Styling" />
@@ -1189,7 +1198,8 @@
     <MESSAGE value="Addition of Login Button" />
     <MESSAGE value="Addition of .html to alleventsmap link" />
     <MESSAGE value="Allow all to access /allevents" />
-    <option name="LAST_COMMIT_MESSAGE" value="Allow all to access /allevents" />
+    <MESSAGE value="Changes to All Events Check-In Styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes to All Events Check-In Styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1526,14 +1536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/checkinslistauth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/events.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1604,8 +1606,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/checkinslist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="622">
+          <caret line="64" column="14" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="64" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/checkinslistauth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="67" column="6" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
           <folding />
         </state>
       </provider>

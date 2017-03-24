@@ -5,59 +5,12 @@
 
 <div class="uk-inline uk-position-top-center">
     <div class="uk-tile uk-tile-secondary">
-        <!-- <a class="uk-button uk-button-primary uk-margin" onclick="location.reload()" ng-href="#/events">Back</a> -->
+
         <a class="uk-button uk-button-primary"
-           ng-href="#/events">Back To My Events</a>
+           uk-toggle="target: #modal-filter">Filter Check-Ins</a>
     </div>
 </div>
 
-
-<div class="uk-grid">
-  <div class="uk-tile uk-tile-default uk-width-1-2">
-    <p class="uk-h3 uk-text-center">List By:</p>
-    <div class="uk-container uk-container-small">
-      <div class="uk-margin">
-        <select ng-model="order" class="uk-select">
-          <p>By:</p>
-          <option value="firstname">First Name</option>
-          <option value="lastname">Last Name</option>
-          <option value="date">Date</option>
-        </select>
-      </div>
-      <div class="formgroup">
-        <input type="radio" id="dirascending" name="direction"
-               ng-model="direction">
-        <label for="dirascending">asc</label>&nbsp;
-
-        <input type="radio" id="dirdescending" name="direction"
-               ng-model="direction" value="reverse">
-        <label for="dirdescending">desc</label>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="uk-tile uk-tile-default uk-width-1-2 ">
-
-    <nav class="uk-navbar-container uk-dark uk-width-1-2 uk-align-center" uk-navbar>
-
-
-
-      <div class="nav-overlay uk-navbar-left uk-flex-1">
-
-
-        <div class="uk-navbar-item uk-width-expand">
-          <form class="uk-search uk-search-navbar uk-width-1-1">
-            <input class="uk-search-input" type="search" ng-model="query" placeholder="Search...">
-          </form>
-        </div>
-
-        <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
-
-      </div>
-    </nav>
-  </div>
-</div>
 
 <div class="uk-child-width-1-4@m uk-margin-small" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div > .uk-card; delay: 200; repeat: false">
   <div ng-repeat="checkin in checkins | orderBy: order:direction | filter: query">
@@ -72,4 +25,45 @@
       </div>
     </div>
   </div>
+</div>
+
+<!-- This is the modal with the default close button -->
+<div id="modal-filter" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <span class="uk-text-large">List by:</span>
+        <div class="uk-margin">
+            <select ng-model="order" class="uk-select">
+                <option value="" disabled selected>Please Select</option>
+                <option value="firstname">First Name</option>
+                <option value="lastname">Last Name</option>
+                <option value="date">Date</option>
+            </select>
+        </div>
+        <div class="formgroup">
+            <input type="radio" id="dirascending" name="direction"
+                   ng-model="direction">
+            <label for="dirascending">asc</label>&nbsp;
+
+            <input type="radio" id="dirdescending" name="direction"
+                   ng-model="direction" value="reverse">
+            <label for="dirdescending">desc</label>
+        </div>
+        <br>
+
+        <span class="uk-text-large">Or Search:</span>
+        <br>
+        <br>
+        <div class="uk-inline">
+            <div class="uk-margin">
+                <form class="uk-search uk-search-default">
+                    <span class="uk-search-icon-flip" uk-search-icon></span>
+                    <input class="uk-search-input" type="search" ng-model="query" placeholder="Search...">
+                </form>
+            </div>
+            <button class="uk-button uk-button-primary uk-modal-close" type="button">Filter</button>
+        </div>
+    </div>
+
+</div>
 </div>
