@@ -29,20 +29,20 @@
     <span class="text">Event Name: {{event.eventname}}</span><br>
     <span class="text">Event Type: {{event.eventtype}}</span><br>
     <span class="text">Event Date: {{event.eventdate}}</span><br>
-
+                  <div class="uk-margin">
 
                   <a ng-click="addUser(event.$id)"
-                     class="uk-icon-link uk-align-right" title="I'm Going" uk-tooltip uk-icon="icon: check">
+                     class="uk-icon-link uk-align-right" title="I'm Going" uk-tooltip uk-icon="icon: check; ratio: 1.5">
                   </a>
 
                   <a ng-href="#/checkinsList/{{event.$id}}"
-                     class="uk-icon-link" title="View Check-Ins" uk-tooltip uk-icon="icon: users">
+                     class="uk-icon-link" title="View Check-Ins" uk-tooltip uk-icon="icon: users; ratio: 1.5">
                   </a>
 
                   <a href="views/eventmap.html?eventId={{event.$id}}"
-                     class="uk-icon-link" title="View On Map" uk-tooltip uk-icon="icon: location">
+                     class="uk-icon-link" title="View On Map" uk-tooltip uk-icon="icon: location; ratio: 1.5">
                   </a>
-
+                  </div>
 
     
   </div><!-- events list -->

@@ -13,22 +13,23 @@
         <span class="text">Event Date: {{event.eventdate}}</span><br>
         <span class="text">Event Description: {{event.eventdescription}}</span><br>
         <span class="text">Event Floor: {{event.eventfloor}}</span><br>
-
+<div class="uk-margin">
         <a ng-click="deleteEvent(key)"
-           class="uk-icon-link uk-align-right" title="Delete" uk-tooltip uk-icon="icon: trash">
+           class="uk-icon-link uk-align-right" title="Delete" uk-tooltip uk-icon="icon: trash; ratio: 1.5">
         </a>
 
         <a ng-href=#/eventedit/{{currentUser.regUser}}/{{event.$id}}"
-           class="uk-icon-link" title="Edit" uk-tooltip uk-icon="icon: pencil">
+           class="uk-icon-link" title="Edit" uk-tooltip uk-icon="icon: pencil; ratio: 1.5">
         </a>
 
         <a ng-href="#/checkinsListAuth/{{event.$id}}"
-           class="uk-icon-link" title="View Check-Ins" uk-tooltip uk-icon="icon: users">
+           class="uk-icon-link" title="View Check-Ins" uk-tooltip uk-icon="icon: users; ratio: 1.5">
         </a>
 
         <a href="views/eventmap.html?eventId={{event.$id}}"
-           class="uk-icon-link" title="View On Map" uk-tooltip uk-icon="icon: location">
+           class="uk-icon-link" title="View On Map" uk-tooltip uk-icon="icon: location; ratio: 1.5">
         </a>
+      </div>
       </div>
     </div>
     <div>
