@@ -9,19 +9,32 @@ myApp.controller('AllEventsController',
     var auth = $firebaseAuth();
     auth.$onAuthStateChanged(function(authUser) {
       if(authUser) {
+
         var eventsRef = ref.child('events');
         var eventsList = $firebaseArray(eventsRef);
         var auth = $firebaseAuth();
-        $scope.events = eventsList;
+
+        $scope.category = eventsList;
+          $scope.makeList = function(order){
+              if (order == 'all'){
+
+                  $scope.category = eventsList;
+              }
+
+              else {
+                  var categories = eventsRef.orderByChild('type').equalTo(order);
+                  $scope.category = $firebaseArray(categories);
+              }
+          };
 
         $scope.addUser = function(eventid) {
             var eventRef = ref.child('events/'+eventid+"/guestlist/"+authUser.uid);
-            var hostName; 
+            var hostName;
             ref.child('users').child(authUser.uid).on("value", function(snapshot){
             hostName = snapshot.val().firstname + ' ' + snapshot.val().lastname;});
             eventRef.update({
-                name: hostName    
-            }); 
+                name: hostName
+            });
           } //editEvent
       }
   })
