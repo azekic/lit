@@ -54,45 +54,56 @@
                 <div id="edit-profile" uk-offcanvas="mode: push; overlay: true">
                     <div class="uk-offcanvas-bar">
 
+                        <br>
+                        <br>
+
+
+                        Profile Picture:
+                        <div class="test-upload uk-width-1-1 uk-margin"  uk-form-custom>
+                            <input type="file" value="upload" id="fileButton">
+                            <button class="uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">Select Picture</button>
+                        </div>
+
+
+                        <form ng-submit="updatePicture()" name="myform" novalidate>
+                            <button type="submit" class="uk-button uk-button-secondary uk-width-1-1 uk-offcanvas-close" onClick="refreshPage()" >Update Picture</button>
+                            <progress value="0" max="100" id="uploader">0%</progress>
+                        </form>
+
                         <form name="myform" ng-submit="updateInfo()" novalidate>
-                            <div class="inputwrapper">
-                                <p class = "label">First Name:</p> <input type="text" name="firstname"
-                                                                          placeholder="First Name"
-                                                                          ng-model="firstname" ng-required="true">
-                                <p class = "label">Last Name:</p><input type="text" name="lastname"
-                                                                        placeholder="Last Name"
-                                                                        ng-model="lastname" ng-required="true">
 
-                                <p class = "label">Age:</p><input type="text" name="age"
-                                                                  placeholder="age"
-                                                                  ng-model="age" ng-required="true">
+                            Personal Information:
+                            <br>
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" name="firstname" placeholder="First Name"
+                                       ng-model="firstname" ng-required="true">
+
+                                <input class="uk-input" type="text" name="lastname" placeholder="Last Name"
+                                       ng-model="lastname" ng-required="true">
+
+                                <input class="uk-input" type="text" name="age" placeholder="Age"
+                                       ng-model="age" ng-required="true">
                             </div>
 
-                            <div class="block">
-                                <p class = "label">Occupation:</p>
-                                <input type="radio" name="occupation" value="Technology" ng-model="occupation" ng-required="true"> Technology
-                                <input type="radio" name="occupation" value="Health" ng-model="occupation" ng-required="true"> Health
-                                <input type="radio" name="occupation" value="Academia" ng-model="occupation" ng-required="true"> Academia   <br>
-                                <input type="radio" name="occupation" value="Government" ng-model="occupation" ng-required="true"> Government
-                                <input type="radio" name="occupation" value="Services" ng-model="occupation" ng-required="true"> Services
-                                <input type="radio" name="occupation" value="Entrepreneur" ng-model="occupation" ng-required="true"> Entrepreneur<br>
+                            Occupational Information:
+                            <div class="uk-margin">
+                                <select class="uk-select" name="occupation" ng-required="true" ng-model="occupation">
+                                    <option name="occupation" value="Technology">Technology</option>
+                                    <option name="occupation" value="Health">Health</option>
+                                    <option name="occupation" value="Academia">Academia</option>
+                                    <option name="occupation" value="Government">Government</option>
+                                    <option name="occupation" value="Services">Services</option>
+                                    <option name="occupation" value="Entrepreneur">Entrepreneur</option>
+                                </select>
                             </div>
-
-                            <div class="block">
-                                <p class = "label">Gender:</p>
+                            <div class="uk-margin">
+                                Gender:
                                 <input type="radio" name="gender" value="Male" ng-model="gender" ng-required="true"> Male
                                 <input type="radio" name="gender" value="Female" ng-model="gender" ng-required="true"> Female
                             </div>
 
                             <br>
-                            <button class="uk-button uk-button-secondary uk-width-1-1" >Update profile</button> <br>
-
-                            <img src="url" style="width:200px;height:200px;">
-                            <progress value="0" max="100" id="uploader">0%</progress>
-                            <input type="file" value="upload" id="fileButton"/>
-                            <form ng-submit="updatePicture()" name="myform" novalidate>
-                                <button type="submit"  class="btn btn-block uk-offcanvas-close" onClick="refreshPage()" >Update Picture</button>
-                            </form>
+                            <button type="submit" class="uk-button uk-button-secondary uk-width-1-1" >Update profile</button> <br>
                         </form>
 
                         <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin" type="button">Close</button>
