@@ -18,10 +18,10 @@
             <div class="uk-flex uk-flex-column uk-flex-center uk-text-center" uk-grid>
                 <div class="uk-card uk-card-secondary uk-card-body">
                     <img src="{{friendRequest.profilePic}}" style="width:75px;height:75px;"><br><br>
-                    <span class="text">First Name: {{friendRequest.firstname}} {{friendRequest.lastname}}</span><br>
+                    <span class="text">{{friendRequest.firstname}} {{friendRequest.lastname}}</span><br>
                     <span class="text">{{friendRequest.email}}</span><br><br>
 
-                    <button class="uk-button uk-button-default"
+                    <button class="uk-button uk-button-secondary uk-margin"
                             ng-click="addfriend(friendRequest.$id, friendRequest.friendID, friendRequest.firstname, friendRequest.lastname, friendRequest.profilePic)"><span>Accept Friend Request</span></button>
                     <button class="uk-button uk-button-danger"
                             ng-click="deleteFriendRequest(friendRequest.$id)"><span>Reject Friend Request</span></button>
@@ -30,3 +30,6 @@
         </div><!-- events list -->
     </div><!-- events cf -->
 </div>
+
+
+
