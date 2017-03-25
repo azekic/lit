@@ -1,6 +1,32 @@
 # Updated User Guide for Stage 3
 
+## Introduction
 
+There is a disconnect between students and the events going on around them. Councils, clubs, and societies across campus have no standardized method to communicate with students. Students are left to figure out whats going on across campus on their own. From this insight came the inception of LIT, a service that aims to fill the gap and bring the events of all clubs and societies across campus directly to students, using a novel and intuitive user interface.
+
+## Registration
+
+To create an account, select the "Register" tab, then fill in your name and email, and type in a password. You will be added to our database and given a unique UserID. Alternatively, you can login with Facebook by selecting the "Facebook" tab, and entering your Facebook login info.
+
+## Login
+
+If you've already created an account, you can log in by selecting the "Login" tab, and entering your email and password from there. You can log out at any time by selecting "logout" directly below the nav bar.
+
+## Account Settings
+
+Selecting the "Account Settings" tab allows you to see your current name and email, and gives you the option to add a profile picture. Your first name, last name, and email can also be changed by clicking on their respective links. You cannot choose what to change them to, and you will not see the changes live, but the changes will appear in our database.
+
+## All Events
+
+The "All Events" tab leads you to a list of all events created on our database. Events can be sorted by their category and time. To join an event simply select the "+" button next to the event and you will be added.
+
+## Creating an Event
+
+To create an event, select the "My Events" tab, type in the event name and select the "+" button.
+
+## Editing and Deleting Events
+
+On the "My Events" tab, you can see all the events you've created at a glance.
 <!---
 Computer Science 2212 - Introduction to Software Engineering is a course designed to examine the stages of the software engineering process, including requirements gathering, specification, design, implementation, and testing. Students of CS 2212 are required to work cooperatively in a team to design and implement a moderately large software system.
 
