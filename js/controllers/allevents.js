@@ -14,7 +14,7 @@ myApp.controller('AllEventsController',
           var auth = $firebaseAuth();
           var eventsListBack= $firebaseArray(eventsRef);
 
-          $scope.category = eventsListBack;
+          //$scope.category = eventsListBack;
 
           $scope.makeList = function(order){
               if (order == 'all'){
@@ -42,6 +42,14 @@ myApp.controller('AllEventsController',
                       }
                   }
               }
+          };
+
+         $scope.searchList = function(input){
+             var inputLower = input.toLowerCase();
+             var input1 = "";
+                 input1 = input + "\uf8ff";
+               var list = eventsRef.orderByChild('eventname').startAt(input).endAt(input1);
+               $scope.category= $firebaseArray(list);
           };
 
         $scope.addUser = function(eventid) {

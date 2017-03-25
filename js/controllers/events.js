@@ -29,7 +29,6 @@ myApp.controller('EventsController',
         });
 
         $scope.addEvent = function() {
-
           eventsInfo.$add({
             eventname: $scope.eventname,
             eventdate: $scope.eventdate,
