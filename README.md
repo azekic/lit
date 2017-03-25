@@ -1,122 +1,42 @@
-<!---
-Computer Science 2212 - Introduction to Software Engineering is a course designed to examine the stages of the software engineering process, including requirements gathering, specification, design, implementation, and testing. Students of CS 2212 are required to work cooperatively in a team to design and implement a moderately large software system.
+# Updated User Guide for Stage 3
 
-LIT is a heat map event tracker that displays current and future events. Each event will be defined by an area on the map with geo-fencing using Google Maps API. A user who enters the defined area will add to the event counter - which displays how many users are within that event’s area. The density of people will be visually displayed through color. For example: events of low, medium, and high user density will be filled in with yellow, orange, and red colours respectively. By clicking or tapping on the event area, a user can see more information about that specific event. A time slider will allow the user to view events on the map at later points in time.
+## Introduction
 
-1. Create geo-fenced events
-
-2. Users can discover events around them using a heat map
-
-3. Facebook integration for easy login and event sharing
-
-*Developed by Team 13 for CS 2212*
-
-## <a></a>MEMBERS
-
-### ANDRE ZEKIC
-![alt text](./website/img/andre.jpg)
-
-Andre is a fourth year student at Western University pursuing a double major in Chemistry and Computer Science. He is often seen speeding across campus on his electric longboard or drinking concerning amounts of Soylent. His position as *Computer Science Representative* and *VP of Promotions* on Western’s *Science Student’s Council* and the *Chemistry Club* respectively brought insight towards a concerning truth – councils, clubs, and societies across campus have no standardized method to communicate with students. Students are left to figure out whats going on across campus on their own. From this insight came the inception of ‘Lit’, a service that aims to fill the gap and bring the events of all clubs and societies across campus directly to students.
-
-**Role:** Project Lead, UI Lead
-**azekic@uwo.ca**
-
-### ANIRUDHA NANDI
-![alt text](./website/img/nandi-2.jpg)
-
-Nandi is a second year computer science student at Western University. He is from Milton, Ontario but was originally born in India. He plans on attending the Richard Ivey School of Business next year to double major in Computer Science and Business Administration. Nandi has been coding since he was 11 and can code in C, C#, C++, Java, and Python. He also works at RezNet, the Internet Service Provider at Western University. Hobbies include: soccer, gaming, penetration testing on Linux, and coding.
-
-**Role:** Back end developer
-**anandi@uwo.ca**
-
-### MITCH MANCUSO
-![alt text](./website/img/Mitch.jpg)
-
-Mitch is a fourth year computer science student at the University of Western Ontario. Over the years he has maintained a portfolio of design and operational projects utilizing knowledge in Swift, Filemaker, Oracle, HTML, CSS, PHP and SQL. Hobbies include: spending way too much time on the internet, and losing track of time.
-
-**Role:** Framework Lead
-**mmancus4@uwo.ca**
-
-### YUHAN LI
-![alt_text](./website/img/Yuhan.jpg)
-
-Yuhan is a third year student double major in Financial Modeling and Computer Science at Western University. Throughout studies, he is proficient in Java, Python, Matlab,C,SQL, mongoDB, Excel(VBA). Yuhan has a wide range of interests. He created the Western Magic Community to become the largest magician club in London, ON. Hobbies includes: photoshooting, boxing and video editing.
-
-**Role:** Back End Developer
-
-**Contact:**
-
-**[Personal Web](https://www.liyuhan.me)**    
-**[Linkedin](https://ca.linkedin.com/in/yuhan-li-5b07b896)**    
-**[Email](yli2422@uwo.ca)**
-
-### MAKSYM KOVAL
-![alt text](./website/img/maksym.jpg)
-
-Maksym is a second year student at western pursuing ] a dual-degree in Computer Science and Business Administration. He has always had an interest in merging business and computing. Initially involved in a student start-up as Vice President of Information Technology, he expanded his skills further upon entering university. Now as a Director of Technology at the Western Forex Association, he dedicates himself to site management and graphic design, while keeping a part time position at PPL as a Recreation Coordinator.
-
-**Role:** Back End Developer
-
-### YIJUN HE
-![alt text](./website/img/yijun.jpg)
-
-Yijun is a second year computer science student at Western University who plans on doing Specilization in Computer Science. He is from China, and he likes music and graphic design. He started learning code last year and he can code in Java, C, Python, and HTML/CSS/Javascritpt.
-
-**Role:** Front End Developer
-
-**yhe362@uwo.ca**
-
-![alt text](./website/img/weija.jpg)
- 
-Weija Zhou is a second year student at Western pursuing a Computer Science degree. He has always been interested in computers and electronics. He took an interest in computer science in high school. Throughout his life, he has gained skills in the mystical languages of python, java, C, C++, html, css, and javascript. He is excited about designing new projects and is committed to learning and being awesome. His official role on the team is being the "create" page developer. 
- 
- **[wzhou94@uwo.ca](wzhou94@uwo.ca)**
- 
-### GARREN MCCALLUM
-![alt text](./website/img/garren.jpg)
-
-Garren is an avid technology enthusiast with an interest in anything computer or gaming related, with cars being a side hobby. He is particularly interested in the Android platform and enjoy making system modifications and changing Android versions on his mobile device. Garren is currently taking a Major in Computer Science and a Minor in Mathematics. He has experience in the Python, Java and C programming languages from past courses.
-
-**Role:** Back End Developer
-**gmccall5@uwo.ca**
-
-### SPENCER ROEBOTHAM
-<img src="./website/img/Spencer.jpg">
-
-Spencer is a third year computer science student at the University of Western Ontario. He has experience programming in Java, C, C++, Unix shell, ARM assembly, JavaScript, Ruby, HTML, and CSS. He is currently the VP Sponsorship of Western Cyber Security, a student-run organization at Western for those interested in ethical hacking and information security.
-
-**Role:** Back End Lead
-
-## UI DESIGN
-
-The Login page allows a user to sign up, sign up with Facebook, or log into the appication.
-![Login](./website/img/login.jpg)
-
-The Sign Up page requests that a user fills in the necessary info to generate an account.
-![Signup](./website/img/login2.jpg)
-
-The Discover tab allows a user to find and interact with events.
-![Discover Tab](./website/img/discover.jpg)
-
-The Create tab allows a user to create and edit an event.
-![Create Tab](./website/img/create.jpg)
-
-The Active Events option lets a user browse current events in a timeline format and sort them by proximity, popularity, and date.
-![Active](./website/img/timeline.jpg)
-
-The Attending Events option lets a user view and modify the events they have chosen to attend.
-![Events](./website/img/events.jpg)
-
-The Settings option allows a user to modify their account, manage their events, and provides access to help resources.
-![Settings](./website/img/settings.png)
+There is a disconnect between students and the events going on around them. Councils, clubs, and societies across campus have no standardized method to communicate with students. Students are left to figure out whats going on across campus on their own. From this insight came the inception of LIT, a service that aims to fill the gap and bring the events of all clubs and societies across campus directly to students, using a novel and intuitive user interface.
 
 
+## Guest Browsing
 
-## SOFTWARE DESIGN
+You can browse current events on the site without registering in two ways. The marker button on the bottom right brings you to a map of all the events on campus, and the list button on the bottom right brings you to a list of all events on campus. For more information on how to use the site, select the question button on the bottom right.
 
-## UML DIAGRAM
+## Registration
 
-## PROJECT PLAN
+If you have not made an account with us, you will be automatically redirected to the login page. Alternatively you can access the login page (while logged out) by selecting the lock button on the bottom right. To create an account, select the "Register" link at the bottom , then fill in your name and email, and type in a password. You will be added to our database and given a unique UserID. Alternatively, you can login with Facebook by selecting “LOG IN WITH F”, and following the registration process from there.
 
-## USER STORIES
--->
+## Login
+
+If you've already created an account, you can log in by email and password on the login page (which can be accessed by selecting the lock button on the bottom right. You can log out at any time by selecting “LOG OUT” at the top right of the nav bar.
+
+## Friends
+
+LIT allows you to interact with other users through a friends system. To view all users on LIT, select the people icon on the bottom right. You can add a user as a friend by selecting ADD FRIEND or view more details about them by selecting GO TO PROFILE. To view a list of all your friends, select the person con on the top right. 
+
+## Map
+
+You can view all events on the map by selecting the marker button on the bottom right. This will bring you to a view of western’s campus with a heat map showing the concentration of users at individual events. To view the areas bound by each event and more details, zoom into the map. You will see polygons outlining the radius of each event. The colour of an event corresponds to its density of attendees - yellow to orange to red in order of increasing attendees. If you click on an event you can view more details about the event. Select the back arrow on the bottom left to return back to the main user interface.
+
+## Account Settings
+
+Selecting the "Account Settings" tab in the top right allows the user to see their current name, age and email. Hovering over the profile picture will give the option to change the user’s first name, last name, email and profile picture. The user can select a picture to upload and save the changes. The user also has the option to fill in the text boxes to change their name and age, as well as gender and occupational information. Clicking the Update Profile button will save these changes. There are also buttons to link and unlink the user’s account with their Facebook profile.
+
+## All Events
+
+The "All Events" tab in the top left leads to a list of all events created on our database. Events can be sorted by the most recently created, the time the event is happening, archived events, by category or display all events in the database. There is also the option to search by entering the case sensitive title, to quickly get to the event the user you want to view. When the filter is applied there are a few options. The user can add to themselves to an event’s guest list by clicking the check icon. To view the guest list, click the people icon.
+
+## Creating an Event
+
+To create an event, select the “+” icon in the bottom right from any page. Here the user can enter the Event Name in the field and select the category by clicking on one of the options. The user can enter an event description, the year in the specified format, and the floor number the event will be held on. A Back button is provided at the bottom to cancel event creation.
+
+## Editing and Deleting Events
+
+On the "My Events" tab, the user can see all the events you've created at a glance. On each event card the user can select the trash can icon to delete their event, and selecting the pencil icon when take the user to another page to edit the details. This page works in the same way as the event creation page. The people icon will display the list of users attending that event and the pin icon will display that event on the map.
