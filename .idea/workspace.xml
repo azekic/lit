@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="41bef3e5-2211-4543-88a4-f5cf99cb4adc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/allevents.js" afterPath="$PROJECT_DIR$/js/controllers/allevents.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/allevents.html" afterPath="$PROJECT_DIR$/views/allevents.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/checkinslist.html" afterPath="$PROJECT_DIR$/views/checkinslist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/checkinslistauth.html" afterPath="$PROJECT_DIR$/views/checkinslistauth.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,21 +21,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="allevents.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/allevents.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="53" column="128" lean-forward="false" selection-start-line="53" selection-start-column="128" selection-end-line="53" selection-end-column="128" />
+            <state relative-caret-position="544">
+              <caret line="77" column="64" lean-forward="true" selection-start-line="72" selection-start-column="12" selection-end-line="77" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allevents.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/allevents.html">
+      <file leaf-file-name="checkinslist.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/checkinslist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+            <state relative-caret-position="349">
+              <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="63" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkinslistauth.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/checkinslistauth.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -144,8 +155,6 @@
         <option value="$PROJECT_DIR$/views/alleventmap.html" />
         <option value="$PROJECT_DIR$/views/alleventsmap.html" />
         <option value="$PROJECT_DIR$/js/controllers/allevents.js" />
-        <option value="$PROJECT_DIR$/views/checkinslist.html" />
-        <option value="$PROJECT_DIR$/views/checkinslistauth.html" />
         <option value="$PROJECT_DIR$/views/accountsetting.html" />
         <option value="$PROJECT_DIR$/views/events.html" />
         <option value="$PROJECT_DIR$/css/uikit.min.css" />
@@ -154,6 +163,8 @@
         <option value="$PROJECT_DIR$/views/friendRequests.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/views/allevents.html" />
+        <option value="$PROJECT_DIR$/views/checkinslist.html" />
+        <option value="$PROJECT_DIR$/views/checkinslistauth.html" />
       </list>
     </option>
   </component>
@@ -170,7 +181,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="86" />
+    <option name="x" value="41" />
     <option name="y" value="23" />
     <option name="width" value="1354" />
     <option name="height" value="823" />
@@ -707,14 +718,7 @@
       <workItem from="1489013790417" duration="186000" />
       <workItem from="1489689509892" duration="169000" />
       <workItem from="1490142047576" duration="1765000" />
-      <workItem from="1490190397442" duration="91210000" />
-    </task>
-    <task id="LOCAL-00027" summary="Total Change To UI and CSS Features">
-      <created>1490322267789</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1490322267790</updated>
+      <workItem from="1490190397442" duration="92379000" />
     </task>
     <task id="LOCAL-00028" summary="Total Change To UI and CSS Features">
       <created>1490322886441</created>
@@ -1052,11 +1056,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490404831408</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Remove Checkmark for Non-Logged In Users">
+      <created>1490405680943</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1490405680943</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97751000" />
+    <option name="totallyTimeSpent" value="98920000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1068,7 +1079,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="23" width="1354" height="823" extended-state="0" />
+    <frame x="41" y="23" width="1354" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1139,7 +1150,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Beginning Changes to the checkinslist" />
     <MESSAGE value="All Check-Ins" />
     <MESSAGE value="Check-Auth Changes" />
     <MESSAGE value="Added Back Buttons" />
@@ -1164,7 +1174,8 @@
     <MESSAGE value="Change To Position" />
     <MESSAGE value="Import Friends On HTML" />
     <MESSAGE value="Add All Events Button For Logged Out User" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add All Events Button For Logged Out User" />
+    <MESSAGE value="Remove Checkmark for Non-Logged In Users" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove Checkmark for Non-Logged In Users" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1475,14 +1486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/checkinslistauth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/uikit.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
@@ -1495,14 +1498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/checkinslist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1579,8 +1574,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/allevents.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        <state relative-caret-position="544">
+          <caret line="77" column="64" lean-forward="true" selection-start-line="72" selection-start-column="12" selection-end-line="77" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/checkinslist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="63" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/checkinslistauth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
           <folding />
         </state>
       </provider>
