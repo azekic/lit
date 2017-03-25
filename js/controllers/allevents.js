@@ -54,12 +54,12 @@ myApp.controller('AllEventsController',
 
         $scope.addUser = function(eventid) {
             var eventRef = ref.child('events/'+eventid+"/guestlist/"+authUser.uid);
-            var hostName; 
+            var hostName;
             ref.child('users').child(authUser.uid).on("value", function(snapshot){
             hostName = snapshot.val().firstname + ' ' + snapshot.val().lastname;});
             eventRef.update({
-                name: hostName    
-            }); 
+                name: hostName
+            });
           } //editEvent
       }
       else{
