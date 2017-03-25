@@ -55,6 +55,10 @@ myApp.controller('AllEventsController',
         $scope.addUser = function(eventid) {
             var eventRef = ref.child('events/'+eventid+"/guestlist/"+authUser.uid);
             var hostName;
+            var profileEventsGoing = ref.child('users').child(authUser.uid).child('eventsGoing');
+            profileEventsGoing.push({
+                eventid: eventid});
+
             ref.child('users').child(authUser.uid).on("value", function(snapshot){
             hostName = snapshot.val().firstname + ' ' + snapshot.val().lastname;});
             eventRef.update({
