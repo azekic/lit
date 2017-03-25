@@ -1,5 +1,7 @@
 # Updated User Guide for Stage 3
 
+## [Link to website](https://liteventtracker.com/)
+
 ## Introduction
 
 There is a disconnect between students and the events going on around them. Councils, clubs, and societies across campus have no standardized method to communicate with students. Students are left to figure out whats going on across campus on their own. From this insight came the inception of LIT, a service that aims to fill the gap and bring the events of all clubs and societies across campus directly to students, using a novel and intuitive user interface.
