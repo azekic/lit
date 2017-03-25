@@ -22,7 +22,7 @@
     <span class="text">Event Date: {{event.eventdate}}</span><br>
                   <div class="uk-margin">
 
-                  <a ng-click="addUser(event.$id)"
+                  <a ng-show="currentUser" ng-click="addUser(event.$id)"
                      class="uk-icon-link uk-align-right" title="I'm Going" uk-tooltip uk-icon="icon: check; ratio: 1.5">
                   </a>
 
