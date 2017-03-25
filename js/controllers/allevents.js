@@ -14,7 +14,7 @@ myApp.controller('AllEventsController',
           var auth = $firebaseAuth();
           var eventsListBack= $firebaseArray(eventsRef);
 
-          //$scope.category = eventsListBack;
+          $scope.category = eventsListBack;
 
           $scope.makeList = function(order){
               if (order == 'all'){
