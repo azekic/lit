@@ -1,0 +1,37 @@
+<head>
+
+    <style>
+        #uploader {
+            -webkit-appearance: none;
+            appearance:none;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .label{
+            float: left;
+        }
+        .block{
+            display:inline;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="card events cf" >
+    <div class="textintro">
+        <h1>User Profile</h1>
+        <img src="{{user.profilePictureurl}}" style="width:75px;height:75px;"><br>
+        <span class="as-word">email: {{ user.email }} </span>
+        <span class="as-word">occpuation: {{ user.occupation }}</span>
+        <span class="as-word">age: {{ user.age }}</span>
+
+
+    </div><!-- events cf -->
+
+    <br/>
+
+
+
+
+</body>

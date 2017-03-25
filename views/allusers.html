@@ -4,7 +4,7 @@
 
 <div class="uk-child-width-1-4@m uk-margin-small" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: > div > .uk-card; delay: 200; repeat: false">
     <div ng-repeat="(key, user) in users">
-        <div class="uk-container">
+        <div class="uk-container uk-margin">
 
             <div class="uk-flex uk-flex-column uk-flex-center uk-text-center" uk-grid>
         <div class="uk-card uk-card-secondary uk-card-body">
@@ -12,8 +12,13 @@
             <span class="text">{{user.firstname}} {{user.lastname}}</span><br>
             <span class="text">{{user.email}}</span><br><br>
 
-            <button class="uk-button uk-button-primary"
+            <button class="uk-button uk-button-primary uk-margin"
                     ng-click="addfriend(user.$id)"><span>Add Friend</span></button>
+
+            <a class="uk-button uk-button-default"
+               ng-href="#/profile/{{user.regUser}}">
+                <span>Go to Profile</span>
+            </a>
                 </div>
             </div>
   </div><!-- events list -->
