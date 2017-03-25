@@ -1,11 +1,14 @@
 <html>
-<div id="floating-panel">
-   <button onclick="toggleHeatmap()">Toggle Heatmap</button>
-   <button onclick="changeRadius()">Change radius</button>
-   <button onclick="changeOpacity()">Change opacity</button>
-</div>
-<div id="map"></div>
 
+<div id="wrapper">
+   <div id="map">
+   </div>
+   <div id="over_map">
+      <a id = "submit"
+        href="https://liteventtracker.com/weija2/#/events"><img src = "../img/arrow_left-512.png">
+      </a>
+   </div>
+</div>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4fnO2ErBKwPTrcRa8yi9DjoinVkC1y8E&libraries=visualization&callback=initMap">
 </script>
 <style type="text/css">
