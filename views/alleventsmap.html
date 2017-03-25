@@ -62,6 +62,15 @@ var centreLat = parseFloat(localStorage.getItem("curCentLat"));
 var centreLng = parseFloat(localStorage.getItem("curCentLng"));
 localStorage.clear();
 
+function ObjectLength( object ) {
+    var length = 0;
+    for( var key in object ) {
+        if( object.hasOwnProperty(key) ) {
+            ++length;
+        }
+    }
+    return length;
+};
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -79,30 +88,37 @@ function initMap() {
   firebase.initializeApp(config);
   var refEvent = firebase.database().ref('events')
   refEvent.once("value", function(snapshot) {
-
-    snapshot.forEach(function(childSnapshot) {
-      var eventkey = childSnapshot.key;
-      refCoord = refEvent.child(eventkey).child("coord");
-
-      refCoord.once("value", function(snapshot){
-        var mapcoord = []
-
-        snapshot.forEach(function(childSnapshot){
-          var latitude = parseFloat(childSnapshot.val().Lat);
-          var longitude = parseFloat(childSnapshot.val().Long);
+    allEventsObj = snapshot.val();
+  }).then(function(){
+    for (key in allEventsObj){
+      var mapcoord = [];
+      var numberofGuests = ObjectLength(allEventsObj[key]['guestlist']);
+      if (numberofGuests <=1){
+        color = "yellow"; 
+      } 
+      else if (numberofGuests <=3){
+        color = "orange"; 
+      }
+      else{
+        color = "red"; 
+      }
+      for (key2 in allEventsObj[key]['coord']){
+          var latitude = parseFloat(allEventsObj[key]['coord'][key2].Lat);
+          var longitude = parseFloat(allEventsObj[key]['coord'][key2].Long);
           mapcoord.push({lat: latitude, lng: longitude});
-        });
-        polygon = new google.maps.Polygon({
+      } 
+       polygon = new google.maps.Polygon({
           paths: mapcoord,
           editable: false,
           draggable: false,
-          fillColor: "#ff0000",
-          fillOpacity: 0.5,
-          strokeWeight: 0.5
+          fillColor: color,
+          fillOpacity: 0.4,
+          strokeWeight: 0.5,
         });
+
         polygon.setMap(map);
-      });
-    });
+
+    }
   });
   
 
