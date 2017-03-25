@@ -226,38 +226,38 @@
      <h2>Features</h2>
     <h3>Authentication System</h3>
     <p>Users will have the option to create an account through traditional email and password or using Facebook Login API.<br>
-    <b>Feasibility:</b> Simple<br>
+    <b>Feasibility:</b> Simple, this has been implemented<br>
     <b>Dependency:</b> Relies on Facebook API for registration, local database to store account info.
     </p>
     <h3>Event Creation</h3>
   <p>Users can create an edit their own events, which will be stored in a local database. Basic event information like the name, description and floor level will be inputted by the user. An integrated calendar UI will allow the user to select a date and time, and the option to add photos will be included.
     <br>To define the event’s area, the user will input the vertices of the event on the map, and a perimeter will be generated from these vertices.
-    <br><b>Feasibility:</b> Relatively complex. Calendar UI will need to span multiple years to be fully functional. Creating the event perimeter will require integration with Google Maps API.<br>
+    <br><b>Feasibility:</b> Relatively complex. Calendar UI will need to span multiple years to be fully functional. Creating the event perimeter will require integration with Google Maps API. The event perimeter and creation have been implemented, the calander UI has not<br>
     <b>Dependency:</b> Requires a functioning event database and successful use of Google Maps API.
   </p>
     <h3>Map-Based Event Browsing</h3>
   <p>The user is shown a map of Western's campus, where all current events can be seen at a glance. By clicking on any event on the map, the user is presented with information about the event including the location, time, number of attendees, and which friends of theirs are attending the event. They are also given the option to RSVP the event, which will add the event to the user's Attending Events. A filter allows the user to specify the events they would like to see on the map, and a search bar allows for further filtering. A Time Slider at the top allows a user to browse upcoming events on the map by cycling through future dates.
     <br>
     <b>Feasibility:</b> Medium complexity. Requires an intuitive UI to navigate events. Most data is being pulled from the event database, so no need for complex algorithms.<br>
-    <b>Dependency: Dependent on a functioning event database to pull information from each event.</b>
+    <b>Dependency: Dependent on a functioning event database to pull information from each event. This has not been implemented on the map, but individual events can be viewed on the map by themselves from the All Events page</b>
     </p>
     <h3>Heat Map</h3>
   <p>A map interface will display all active and future events over a map of Western’s Campus. Each event’s area will be coloured in depending on the density of users in the area using simulated data points.
     <br>
-    <b>Feasibility:</b> Medium complexity. Vertices of the event will need to be converted to longitude / latitude points on the map to allow for overlaying. Event colour will be provided using predefined colour values for a given number of people and pulled from the event database.
+    <b>Feasibility:</b> Medium complexity. Vertices of the event will need to be converted to longitude / latitude points on the map to allow for overlaying. Event colour will be provided using predefined colour values for a given number of people and pulled from the event database. This has been implemented and events can be viewed all at once.
     <br>
     <b>Dependency:</b> Requires successful use of Google Maps API to place event areas on the map.
   </p>
   <h3>Active Events</h3>
-  <p>A user will be able to browse current events in a timeline format and sort them by proximity, popularity, and date.
-    <br><b>Feasibility:</b> Relatively complex. Using simulated data, we will have to calculate the distance from our user to the nearest edge of each event and sort the database of active events by proximity. Popularity and date can be sorted by already provided data.
-    <b>Dependency:</b> Requires successful use of Google Maps API to calculate the distance between two points.
+  <p>A user will be able to browse current events in a timeline format and sort them by date, category and recently created.
+    <br><b>Feasibility:</b> Relatively complex. Using simulated data, we will events in the datebase and and on the map. Date can be sorted by already provided data. The events can be sorted and searched on the all events page.
+    <b>Dependency:</b> Requires successful use database and storage of events and users.
   </p>
     <h2>Additional Features</h2>
     <h3>Attending Events</h3>
-  <p>A user can view the events they have chosen to attend, and has the option to delete them from the list.</p>
+  <p>A user can view the events they have chosen to attend, and has the option to delete them from the list.</p> This has not been implemented
     <h3>User Settings</h3>
-  <p>A user can modify their account (delete, change name and photo), manage their events (delete, change information), and has access to help resources (written guide to application).
+  <p>A user can modify their account (delete, change name and photo), manage their events (delete, change information), and has access to help resources (written guide to application). This has been implemented
   </p>
 
 </div>
