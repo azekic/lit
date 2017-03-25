@@ -7,8 +7,8 @@ myApp.controller('AllEventsController',
 
     var ref = firebase.database().ref();
     var auth = $firebaseAuth();
-   // auth.$onAuthStateChanged(function(authUser) {
-     // if(authUser) {
+    auth.$onAuthStateChanged(function(authUser) {
+     if(authUser) {
           var eventsRef = ref.child('events');
           var eventsList = $firebaseArray(eventsRef);
           var auth = $firebaseAuth();
@@ -61,7 +61,7 @@ myApp.controller('AllEventsController',
                 name: hostName    
             }); 
           } //editEvent
-    //  }
-  //})
+      }
+  })
 
 }]);
