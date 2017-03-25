@@ -38,8 +38,7 @@
     return query_string;
   }();
 </script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-Xp8injjOHlh73LNN0oBSzfZeuCZjPns&callback=initMap">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4fnO2ErBKwPTrcRa8yi9DjoinVkC1y8E&callback=initMap">
 </script>
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 
@@ -59,13 +58,17 @@ html, body {
 
 var map;
 var infoWindow;
+var centreLat = parseFloat(localStorage.getItem("curCentLat"));
+var centreLng = parseFloat(localStorage.getItem("curCentLng"));
+localStorage.clear();
 
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 43.00998848394310, lng: -81.27191001055915},
-    zoom: 16
+    center: {lat: centreLat, lng: centreLng},
+    zoom: 17,
   });
+  
   var config = {
     apiKey: "AIzaSyBLefPTD2pIO1RAUYxTIN8ao_Xdx054D9Q",
     authDomain: "litapp-a4f8d.firebaseapp.com",
@@ -93,14 +96,24 @@ function initMap() {
           paths: mapcoord,
           editable: false,
           draggable: false,
-          fillColor: "red",
-          fillOpacity: 0.1,
+          fillColor: "#ff0000",
+          fillOpacity: 0.5,
           strokeWeight: 0.5
         });
-
         polygon.setMap(map);
       });
     });
+  });
+  
+
+  map.addListener('zoom_changed', function() {
+
+  //If zoomed in close, removes theme, logo, and heatmap
+  if (map.getZoom() < 17) {
+    localStorage.setItem("eventsCentLat", map.getCenter().lat());
+    localStorage.setItem("eventsCentLng", map.getCenter().lng());
+    location.href = "map.html";
+    }
   });
 }
 
