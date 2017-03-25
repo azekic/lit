@@ -15,6 +15,7 @@ myApp.controller('AllUsersController',
                     $scope.users = usersList;
 
                     $scope.addfriend = function(friendID) {
+                        console.log(friendID);
                         userProfileref = ref.child('users').child(authUser.uid);
                         profilerefObject = {};
                         //object used to check if user is already friends or already sent them friend request
