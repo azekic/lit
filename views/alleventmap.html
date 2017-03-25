@@ -1,0 +1,314 @@
+<style>
+   #wrapper { position: relative; }
+   #over_map { position: absolute; bottom: 30px; left: 10px; z-index: 99; }
+
+
+
+
+
+
+   /* The Modal (background) */
+   .modal {
+       display: none; /* Hidden by default */
+       position: fixed; /* Stay in place */
+       z-index: 100; /* Sit on top */
+       left: 0;
+       top: 0;
+       width: 100%; /* Full width */
+       height: 100%; /* Full height */
+       overflow: auto; /* Enable scroll if needed */
+       background-color: rgb(0,0,0); /* Fallback color */
+       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+       -webkit-animation-name: fadeIn; /* Fade in the background */
+       -webkit-animation-duration: 0.4s;
+       animation-name: fadeIn;
+       animation-duration: 0.4s
+   }
+
+   /* Modal Content */
+   .modal-content {
+       position: fixed;
+       bottom: 0;
+       background-color: #fefefe;
+       width: 100%;
+       -webkit-animation-name: slideIn;
+       -webkit-animation-duration: 0.4s;
+       animation-name: slideIn;
+       animation-duration: 0.4s
+   }
+
+   /* The Close Button */
+   .close {
+       color: white;
+       float: right;
+       font-size: 28px;
+       font-weight: bold;
+   }
+
+   .close:hover,
+   .close:focus {
+       color: #000;
+       text-decoration: none;
+       cursor: pointer;
+   }
+
+   .modal-header {
+       padding: 2px 16px;
+       background-color: #5cb85c;
+       color: white;
+   }
+
+   .modal-body {padding: 50px 16px;}
+
+   .modal-footer {
+       padding: 2px 16px;
+       background-color: #5cb85c;
+       color: white;
+   }
+
+   /* Add Animation */
+   @-webkit-keyframes slideIn {
+       from {bottom: -300px; opacity: 0}
+       to {bottom: 0px; opacity: 1}
+   }
+
+   @keyframes slideIn {
+       from {bottom: -300px; opacity: 0}
+       to {bottom:0px; opacity: 1}
+   }
+
+   @-webkit-keyframes fadeIn {
+       from {opacity: 0}
+       to {opacity: 1}
+   }
+
+   @keyframes fadeIn {
+       from {opacity: 0}
+       to {opacity: 1}
+   }
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+<div id="wrapper">
+   <div id="map">
+   </div>
+   <div id="over_map">
+      <a id = "submit"
+        href="/#/guide"><img src = "../img/arrow_left-512.png">
+      </a>
+   </div>
+</div>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h1>Event Name:<h1>
+      <h2 id ="p1" style="color:red">Event Name: </h2>
+    </div>
+    <div class="modal-body">
+
+        <h4>Event Description: <h4>
+      <p id = "p2" style="color:red">Event Description: </p>
+        <h4>Event Date <h4>
+      <p id = "p3" style="color:red">Event Date</p>
+        <h4>Event Floor: <h4>
+      <p id = "p4" style="color:red">Event Floor</p>
+        <h4>Event Host:<h4>
+      <p id = "p5" style="color:red">Host Name:</p>
+
+    </div>
+    <div class="modal-footer">
+      <h2> Event Type:</h2>
+      <h3 id="p6">Event Categ</h3>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Replace the value of the key parameter with your own API key. -->
+<script>
+  var QueryString = function () {
+    // This function is anonymous, is executed immediately and
+    // the return value is assigned to QueryString!
+    var query_string = {};
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+      var pair = vars[i].split("=");
+          // If first entry with this name
+      if (typeof query_string[pair[0]] === "undefined") {
+        query_string[pair[0]] = decodeURIComponent(pair[1]);
+          // If second entry with this name
+      } else if (typeof query_string[pair[0]] === "string") {
+        var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+        query_string[pair[0]] = arr;
+          // If third or later entry with this name
+      } else {
+        query_string[pair[0]].push(decodeURIComponent(pair[1]));
+      }
+    }
+    return query_string;
+  }();
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-Xp8injjOHlh73LNN0oBSzfZeuCZjPns&callback=initMap">
+</script>
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+
+<style type="text/css">
+  #map {
+  height: 100%;
+  z-index: 99;
+}
+Optional: Makes the sample page fill the window.
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+</style>
+<script>
+var map;
+var infoWindow;
+function initMap() {
+  var mapDiv = document.getElementById('map');
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 43.00998848394310, lng: -81.27191001055915},
+    zoom: 16
+  });
+  var config = {
+    apiKey: "AIzaSyBLefPTD2pIO1RAUYxTIN8ao_Xdx054D9Q",
+    authDomain: "litapp-a4f8d.firebaseapp.com",
+    databaseURL: "https://litapp-a4f8d.firebaseio.com",
+    storageBucket: "litapp-a4f8d.appspot.com",
+    messagingSenderId: "863295441400"
+  };
+  firebase.initializeApp(config);
+  var refEvent = firebase.database().ref('events')
+  refEvent.once("value", function(snapshot) {
+    snapshot.forEach(function(childSnapshot) {
+    // key will be "fred" the first time and "barney" the second time
+      var eventkey = childSnapshot.key;
+      refName = refEvent.child(eventkey).child("eventname");
+      refName.once("value", function(snapshot){
+        var name = snapshot.val();
+        document.getElementById("p1").innerHTML = name;
+      });
+      refDescp = refEvent.child(eventkey).child("eventdescription");
+      refDescp.once("value", function(snapshot){
+        var descp = snapshot.val();
+        document.getElementById("p2").innerHTML = descp;
+      });
+      refData = refEvent.child(eventkey).child("eventdate");
+      refData.once("value", function(snapshot){
+        var data = snapshot.val();
+        document.getElementById("p3").innerHTML = data;
+      });
+      refFloor = refEvent.child(eventkey).child("eventfloor");
+      refFloor.once("value", function(snapshot){
+        var floor= snapshot.val();
+        document.getElementById("p4").innerHTML = floor;
+      });
+      refHost = refEvent.child(eventkey).child("hostname");
+      refHost.once("value", function(snapshot){
+        var host = snapshot.val();
+        document.getElementById("p5").innerHTML = host;
+      });
+      refType = refEvent.child(eventkey).child("eventtype");
+      refType.once("value", function(snapshot){
+        var type = snapshot.val();
+        document.getElementById("p6").innerHTML = type;
+      });
+      refCoord = refEvent.child(eventkey).child("coord");
+
+      refCoord.once("value", function(snapshot){
+        var mapcoord = []
+        snapshot.forEach(function(childSnapshot){
+          var latitude = parseFloat(childSnapshot.val().Lat);
+          var longitude = parseFloat(childSnapshot.val().Long);
+          mapcoord.push({lat: latitude, lng: longitude});
+        });
+        polygon = new google.maps.Polygon({
+          paths: mapcoord,
+          editable: false,
+          draggable: false,
+          fillColor: "green",
+          fillOpacity: 0.1,
+          strokeWeight: 0.5
+        });
+
+        polygon.setMap(map);
+        polygon.addListener('click', showArrays);
+
+
+
+
+
+
+      });
+    });
+  });
+infoWindow = new google.maps.InfoWindow;
+}
+
+function showArrays(event) {
+
+  var modal = document.getElementById('myModal');
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  var temp = 1
+
+      modal.style.display = "block";
+      span.onclick = function(event) {
+        if(event.target == span){
+          modal.style.display ="none";
+        }
+      }
+
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+var ref = new Firebase("https://docs-examples.firebaseio.com/samplechat/users/fred");
+ref.once("value", function(snapshot) {
+  var a = snapshot.exists();
+
+
+</script>

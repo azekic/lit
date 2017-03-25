@@ -1,3 +1,6 @@
+# Updated User Guide for Stage 3
+
+
 <!---
 Computer Science 2212 - Introduction to Software Engineering is a course designed to examine the stages of the software engineering process, including requirements gathering, specification, design, implementation, and testing. Students of CS 2212 are required to work cooperatively in a team to design and implement a moderately large software system.
 
