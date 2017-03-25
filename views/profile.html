@@ -1,37 +1,59 @@
 <head>
+    <div class="uk-tile uk-tile-lit" ng-controller="RegistrationController">
+        <p class="uk-h3-lit uk-text-center">{{user.firstname}}'s Profile</p>
+    </div>
 
-    <style>
-        #uploader {
-            -webkit-appearance: none;
-            appearance:none;
-            width: 100%;
-            margin-bottom: 10px;
-        }
-        .label{
-            float: left;
-        }
-        .block{
-            display:inline;
+    <div class="uk-inline uk-position-top-center">
+        <div class="uk-tile uk-tile-secondary">
 
-        }
-    </style>
-</head>
-<body>
-
-<div class="card events cf" >
-    <div class="textintro">
-        <h1>User Profile</h1>
-        <img src="{{user.profilePictureurl}}" style="width:75px;height:75px;"><br>
-        <span class="as-word">email: {{ user.email }} </span>
-        <span class="as-word">occpuation: {{ user.occupation }}</span>
-        <span class="as-word">age: {{ user.age }}</span>
+            <a class="uk-button uk-button-primary"
+               href="#/allusers">Back To All Users</a>
+        </div>
+    </div>
 
 
-    </div><!-- events cf -->
+<div class="uk-section">
+    <div class="uk-container">
 
-    <br/>
+        <div class="uk-flex uk-flex-center uk-text-center" uk-grid>
+            <div class="uk-card uk-card-body uk-card-secondary uk-width-1-2">
+                <div class="uk-text-center">
+                    <div class="uk-inline-clip uk-transition-toggle uk-light">
+
+                        <img id="profilePhoto" src="{{user.profilePictureurl}}" class="uk-border-circle" onerror="this.src='https://www.soundstream.tv/assets/default_profile-e08597880fc222202f22984a4f1966a29b108e856a3fb935072bfbbc302a4b73.png'" width="150" height="150">
+
+                    </div>
+                </div>
+                <div class="uk-margin-top">
+                    <span class="uk-text-large">{{user.firstname}} {{user.lastname}}</span>
+                </div>
+                <br>
+                <span class="uk-text-bold">{{user.firstname}}'s Information:</span>
+                <br>
+                <br>
+                <span class="uk-text-small">{{user.email}}</span>
+                <br>
+                <span class="uk-text-small">Age: </span>
+                <span class="uk-text-small uk-badge">{{ user.age }}</span>
+                <br>
+                <span class="uk-text-small">Occpuation: {{ user.occupation }}</span>
+                <hr>
+
+                <div class="event" ng-repeat="(key, event) in userEventsGoing">
+                <span class="text">Event Name: {{event.eventname}}</span><br>
+                <span class="text">Event Type: {{event.eventtype}}</span><br>
+                <span class="text">Event Date: {{event.eventdate}}</span><br>
+                <span class="text">Event Description: {{event.eventdescription}}</span><br>
+                <span class="text">Event Floor: {{event.eventfloor}}</span><br>
+                </div>
+
+            </div>
+        </div><!-- events cf -->
 
 
 
 
-</body>
+            </div>
+        </div>
+    </div>
+</div>

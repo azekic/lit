@@ -2,8 +2,8 @@
  * Created by Weija on 2017-03-01.
  */
 myApp.controller('FriendRequestController',
-    ['$scope', '$rootScope','$firebaseAuth', '$firebaseArray','$firebaseObject',
-        function($scope, $rootScope, $firebaseAuth, $firebaseArray, $firebaseObject){
+    ['$scope', '$rootScope','$firebaseAuth', '$firebaseArray',
+        function($scope, $rootScope, $firebaseAuth, $firebaseArray){
 
     var ref = firebase.database().ref();
     var auth = $firebaseAuth();
@@ -11,18 +11,8 @@ myApp.controller('FriendRequestController',
       if(authUser) {
         var friendrequestRef = ref.child('users').child(authUser.uid).child('friendRequests');
         var friendRequestsList = $firebaseArray(friendrequestRef);
-        var obj = []; 
-        friendrequestRef.once("value", function(snap){
-            snap.forEach(function(childSnapshot) {
-                var friendref = childSnapshot.val().friendID;
-                var friendProfileRef = ref.child('users').child(friendref); 
-                var friendProfileObj = $firebaseObject(friendProfileRef); 
-                obj.push(friendProfileObj); 
-                $scope.friendRequests = obj; 
-                console.log($scope.friendRequests);
-            });
-        });
         var auth = $firebaseAuth();
+        $scope.friendRequests = friendRequestsList;
 
         $scope.addfriend = function(friendRequestID, friendID, friendFirstName, friendLastName, friendProfilePic) {
             var friendRequestRef = ref.child('users/'+authUser.uid+'/friendRequests/'+ friendRequestID);

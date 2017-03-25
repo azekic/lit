@@ -35,9 +35,14 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/checkinslistauth.html',
       controller: 'CheckInsController'
     }).
-  when('/profile/:mId', {
+  when('/profile/:uID', {
       templateUrl: 'views/profile.html',
-      controller: 'ProfileController'
+      controller: 'ProfileController',
+      resolve:{
+      currentAuth: function(Authentication) {
+          return Authentication.requireAuth();
+      } //currentAuth
+  }//resolve
   }).
     when('/addevent/:nId/:eId/:sId/:wId/', {
       templateUrl: 'views/addevent.html',
