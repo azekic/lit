@@ -36,6 +36,7 @@
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'UI DESIGN')">UI DESIGN</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'SOFTWARE DESIGN')">SOFTWARE DESIGN</a></li>
   <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'PROJECT PLAN')">PROJECT PLAN</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'PROJECT RETROSPECTIVE')">PROJECT RETROSPECTIVE</a></li>
 
 
 </ul>
@@ -255,12 +256,26 @@
   </p>
     <h2>Additional Features</h2>
     <h3>Attending Events</h3>
-  <p>A user can view the events they have chosen to attend, and has the option to delete them from the list.</p> This has not been implemented
+  <p>A user can view the events they have chosen to attend, and has the option to delete them from the list. This has not been implemented</p> 
     <h3>User Settings</h3>
   <p>A user can modify their account (delete, change name and photo), manage their events (delete, change information), and has access to help resources (written guide to application). This has been implemented
   </p>
 
 </div>
+  
+<div id="PROJECT RETROSPECTIVE" class="tabcontent">
+  <h2>MVC / Design Patterns</h2>
+  <h3>What is the relationship between user interfaces, application logic, and data in your project?</h3>
+  <p> The users input their data, such as when creating an event or changing profile information, into the user interface which is processed through HTML and passed to JavaScript controllers. These controllers then perform any application logic and the querying of the database.  The data for our project is stored in Firebase, an online database provided by Google, which contains the users and events data. </p>
+  <h3>Did you implement your server-side program as a REST API?</h3>
+  <p>Our server-side program was not implemented as a REST API since Firebase and JavaScript made it very easy to access data directly from the database and pass it to our program.</p>
+  <h3>Which collection of classes serve as the M, V, and C in MVC?</h3>
+  <p>The Firebase database serves as the model (M) in our project as it stores all of our data to be manipulated. The project’s views (V) are all implemented in the HTML files, such as allevents.html or addevent.html, which pass data to the controllers and display the results to the user. The controllers (C) of the project are the JavaScript files, such as allevents.js or events.js. These files take the input from the HTML files and perform the data querying and manipulation.</p>
+  <h3>How do these classes communicate with each other? Give an example based on a user action.</h3>
+  <p>When the user navigates to the All Events page, they can select a category from a drop down menu or search for an event. When they select a category and click the submit button this immediately passes the category name as a string through a function call in the allevents.html file to the allevents.js controller. This JavaScript function then performs a few comparisons to check what category the user wants to view. When it has decided on which output the user wants, it populates a list by querying Firebase based on the category each event has as an attribute. The function then returns the list to HTML file and displays it to the user.</p>
+  <h3>If you were to start the project again today, what aspects of code organization could be improved in your project?</h3>
+  <p>If we were to start over, we could improve on our JavaScript controllers. The project would benefit from a more overarching class structure for subclasses to inherit so we could reuse more code. This way we would not have to worry about changing a variable that may break other components. We could also use this idea to have fewer JavaScript files to help keep the project organized. We could also improve on keeping our code as close as possible to what was laid out in the UML diagram. This way when knew components are added everyone would still understand what information is being manipulated and where it is supposed to be sent. </p>
+  </div>
 
 </div>
     <!-- MAIN CONTENT -->
