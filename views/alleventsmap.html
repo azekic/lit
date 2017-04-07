@@ -1,127 +1,376 @@
+<div ng-controller="AllEventsMapController">
 <style>
    #wrapper { position: relative; }
    #over_map { position: absolute; bottom: 30px; left: 10px; z-index: 99; }
+
+
+
+
+
+
+   /* The Modal (background) */
+   .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 100; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      -webkit-animation-name: fadeIn; /* Fade in the background */
+      -webkit-animation-duration: 0.4s;
+      animation-name: fadeIn;
+      animation-duration: 0.4s
+   }
+
+   /* Modal Content */
+   .modal-content {
+      position: fixed;
+      bottom: 0;
+      background-color: #fefefe;
+      width: 100%;
+      -webkit-animation-name: slideIn;
+      -webkit-animation-duration: 0.4s;
+      animation-name: slideIn;
+      animation-duration: 0.4s
+   }
+
+   /* The Close Button */
+   .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+   }
+
+   .close:hover,
+   .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+   }
+
+   .modal-header {
+      padding: 2px 8px;
+      background-color: 	#FF6961;
+      color: white;
+   }
+
+   .modal-body {padding: 25px 8px;}
+
+   .modal-footer {
+      padding: 2px 8px;
+      background-color: 	#FF6961;
+      color: white;
+   }
+
+   /* Add Animation */
+   @-webkit-keyframes slideIn {
+      from {bottom: -300px; opacity: 0}
+      to {bottom: 0px; opacity: 1}
+   }
+
+   @keyframes slideIn {
+      from {bottom: -300px; opacity: 0}
+      to {bottom:0px; opacity: 1}
+   }
+
+   @-webkit-keyframes fadeIn {
+      from {opacity: 0}
+      to {opacity: 1}
+   }
+
+   @keyframes fadeIn {
+      from {opacity: 0}
+      to {opacity: 1}
+   }
+
+
+
+
+
+
+
+
+
+
 </style>
+
+
 
 <div id="wrapper">
    <div id="map">
    </div>
    <div id="over_map">
       <a id = "submit"
-        href="https://liteventtracker.com/weija2/#/events"><img src = "../img/arrow_left-512.png">
+         href="/#/allevents"><img src = "../img/arrow_left-512.png">
       </a>
    </div>
 </div>
+
+<div id="myModal" class="modal">
+
+   <!-- Modal content -->
+   <div class="modal-content">
+      <div class="modal-header">
+         <span class="close">&times;</span>
+         <h1 style ="font-family:Helvetica">Event Name:<h1>
+            <h2 id ="p1" style="color:yellow;font-family:Helvetica">Event Name: </h2>
+      </div>
+      <div class="modal-body">
+
+         <h4 style ="font-family:Helvetica">Event Description: <h4>
+            <p id = "p2" style="color:green;font-family:Helvetica">Event Description:</p>
+            <h4 style ="font-family:Helvetica">Event Date: <h4>
+               <p id = "p3" style="color:green;font-family:Helvetica">Event Date:</p>
+               <h4 style ="font-family:Helvetica">Event Floor: <h4>
+                  <p id = "p4" style="color:green;font-family:Helvetica">Event Floor:</p>
+                  <h4 style ="font-family:Helvetica">Event Host:<h4>
+                     <p id = "p5" style="color:green;font-family:Helvetica">Host Name:</p>
+
+      </div>
+      <div class="modal-footer">
+         <h2 style ="font-family:Helvetica">Event Type:</h2>
+         <h3 id="p6" style ="font-family:Helvetica">Event Categ</h3>
+      </div>
+   </div>
+
+</div>
+
+
 <!-- Replace the value of the key parameter with your own API key. -->
 <script>
-  var QueryString = function () {
-    // This function is anonymous, is executed immediately and
-    // the return value is assigned to QueryString!
-    var query_string = {};
-    var query = window.location.search.substring(1);
-    var vars = query.split("&");
-    for (var i=0;i<vars.length;i++) {
-      var pair = vars[i].split("=");
-          // If first entry with this name
-      if (typeof query_string[pair[0]] === "undefined") {
-        query_string[pair[0]] = decodeURIComponent(pair[1]);
-          // If second entry with this name
-      } else if (typeof query_string[pair[0]] === "string") {
-        var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
-        query_string[pair[0]] = arr;
-          // If third or later entry with this name
-      } else {
-        query_string[pair[0]].push(decodeURIComponent(pair[1]));
-      }
-    }
-    return query_string;
-  }();
+    var QueryString = function () {
+        // This function is anonymous, is executed immediately and
+        // the return value is assigned to QueryString!
+        var query_string = {};
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            // If first entry with this name
+            if (typeof query_string[pair[0]] === "undefined") {
+                query_string[pair[0]] = decodeURIComponent(pair[1]);
+                // If second entry with this name
+            } else if (typeof query_string[pair[0]] === "string") {
+                var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+                query_string[pair[0]] = arr;
+                // If third or later entry with this name
+            } else {
+                query_string[pair[0]].push(decodeURIComponent(pair[1]));
+            }
+        }
+        return query_string;
+    }();
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4fnO2ErBKwPTrcRa8yi9DjoinVkC1y8E&callback=initMap">
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-Xp8injjOHlh73LNN0oBSzfZeuCZjPns&callback=initMap">
 </script>
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 
 <style type="text/css">
-  #map {
-  height: 100%;
-  z-index: 99;
-}
-Optional: Makes the sample page fill the window.
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+   #map {
+      height: 100%;
+      z-index: 99;
+   }
+   Optional: Makes the sample page fill the window.
+   html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+   }
 </style>
 <script>
-var map;
-var infoWindow;
-var centreLat = parseFloat(localStorage.getItem("curCentLat"));
-var centreLng = parseFloat(localStorage.getItem("curCentLng"));
-localStorage.clear();
-function ObjectLength( object ) {
-    var length = 0;
-    for( var key in object ) {
-        if( object.hasOwnProperty(key) ) {
-            ++length;
+    var map;
+    var infoWindow;
+    var hashName ={};
+    var counter = 0;
+    var centreLat = parseFloat(localStorage.getItem("curCentLat"));
+    var centreLng = parseFloat(localStorage.getItem("curCentLng"));
+    localStorage.clear();
+    function ObjectLength( object ) {
+        var length = 0;
+        for( var key in object ) {
+            if( object.hasOwnProperty(key) ) {
+                ++length;
+            }
         }
-    }
-    return length;
-};
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: centreLat, lng: centreLng},
-    zoom: 17,
-  });
-  
-  var config = {
-    apiKey: "AIzaSyBLefPTD2pIO1RAUYxTIN8ao_Xdx054D9Q",
-    authDomain: "litapp-a4f8d.firebaseapp.com",
-    databaseURL: "https://litapp-a4f8d.firebaseio.com",
-    storageBucket: "litapp-a4f8d.appspot.com",
-    messagingSenderId: "863295441400"
-  };
-  firebase.initializeApp(config);
-  var refEvent = firebase.database().ref('events')
-  refEvent.once("value", function(snapshot) {
-    allEventsObj = snapshot.val();
-  }).then(function(){
-    for (key in allEventsObj){
-      var mapcoord = [];
-      var numberofGuests = ObjectLength(allEventsObj[key]['guestlist']);
-      if (numberofGuests <=1){
-        color = "yellow"; 
-      } 
-      else if (numberofGuests <=3){
-        color = "orange"; 
-      }
-      else{
-        color = "red"; 
-      }
-      for (key2 in allEventsObj[key]['coord']){
-          var latitude = parseFloat(allEventsObj[key]['coord'][key2].Lat);
-          var longitude = parseFloat(allEventsObj[key]['coord'][key2].Long);
-          mapcoord.push({lat: latitude, lng: longitude});
-      } 
-       polygon = new google.maps.Polygon({
-          paths: mapcoord,
-          editable: false,
-          draggable: false,
-          fillColor: color,
-          fillOpacity: 0.4,
-          strokeWeight: 0.5,
+        return length;
+    };
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: centreLat, lng: centreLng},
+            zoom: 17,
         });
-        polygon.setMap(map);
+        var config = {
+            apiKey: "AIzaSyBLefPTD2pIO1RAUYxTIN8ao_Xdx054D9Q",
+            authDomain: "litapp-a4f8d.firebaseapp.com",
+            databaseURL: "https://litapp-a4f8d.firebaseio.com",
+            storageBucket: "litapp-a4f8d.appspot.com",
+            messagingSenderId: "863295441400"
+        };
+        firebase.initializeApp(config);
+        var refEvent = firebase.database().ref('events')
+        var allEventsObj;
+        refEvent.once("value", function(snapshot) {
+            allEventsObj = snapshot.val();
+        }).then(function(){
+            for (key in allEventsObj){
+                var mapcoord = []
+                var name = allEventsObj[key]['eventname']
+
+                var descp =  allEventsObj[key]["eventdescription"];
+                var date =  allEventsObj[key]["eventdate"];
+                var floor = allEventsObj[key]["eventfloor"];
+                var host = allEventsObj[key]["hostname"];
+                var type = allEventsObj[key]["eventtype"];
+                var numberofGuests = ObjectLength(allEventsObj[key]['guestlist']);
+                if (numberofGuests <=1){
+                    color = "yellow";
+                }
+                else if (numberofGuests <=3){
+                    color = "orange";
+                }
+                else{
+                    color = "red";
+                }
+
+                for (key2 in allEventsObj[key]['coord']){
+                    var latitude = parseFloat(allEventsObj[key]['coord'][key2].Lat);
+                    var longitude = parseFloat(allEventsObj[key]['coord'][key2].Long);
+                    mapcoord.push({lat: latitude, lng: longitude});
+                }
+
+                var marker = new google.maps.Marker({
+                    position: mapcoord[0],
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    eventName: name,
+                    eventDs: descp,
+                    eventDate: date,
+                    eventFloor: floor,
+                    eventHost: host,
+                    eventType: type
+
+                });
+                polygon = new google.maps.Polygon({
+                    paths: mapcoord,
+                    editable: false,
+                    draggable: false,
+                    fillColor: "green",
+                    fillOpacity: 0.1,
+                    strokeWeight: 0.5,
+                    eventID:key,
+                    eventName: name,
+                    eventDs: descp,
+                    eventDate: date,
+                    eventFloor: floor,
+                    eventHost: host,
+                    eventType: type
+                });
+
+
+
+                polygon.setMap(map);
+                marker.addListener
+
+                google.maps.event.addListener(marker,'click', function(event){
+
+                    var modal = document.getElementById('myModal');
+
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    var actualName=this.eventName;
+
+                    document.getElementById("p1").innerHTML = this.eventName;
+
+                    document.getElementById("p2").innerHTML = this.eventDs;
+                    document.getElementById("p3").innerHTML =this.eventDate;
+                    document.getElementById("p4").innerHTML =this.eventFloor;
+                    document.getElementById("p5").innerHTML = this.eventHost;
+                    document.getElementById("p6").innerHTML = this.eventType;
+
+                    modal.style.display = "block";
+                    span.onclick = function(event) {
+                        if(event.target == span){
+                            modal.style.display ="none";
+                        }
+                    }
+
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+
+
+                });
+                google.maps.event.addListener(polygon,'click',function(event){
+
+                    var modal = document.getElementById('myModal');
+
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    document.getElementById("p1").innerHTML =this.eventName;
+                    document.getElementById("p2").innerHTML = this.eventDs;
+                    document.getElementById("p3").innerHTML =this.eventDate;
+                    document.getElementById("p4").innerHTML =this.eventFloor;
+                    document.getElementById("p5").innerHTML = this.eventHost;
+                    document.getElementById("p6").innerHTML = this.eventType;
+
+                    modal.style.display = "block";
+                    span.onclick = function(event) {
+                        if(event.target == span){
+                            modal.style.display ="none";
+                        }
+                    }
+
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+
+
+                });
+
+
+
+                map.addListener('zoom_changed', function() {
+                    //If zoomed in close, removes theme, logo, and heatmap
+                    if (map.getZoom() < 17) {
+                        localStorage.setItem("eventsCentLat", map.getCenter().lat());
+                        localStorage.setItem("eventsCentLng", map.getCenter().lng());
+                        location.href = "map.html";
+                    }
+                });
+
+
+
+                infoWindow = new google.maps.InfoWindow;
+
+            }
+        });
     }
-  });
-  
-  map.addListener('zoom_changed', function() {
-  //If zoomed in close, removes theme, logo, and heatmap
-  if (map.getZoom() < 17) {
-    localStorage.setItem("eventsCentLat", map.getCenter().lat());
-    localStorage.setItem("eventsCentLng", map.getCenter().lng());
-    location.href = "map.html";
-    }
-  });
-}
+
+
+
+
+
+
+
+
+
+
+
 </script>
+</div>

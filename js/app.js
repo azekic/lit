@@ -19,11 +19,27 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'views/register.html',
       controller: 'RegistrationController'
     }).
+  when('/views/map.html', {
+      templateUrl: 'views/map.html',
+      controller: 'HeatMapController'
+  }).
+  when('/views/alleventsmap.html', {
+      templateUrl: 'views/alleventsmap.html',
+      controller: 'AllEventsMapController'
+  }).
+  when('/alleventsmap', {
+      templateUrl: 'views/eventmap.html',
+      controller: 'EventMapController'
+  }).
     when('/guide', {
       templateUrl: 'views/guide.html',
     }).
+  when('/eventedit/:uId/:mId', {
+      templateUrl: 'views/eventedit.html',
+      controller: 'EventEditController'
+  }).
     
-    when('/eventedit/:uId/:mId', {
+    when('/eventedit//:mId', {
       templateUrl: 'views/eventedit.html',
       controller: 'EventEditController'
     }).
