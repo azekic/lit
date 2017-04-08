@@ -74,7 +74,7 @@ There were some features in Firebase that were missing, making it a challenge to
 Also, Facebook’s APIs for authentication along with its developer documentation was incredibly confusing to implement for such a simple function of Facebook Login. Pulling user data from the Facebook authorization request (display_name, age, events) was tedious, and further passing that information to Firebase was not always reliable due to the token storage requirements imposed by Facebook. Overall, while we did get this to work - it appears that areas of the Facebook API documentation were out of date, adding an additional level of complexity to troubleshooting. 
 
 ## Video Demonstration
-### [Link to video]()
+### [Link to video](https://youtu.be/7vAmv45OWUc)
 
 ## [Link to website](https://liteventtracker.com/)
 
