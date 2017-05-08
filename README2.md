@@ -1,3 +1,4 @@
+
 # Updated User Guide for Stage 4
 
 ## Workflow
@@ -118,3 +119,4 @@ To create an event, select the “+” icon in the bottom right from any page. H
 ## Editing and Deleting Events
 
 On the "My Events" tab, the user can see all the events you've created at a glance. On each event card the user can select the trash can icon to delete their event, and selecting the pencil icon when take the user to another page to edit the details. This page works in the same way as the event creation page. The people icon will display the list of users attending that event and the pin icon will display that event on the map.
+
